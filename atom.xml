@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>huowy&#39;blog</title>
+  <icon>https://carefulhuo.github.io/icon.png</icon>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://carefulhuo.github.io/"/>
+  <updated>2020-07-05T08:27:29.786Z</updated>
+  <id>https://carefulhuo.github.io/</id>
+  
+  <author>
+    <name>huowy</name>
+    <email>hnzmdhwy@sina.com</email>
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>https基础概念</title>
+    <link href="https://carefulhuo.github.io/posts/8ac28a0d/"/>
+    <id>https://carefulhuo.github.io/posts/8ac28a0d/</id>
+    <published>2020-07-05T07:32:59.000Z</published>
+    <updated>2020-07-05T08:27:29.786Z</updated>
+    
+    <summary type="html">
+    
+      HTTP协议是一种超文本传输协议，是一种请求，响应式协议，http
+    
+    </summary>
+    
+    
+      <category term="网络" scheme="https://carefulhuo.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="网络" scheme="https://carefulhuo.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+</feed>
