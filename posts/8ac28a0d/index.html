@@ -47,7 +47,7 @@
 <meta property="og:description" content="HTTP协议是一种超文本传输协议，是一种请求，响应式协议，http">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-05T07:32:59.000Z">
-<meta property="article:modified_time" content="2020-07-06T02:44:34.615Z">
+<meta property="article:modified_time" content="2020-07-06T02:58:10.215Z">
 <meta property="article:author" content="huowy">
 <meta property="article:tag" content="网络">
 <meta name="twitter:card" content="summary">
@@ -189,6 +189,13 @@
 
 <div class="container body-wrap">
     
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Http协议"><span class="post-toc-number">1.</span> <span class="post-toc-text">Http协议</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#HTTP消息"><span class="post-toc-number">2.</span> <span class="post-toc-text">HTTP消息</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#HTTP请求消息"><span class="post-toc-number">3.</span> <span class="post-toc-text">HTTP请求消息</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#注意：浏览器表单默认的是GET请求"><span class="post-toc-number">3.0.1.</span> <span class="post-toc-text">注意：浏览器表单默认的是GET请求</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#HTTP响应消息"><span class="post-toc-number">4.</span> <span class="post-toc-text">HTTP响应消息</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#HTTP-请求或响应-消息中的其他字段"><span class="post-toc-number">5.</span> <span class="post-toc-text">HTTP(请求或响应)消息中的其他字段</span></a></li></ol>
+        </nav>
+    </aside>
+   
 <article id="post-https"
   class="post-article article-type-post fade" itemprop="blogPost">
 
@@ -215,25 +222,380 @@
         </div>
         <div class="post-count-custom">
             <i class="icon icon-lg icon-comment-o"></i>
-            阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
+            阅读本文可能花费您&nbsp;<span class="post-count">6</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">输入密码，查看文章。</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="39fee223d9fc9f3f43f6f4595f43069b521eacc304f6fc05a0c4ce4dfd2d3bf6">43532ad8c0e700fd4b3f557d5da03288cfb8b15090e94644cd6e2eb11d71cf3993a76f6bed45346f91ce0fb7efe0be4433f365fe18921cd04d25416562a3ad027ffc028a8b0cd9161aa06cbd18a96b2c83ed2343e65fc6d885b1eb40eb02cd1830d272ac1b28947388d165fb96499ed859010aa0bda09b17cd7f24cbf68ea69b8fd9739a7f7880df1f737f73cd89fbbc8e83a890074ec615cfd368f5bef13b9be68b74efc1e93c70ce5a6073316643cf449a3c06f05fc40329048760b46b9bf9303f06309edec415aecbedc5a1c02f8e5de551304396089b7b702b70762a9fd094acf7e8e5dc88a31f66d3b107ea617bcbee4273a581091bc8e147bd1af837b53fdc5de976f4029a94c184b90a3a068c52532b5b5efc1f0ddfad2287e85624ba94df561eeb16fdcd3c0e180525ee1bca6e8f13a7df2e6d191c829f8d1c2907008ab8d1710c9eb01aa93bbc890ddfbdd4cf813095e1a8f6822148e9cd6a16005aa2f8a8ccd44d4c0bcd0f641cb1e34c0b9f810119862f2527eb719c93322bd06c425f009b4128e725ad5dbc5f119cc8e6d5d592a8c57c19d87924ca672c05faaaa830921b83d9ed5d71cc98ec8268df86f99bebf3e52454cbade1e90b53a79049c671d71a5e35d5818c270da460935c6cdb0dbe89e05b1d2d936d807e42427aa6bb068602d18f79a155faa86b1c61529be3b1ce756294baa2b8a9a2858b2793fbe6cf0cbe161915dee3821839e0b9e0a19ac6cf536d44870da2732a168696272047f3de84a4aef8605527f5c54a4543b824e469b06b4e4ed4c3f05cd2cee162c1d0a72e9d02b940397ea31ad3beb8b475f0bfdf6e498f78b254036c99a57d44ad3de36a7afe4118959f4d5ec92ca71313a10a2f88c204b3d873f305a57a136625f400e03ea62b005ad06512375728187e3abab1d71bfb0fe85ee4352c629cf0b7f2e9fa33e28294ed494c58ce5a3edc9fd9545e8f82c8c6762e7079211e5518e8fa7c651e11ba85660041f66ce75cf4313b7adcb67fb53e6e22f54575bc14d165651fe8cdada5a7cae6d51a022e0f165de87c52c1db4bff59607c5bc4466e622c41552dec6151f246111aa5089a6e804a47a354d4444b14212f50699b1c6f5770a8dcc6fc48bd15821dcd34f3ae479d9a17a1a2e823755b5b772fbd620b2dfe1ca1f599ab63d757c6d725c9afc3ea082513f7b6fba8d8a8d11ee508a9b2841c0261e6f5cc0fb3f076c6364ea0f325e7ed1bd49f8f7a326f44122c5680587d815b8a80c25d095658b0b9835c9319f6cdc46ab21831aae19e3995f93c9c9d389fc7243ecf65c6e18f2eaea66e25fc0b36f7b4485ec56ad47fb493ff9ce1ec9ed212298adc6c31a124869563c229e66e801762bceb5f0e8151c96b5234f3c3c38d92b611bfdab9dedfafe910321b72ff249b21f625086f2f51cbd24c798aa63adf715e8312e293354a19acd1d53f19638b435190136b7f09d1ff8cd59a14afa5e7fa696789399a9c0ccd7c2fca2fb4d6f3504681f929ed4b15c4008adaa04ead70b747d0b19c5420eeb082c8f6addefeb25ec55f5fd416edbe3e9f8fc66a2ac9819b9ecf19d39f41121e31f4ae0c2af7bb08a640392336cf77c68b7ff5fa78f4bc0bef11c38134e29d576174dae7ed9b87ce44e6b5df35f41a0e076c4fdce9925bcefc231bb201708ff14068076a5585bcbdb060bf66b9f43cff97f72aa51ca077474fe6a915c080f45ce072c8f1736cd18c91536d3838084e0579068741e06f9c79c7eeb21288324fa090e3ea3a6f794b6519a7646f575ba5e0381eef92b3bcef5ad902e2072841c73f43d02937be12f13131d0f6dfd8080a65858839b0195e1024afbd9fe101c260dcf41b43d6ef93a7516e02ca223e864ef5f57a0fc2e351834cdc9b9824a3228b20bff7be66f8600df8f92bfaffab8748498fdb5409cb1e6d03afeca15c986e2bc8e98dd2e18d2a4123e89b57027d7715e2f50fb525d242a62f74fd87bed8295b9b898de29198199f99cf50c0a485957d76cb714d1e7aaa90c31107fb0c68f678a6aff60b43e967d2c26a7f0a8c95a407aef62910fc75e15eba16c69755e9ec45f8bb1687e152d015b0e27862062dae70c5ac310bba32d6c65838f8d22ea74029d974a758ada39b34d98e7d989c86848c09f04eb0d6a889d74322bf75ea409c925e04f1394decc7e832905dfe756bca456ec0e1080b2d87777a9312bdd08464307968117e266843e90ace549bdd9d8c68234d73ae42c5bac8ff62aace5e6a94068f8087ef11399b695f40ba9020a0e85f2cde30ad3a25fd9a4718553426ae8b640210308bc1b8d8445ee12f12913e71f6362c9c6e911f26d697b42675bcca2c098177e9d0c7db3a250538993c6493eb3858860abe1d6e316ddd364c25f3626d8639bfa0234710b241c819880bb27bc3ade60beffc6379787f3b8a915ae6b0f046f5024b2c890467f1ef386264a80e99e321763ebe134c43f83a103be17628808878ff6faa092e3c94c1e7556f808b6694876b9ec5a8c90987ff04411a464f7ec8f409b4b30db0200c76e446a3da573972b242bf803995b6246c0259ca1889193749232f539f16d49a4293680a67c43b9fe851b76ea5cf68f4f2769dccf25a253de773681b8514becf068364dc0b5974888a436a04a8fffad741e1bae902370d63e4e6d3d19a1163e762b898fc17953b7f80c3aefec92c4dd27596b9bd90b700f379e86d24abb9abcfcf5d3b75eb7ff3080f32cfe7881356859a82fcaadd51e9a45d6167a7302e1b800026efadce51204357a40e003d95f1cbb59a31474de6fd8be8813d50e025d1107da3f6725c8fb24dbbb3f1ab19bf448474f119a33fa545b854906b38c457f25866cd9779a06550927e583a7eded6bd54368b47843d8782302dac6bb72a585b93aa803e0f6e9004aced317a0851ecb427052ce88c78cc9bf2dbbc40aad057219d64d388589046c00314dfed89d3664f77890c7375486b1c98df6c5776b9ac16d3500dc830bd9155147fe29f89a6b2c4973699f9c7e42429cd07786dbee1ffd0f0813d6edafcd5d64f99f54eac9cbb6d382b07184ea73835f6b4b000b4e67ae1df6bcdb1236247dbe073082d5ab139d643e94597131dab0dbca6de0f4a43f9582c010978a7762dfc6f5dfa1156f184828b28581979f78625e2d5417b209a114a6402376444c38cea746876f403b44f6a48c6017e6a275f53181a8fa9c06a3d7095d24cdbe9a1c5d0d492d32172e754f3b781efe8bfe88476079f2b75414ec91e7358c5abe2170a3cda6627ca6c1edd861ddec38e408e3d4528f5bdaaa9165b53f80dfee989341fee8b21311b66274050fc92d034215eadbb3731eb57fbbf96f892ac2c5ef2f5b30f9c1a44261a3da598f440192bdb42061596d8c3442dd7d21c89faac7deeed59042144d0a9e9371d388b72079c70ace03d9065231ed46b84c944b1c090186a3836bf8871606c1968cbd79baee740632a30fd3aa4ac739ad2f8a58a7a6e7e37cc9b30eff0150fe3388957d2458ac908937f8dbf28a41846e20efc914468abcd89f46a53f57235b468b7c453e9e854619f85ea790941cb3da1ca8c2ee251659a82d7fe20f58db0f64746d891929e23ba776ecc8632d86fbb637bc87d9b9956175320bb1edd1ca654c8c058ec38ccfb9c2134a9220a5ca58394d3724e86e08c9c993d7ea9e02d65eed83cf9a03ad6759a149960ea230279a7a47d8351a571f0edc8be347bd5d75548387dbc09b40c55a6b0707b8e4fffabee4b2900662410f295cbc8d7ab83ed8fd53e2c4906ba5ad88359670cf33a89467da10f8becbfe3c50a7edb1ed240ff4d8c357c6836bbdc195e6baa343bf504f07a462504533f83aa2d263ece104e5e63a69af86c815879b8fcc7d80dc133c6480f62a06b26aa31bb91eac119a593fa894989b2aa6c2d6ee09484bf5edacb445335641ea68b80a4319d924ccc129bf844abb01d3bb01583e285800aba8ffd04e922fdd9aa9b9e9b7d597eeca960a79965b6e3dc7ee38a6adb5f98eb5a23486c4074e4412d3e38c67b14702d8d414f138b9786ce53ddd100e4506fbe4b4a59e32e6d734fdf6819335f7b71f380a394b92909c02d93c1640312b573bab4f66970e7f8025d8153476481f044ced5ce98a81726b58dba60be57ca8d53bd29e10f5d8bb76bcca836f77c3318af615295805532986e8ca6eea01b57514358e975a0869fa7afd62906ae061f7b8f1df7f504a065a91cf661c2f22576dbf40e91e62ab1b1c49749e84d32cbb032c058cbf623b463fe3a97092f8af1f1a32de57b87d72744046c5e3d7f9fcd6e2f1ca7de1cc4b1c1fb9fe49fc4695601c25c86942ed7aa2a4e569603b2148ec267c67d1b28b1fdbdefafd019baa260998a1578bf43c09de8cacc213604288a1bafe637ca3b4fe87be5b01543e9877bbbee4e4cf69e0fdd3444a8f68bed660ad617664fd784facbc218f8fe6b8691ea40843e5b9b20c17a70b04f6df86c395c8f422d47f1e7ab81d25c41a8fbb155a0766f0d7b0c75efeedbd0f66f05f662af5bb2d9d76ffd0777bf8434c4b4fe7df25c31c6cd7bf69045b03c556ff8d37aca93457c6f0247c964c507651332a6796ad01f42bcde6ad1481b777455e7436962d8c9c3241731f8b2b171986aaef01deb501bd6eb68257004076e6151cdbceece64ea14f5c50488d5b190cfd2a5575df93fec5c5a88579fd4044b6d8a8a677a859f6539bbfa0ad48527d3125a50d1a923c2ecdfe1aafa1306e5f4f48ea18fe4a4a1897deb5c0a7119db2cf03192ff14d48037d911ae0db4021bcef96c5a39f354a925cdcbbf9b0c7ff082ec2115ad8850c27732a72e6407760de7186ffc0a66e9ffb7140571118f31cafb5098b39be73f443de0499e892fee5988a5b35028831204db7ca9e1cccdd3387ca3473a6dc1e5b26833c4753a58be3bdf838346efb45a89f176d826883f58266feaa825bfa5f07dab6021b0095bbdad3f03d5ff63011a4c78090d41124a136ec460bdd409ee342c0b1ed5e69796b91fd3ffd07545841e5703a6303249b39aa19035b4fa73eeff95f597ca077daf01576164584dad2e92335040343cb6666f87d2e9965662b3296b59131f3018a0ea6c3a5ff80f327e0ef4421c5d38a0d78815e7f7c28050f239799eb9831449dbe86b3c6b904e021771c30f7cec69f505c983935c5f35f74de73e9b132133cb016669f018398851b90f82fca88c74b854fae05ab1636853bdc9cab5aeef8d0c499d5c2614980e331c33cb2b46e0bc9f93d97ced5765528d495964b847dc4f730f3bd567efbbaf828f7f08831b523cf1e879049497701a18fffb3292c71b78d93b7cb3e96de7b2d03608ce9881d266a2456433160974b216d3db5240c9d569a66a8a565b7650bdf515ada60be7ce80dfb117813e6fb9ac805e1bba0c669e0d345165b62589b91b82ffbe083a1f4e323a926d9bfa74ec2dc3ce53e377b18eccaf4e3cf55d4bfa963f40432f012df93388c27a9a9dfe5f433b16e0ae02c57bf615cd135242e0760f7e1deb73a868b0a7f2ee9970ab8c0e621700313cf4fbbd1f27b68917e852925943c685dcd44d650be870ad45aeabd7c180c7be34ec20b6b5512e9381b4c64ab05c2a8c1e5e88f2636ecc589e28a90196b38ba993a10fcc1c38af7dbdb803f2d43ecbb5cc6a5a635f438f1b6235d20e0158549ea357a52f60477e3ab065e91bb15cbb1c8863c90453e456609a9ecc0b7ff0e250a325cdd46f1090a629099602e7de23ebd6e8742f11af98a1b21a214c267be66bf832bbf9090a9c6f305890d5239b2d1e3406750f85e43371624cb784abd691df3dfb17eb33320d86354f4f1152eaa7a891c9511369bb528905f4b34538906bd531ac88bc9e7a2e399f9597f82a86aba4446a1f84021b04ceb8f3f391cbf2c2c919a11fb36dec963bbbaff3dbaf95c8d16a04acb84a8be797395db560f7955598bd281bb777f909fda79161b2b1306961f4868dd30562b93acbf3a1ffea339812e0f75b567eb67db0e4a1a5f1c9e3a8bf072f54374a32dc96ee5b67071a120e7f5b9dfb36f770c11db9b34a18b397d66ddfa6a30ef7f5590b2816a36a123e17cd0a2991c205bee4f68a5682186ac5c422484655cf5752aca97d78e1c2a637fce367413e998070995e943a921f9222dbb9f4eed6ba5037cbc993813582fe16f8e70c44b0c8cf268523b36c60e1d471f49de9c5b52202e6e8d59cbb5fd778573e1f488572faf70380205b72fc6714089c9f42c3f4139f9701f6fbcddc998898322f91da1950c803fbae4726bcac424d034625ebd4c3f6831d4ea6fbff81307e7f7f225fafd82d0c6ee4a47c25c9b7ca78195cd418955c32674dde01daf775a9dd45540b1b1b9ab5dd471d756688e9ea9985a19c31aea5dac8777b3daee5c9289079b9fc9ee6ac77aabbf7034c6e7e1c3dfdc00871021003fa3576d686e7cf448c193a0a98d4c5fc1bb113a5d1afc30fe81acf94e9a6fe71caf2391e259d8440e0a3accc749004ffc09a6fdadea9155bdf00e83252c81e10456b9872e3fa60098012500c631922f549d649bcf719bf1f34742e5a7b7826e3b63d8efc3ce2ed3094d588ebd5f70603fc327122bebcbbb098a02305e74738db3d3f7368e241470841d0bfc22056b2ac55a88b0f0108fe93ae62548780f17451db6ca9293de741d9e0e5987df6353a4fd2f2d73ce6a86f50c9755a8b8cebc4cbb203d6f4d6caf86be81b50f7634bef7a9400aa908610ccb87efb5cf07c5cf121c5826515e51522850cafe0a19dd6eccdf00bd65a6be9ce217c19ea52ea6303c934e0d91f232504eabce14b1901a18fb7682eb994b19cabe9bbeb2b5934ff1568434a1fb33986a321923c0aa9b617d91869a34a18a6012b46c10ac2c4cd018b5a9dcaa22f454e5461d964f458a19990e40fb3ae04faa363aba8fbf47c1bbe95d118c1b51f4717df30be906855ba0b87eeac472374bee24dd025ef432a2bc46b247d4072586f67fbb7982791d5e10c5cfbc25caf17972272dccf63bed0474cb5d83e687b881f168797f4a7a552760079fb37ce40ab886e5d59395f780d7ef037eef4629a299c49ec7556420f9631745a0e722110093832bb4819e2ce8d87d75d6c0077dd6ae8ed70516be3aabc9a5e602a291276f7a822ae1fbf075af4d1bb0d35bf1eca197d9e3c29a9f2faefe9a9031fd8d2d992ebf267b83b1934c6e4982232ea7f61cb97a46383645bfed159041da795d70dab2abb3e3e2334f596eee8494f95aa4132c8e5da501b070cdb6b7de7f7fef3e73dbeab4ec3697776aa2df4bc3bb5e7401077aa9dd5cc1528ce65838685089c4bd8fe3ad4ec6848d42ed4f5b387e781b6e9a705e8b9361f7d71e1c0e124082cbfc3f5eb5abd46c07cd2e9814dea7faf6d36e0dba3f0485a811e3ac710dff9e7e39c3c5c9e763a7c3ea325fbec3a2b3393dff9314c5f933bc7b6e9be92e7fbed0c5bb81a442289b907f36c8a3ad6c921797351c5191ac2304af8f19b23ac234062638531d513be2a632e263bad22f831bf8a8b1312b10073635e5c7d6a773f48e7a41d9fa00b7f3f50731c092c33ba60d9699e2738b2fce6d59c055f86b3c26ee6dc4cf14a4d1403dc169a805e2be949d570e099dbf712b5f6b094050e1b7691bd6fe54814e42488d09c470d330e2dbfe41c3bb13ef178eaf9b48bae37e4b345c54ac0c70f3f74d35901512185eeeab2657a49853a2b115199f12d199ebec8127bc1e858a899c931aa21fa6648b1c83069366f5ebcd98134c51763baf854880f8d6f5b117efb60c6fae40a9e384a24d583713123171b73c3f60623ea3e393abf4923be57344b2e1b1b8b1c0ef6278e7377379637a2efdd68470ac26c8b1e06d2b10331509d1333034d6ff7b62ba9c8824da0581dad16195758fc504b939d6f923d62d391708ae40f63b1abaa3248b7d0ce0e7e588a7b3e6cbf7ddb94db249e98ea7e4d4d712986c5c39f15d1ffb099f71b19e108afbe88bfb3ae586c29f8c3cfea8e3447da0fe01e5c0d2d11c90eb8b7896e1c4466d0a750a60f973c22bffe32b6f3e9143513a8a3069a151c6963f143734d260e93aad2d5a1068259f01278da918d4bb880519fb73bc21edc88a55166b6721e3dfac1d40570335d8e47cedfe6eb63bd13b4eddde95ccba9e547c4b4b6079dec20241242ab9bf3920a6048d0c9d41cd63d8a7e698b0b34075f03229a5b3354803d339c6e64b946e89634ee8ec4ed0e7856d93a3526288a9769e3cc55f851dd27b8bcea74b5040fa4cda4772e80c3e2e90d55bbd913638b772b7e8f3a7c53fe7f3c9d8a8045e6bbb2b50c9a7806d55067e15e775fe787c5d4db39fe1833ff4e307b66b871711d3397f8a0a0bcd3cd5748c7bff3a5fbbc090b363db2cf28ada475cb249a2350341cfa1cfa98cfa24ad9c751e3afdfaf246c3ac303733c02c0ccbea44ff75d10d4bffd182fe982b331f6150a32b75e044949ad67d13c948ce76d8c21826d71fed1e0be16851b07a447a8a819b570f639169cb1b30cd10d27c22d67b818d7878a2ad0bb51ae953488185a785b04132822edaba8ace034f25a4bbfc59ca4f33ac27ef0ecf592dadc8b98ce91a100e5e583a22ef3dbb6242523472ae80a2153d93f25de74fd43350c8354ccb35953cbdda209d029619d327d540d6918c63b282c7a86b2748c1e703a3abe65f9275e847b1e4326783e07bde925ff66a2eddcf0e50222a3e628ef5eb2fafc01c7e42c600eb93ff83cbe3455992d1fb9c2fc0cb8ba1156f2e3ee0f60ee9083de01d8681ad69cc7510f6ff30c386cb3133419b32dd793b07153982e46f1b83033964fdbc3991ca26b8c2649a6298e84689ae8e28def4b73257f28df9d93f59362742aa76c1cac479b1ed5c6b4f105d8050d958caa122212676d9e711cd80db5d4c280c3166d517bf11ccb8e8a10b6140dad86da422a0a4819e2ec7ed83e1d018e4bf92b00dea34bce8a9688ef058ad3fbd9ff57255f2ab6b180908ac1be3d71a7d7586f6f88bd08dc5b0318d36d4ba88653c7b9ac5fbab1b02709184a614eff52bb999961d9db5e5c75fc2fe2d1dd3a477a3ecb3fb7a8a019e616022ad959d5ea1113a61429f7f800820b0b863c7c9f3ad84ff971dd06c6160794badcfacdd6e80ae4209e2371de1ae4557ec4919749e74707b3936563c950412df6599126459b8f6294400a7b5cf9dcea4ea545bf107725852b3bbc48c15edbef998d8d719d3f989b6e7418bc4fee9d6617c3a45824b0c033164481f82d3d461bf3bcc51e6d04d1a7c83b459f5e5204b2c28d5596fd24df317494d86fe819cbe5ac82d06ea8069a86c9c40c924ad7075e849ff508ff251636b35e6bdb92099cdabc8665100097949bd4498dd09921ec3c0cc5ff22148d950c2a98c77369fe900611e7b401f9084d078834bde4135043a62042eda7165e585b7cd35da1c65548537a08346f11c5569ffc9846faaaf0ee9966e6e65902f727f20326b94763bffe4ce7c880fb8efbe5ba684fbdef7b2c93e786e9c04131398fb14aab632c9258bc17a1850e15c55fb03f2c5562303883777a8e6e69abe8d7fe980c784a2d98d1fcf2e1cbf2e061a101deaec2466c2c1fc836d875d1ebdabc851cf43eca384a31c343a85ea20fe7a299b6440f075ca1d8e3df256c0900a10a45f597a8adcd58353c66d2583dd4222fcb0ef9860d804ad5ffb8b48fc673eb49c83319e717fca5ea0b111f7816cceb3179f4b2e565d4dc75a43d150d55b5491432c7c12becea276deb74ebeac9daa52cfa4952ac4b1c8b8c274b4cfac41d2be4152d3a9bd2f2c9b005416d91a162df5529b7a74f8d8cf2d8cc4a2b907faa558e7adbb46d2a3b66c3d23f6f4c6e27752f9c3037a7f614d6708e9ce52e446b8ece96421cc20c1b003529f0f6198e871673dae66b8b62bf2176dd69bedb3373f00fda1ad53bbebef72f5d9f4dcfcbac8fbe81236f6f988725151fc848c611b58d8b5cc1fd6a708c81e46fc0fdc0049bc718a3895ab72b8e70405682f35409ee64feab533f15dcc58f26e3e9fdf4205f323981108f73be4f41d0192a006af7d1d7e099dcec54d243ae0837a2ee271007f4474ddf55dea8204b31cf239ef50c642b39ff5c4efcf76978c73fa5ab9734e545c7abf3d92ad2595445f927a19913fc9162bfffdd365ea2419ac1a7db17e40b6e6b03a612c9d5fb7ca1e1af46c392b110c21c7cb0d700e2f32f1c7fac9e499c55820dfa98e7d422d0877e95d96e4f5c454c1aeef4e427dca472a469d0c0d139e2478ba2ce28c0ab0937d4bd5cefb4f550e2e421dbc6125407b054477231d271ac2b78d947b0946eea87104e5459a9c2882cf3d0de0770b1fe484211f02eeb046e6adfda1b80856d5b5adf274802959610f2ee1082231fb775b706a6701768d75e94f246e19ae5f5b7722194b751ef7f35d2599b345b882a2fa6334941ab14f7c90e6c9387e88d937006fffc39e8bbbcc6b835501ddcf0b09b3f36e59720470f0e0e2c242d609dc9d56ba4a4a64fcb4f46ba9547fd031460e70419798e8ee154c8e6316836482be20f5e0428a843f8ae03c3eb3dfa17b27edcab6cb04c9885ba4f32b43e48b1fbea724fc136be33fee0058b0da2bbdf6e4121309123f60f4a265a8414759b1089cd1d23da30a09aa4220a130cb9a4a7e78f17366ecfb4b80444576d65f3178520338d220201f68232d828205168dcc4d180f32c5825adffa9a8d86cdec6ec9ffda90f6b8b498dce288f4a9094a064afe5db928154bc5bf6cdff1a3c4c9e6a66f5edafea73682e35a3bef15d6bfd391ae997f35a8ead52ebc4f28d0b6b72a89f263b03f5b4024a2101f7aa9919744832703516c05975058c6b471a6e667680f32f40ebadd0fdfec21f9b31c1e402f30bf58500ad8a0d41d8e6429bf7dcd302814b1ae613455e8bba55a50d195498b9b4d12a6cf13b4d3b08f3b9302b89f611815a2ffa9fa18270f3f4311517f3acb260e51268afd67cac2136ce1560b6d9d2f1e4a16c44232c49e9e08757770d3a4a95ae6283b2601eced9b2fd5b310c45c917d191802b6431248596d7d2459bb66710578a17b15ba6d8add59211b588ae931bfde93aeca142c40ce72623074c32fbae371a6a24f94230169718306ec1f69a31b0041bfed22816c797dce65659e565eb25e6caad87eac4fb5a807c20abdcb5c20914d67d9a5969d8200528ab2bc90427587460f73ba84cb222390d1702172d793e62be5a8588648c22c92428692038a542460958002445b3784eabf2a304b718cb3d83f5f51d2176bcd28f26698e48db72757ee096f14bb34b140cbc90d5fa8db8a4069f6acd41e31d3d5d287430fac5c9b1d1b968add0e47643429deb1e46975b46aa72a3204e69af3a4cd95e3b3a9f888a754424d1f2c75ddfe363e6a882c0a1ca6faa287b0b745476bd98eacf909a48ef4b7b1790f79b9911dd62ac3cccaaf2a0703390597bf490867cd2c3153c62affb6f22831dac7baa8fbeca73810accecefe63a321a8946d5f8510bf9b4afa463aa080ee04d4aded4fedc312479177fb256d5e68b1b454af8e9335f08bf0ff743ece4dec3c4e35cc870070b25dd55854b9860ed1ab266d270ae9bbaca4456bf72a363e211ff6713ffecd04b5a871c160450feb980579c43c6f6aed8c1289a0df7d73f9025050ecb35c56a3dc27fa6e419f11b84fbebbf42ce96d4613881c4ba5b9dcdd53dfa499a444c8b0bb005350d0aee832e02dde1074840e06ce5545cae76806e066a9564ee0eb7ef99cf77797dd76201b067b425a94ed750de9ba4769fa7a21f636bcc2bd498de24e8ae4e751b07ac92187c1575f3a721e8da77a3a3e8ed4639ec3e2bd01df880eaa6f04a88f1f735db393024c27f06e2823e360c89aefb72b66c192fd7135209d3422850a521c43fdf572ce80a7704bc0549252390bb075eda33ccd42a25eca7d9b2a3ebca1fa14c0e853dc0aee4cd15fbc4b623a2294ea3814d9cec2fc598511b52582903fce19b7b56ffdc230126394fdb6d20e2c8dd0ea394210da42cdb4e85f111e3206a24b8e1d235bc531b5045b07807d34bb5d75a76eb1ebefa5acfadcb0f559551d82163f0929c5a3bd73b762790eb2ea776cdad1b8b17a7cfa09be4ebb14c9e0a81562c1258ece212c2a3de9be17b4b02c7ce7a0a941dd6fb73e94ba58bb87a96963d2ebe253c27c1fff52de1736c104602ee88a7fdad41ac8393ebe40f0fb3188b744a798ab8cd94a8ab4f4323438d4ba2e92f57b3c652140ad8af4ae4d811807f05adc4ce8b1f0d15891e210839cb90c4750a31e494add22b9d7b96fe6cc4508336bafac43fc2a3ba182b5e2823b042b56161e24c06bfa7fa65eee83150c377fe95644ef59ade96bb814d6f38a4b149a575628d5b573bdd1d67800ab149b9bb31a0b8f23c7b7c26f8a06409a1d24f9d08eb47d9f79a6538d73e744cd021d85475ff7c90167ff510932a3f8cab64eed46c84b48463ecf07bf6f06330098c05fde18112d8d441dbc4071be3d38155afdf8fa6a54ff5ef79be79e26203272b366776e9647c371c1356b48e47c0909cfbb4f21983b7ba816902218823193556e80495e78d3a08e6c4de727eeba651d2263408f6b9feb97f432b61fb30ea8ab66b37c4c4e0246efae1eb46f7415148af9790dd8235926b257a9f6fd6ca5bed8e9487e4379b3a8b1ff1e9e663fbbff7c0185c6d4f87a6f5c2d00ca1bb5f9185c445b3e9aa2e45a9d7f370d3aa3f010fa689fc7475a67c1499245bac17afa77a9e57dec3e14212d8bc5cafcb5066c1a17fcd433ae52c3d471cd5fd9b0d74f220f756e0787dc606e3593f8f615e07d0e9a29b12ab67216c47d0994ceb070de60d787cef173007f329286f86796bb5ba1e76a9a547da7a094cd6f4b7b5785da27fa5bc59c1bc2e4bec9f05b8370c528331854c2074df9c43cb0fa0e339ad88bdff65a6f998deda4d30cef0613f810c9821a02b1894488d479848b271ae804ed4dd07093f1dc98038989d4adc5575a09f3abac3e69286ec8617d0754c303d234146af10fa3e7c577c8fa03b60a97a950e2e4c652144b8330546265d2bd430747d0d6e3cd4e628e1ce5c897d03e1976e116967d4a96149babb3a2263d3bf2b569432ea680a11ea230c4c5bdbaf1f3017b17c5a2b77347a02f089054cbe02aea65d34cf82e90f30b782ffab59f7a0ce9956cb85b52de7c22df8626854fddcf33e915b2620868dbdce7ceeaf60b66c01e76692990b0aaf3d81158d5844474e0bed1972f447cfd7f9a5c839ea4f45abf3221c699ec99168e751834776d7f06551df5dc4880c59e4a0b898fc55f4ccc72bbc4813fae8f6ebff7c5acf0c79948140c84a8b7b103e47fb646458b2f88c96b12548c8c07b1e00ce3273c85af2bb5126caa94837627b36b9a3cc2461651ece9237854f96012479ce9d67db354f066094fe9c86c51d9064072037b62b338a4a9ae826ea661ead2f803a0ec9c79a0234fdcbddd618464602ff482635461e60efcc9878608968e4918ea2f0e5f0a57cf802c1e8c2517f4a510994718b2af1b72760427744c394c9ee1c6c7b495308df6f4cbeb1c6e8077a7bdb215366fa64d6cfaad38e29aae9749fccf07cbf099a7c05d4b4548dbbd55bd727ce0b32f9f70643a80e1da85eda77caebe213d4b546a9afaff4521face01bb03b58e8347e7180b1aced93fb647a30539583edeec6882d6e370cc4eff76e14275949c2fbfd9a28b4dcbf6921e228a9860df1d577ed08a28128b9a205a25fe3d1d025ac09ea051a5796a3be2bac2c92a64c777eb7771693ff989c9ff26ca0f496d87e9eed188a07c45c63955f9198c47031403e665a1690c1e2f002e03c213b08be4bc697a93471123d07f8e38eef5b0e0e9c310e47ee8105a251d349c7c4675b088f8dc81cd2b370d57cb415d155f762113746095b794f75c684e9bffbc9164ea8df7a502e3823a5b1b96a5f6c653c1d9d0dc3bd5aeee57555172be73a420f945eefb57382ba4cf840c1b92d8fe8983313a560a2198e72ca9845b4cf0d079eee5667726d38081eeef4a61b96ab1f0db1b7951675dcea64cea0fba2529d9fef8368bd94430947f2b9b1fba0d69911f585a980bd4800f40b1eb643a4d5585db3a903f5e6db330c47f072d72e83471213d4f1d0e48859c59b32ee6c3e1cd78e5f9b670d8bcf32c96673664f82d7ccc81b9d80aeed6ce4876ef97a9d620964b62bb5ead2c3fdffddff3dc7f175f27e3cc80267fa0cc619b680cffef45d362015c87b07382975fe1206bd06f426176fb890d37d8ebd6c24523e118c41df2bb4c0532b11c5936d43ad0fd276efcb5e40dd0aadb4d4827e249b882a7af07fe90475adfd71e38356cd5e411f6ec6d1ac947bffbe9980a022d073427b24bcb10b9b08dde78d50532d4949514c1a3de3303edddcb09d4bb4e3a662f450e214f6158e36b3ec2faa9abb963577973476ea0af8620e91b074a120ba3f72c6e9b06990fe77882cb11a7444b991ea30895cb4376a5ff2bd564c788298e25de09b9ebf66f2be2869194830ae365cee1ca5602eefbaf41d87bb0574bf71ea0d4d05e03e454197cd915a6a060c1b6133031940f15be97d43fa82c0d4c4e0507346c3391763b1cdee30df34eb241f7ab629069995438bc49ee88d10e14aa2bd1f89e2c08b777df9af4aae22f224d7feb67ee48595614e8fb6d347aa53eb1116d34743a5e63d01900ca106f07fdf85f88fadfc724f6d95f1cdeb22d75722ae6e9bf2840fe528f2cd68be832f0d3639586b1b2eaf3cdf199044ec46dc6eea551029ed20af9e266313829cbf56f78235ee9de7eded68c9a61548293856855490224166efb13f928bf63934f48eac42a7f15feb6bc1088ee1c60910</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+            <h4 id="Http协议"><a href="#Http协议" class="headerlink" title="Http协议"></a>Http协议</h4><ol>
+<li><strong>什么是HTTP协议？</strong><br> HTTP协议是一种超文本传输协议，是一种请求，响应式协议。<a id="more"></a></li>
+<li><strong>HTTP协议的特点</strong><ol>
+<li>支持浏览器(客户端)/服务器模式</li>
+<li>简单快速，浏览器向服务器发起请求时，只需要传送请求方式和路径</li>
+<li>灵活，可以发送任意类型的数据</li>
+<li>无状态，Http是无状态协议，无状态是指对事物处理没有记忆能力</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h4 id="HTTP消息"><a href="#HTTP消息" class="headerlink" title="HTTP消息"></a>HTTP消息</h4><ol>
+<li><p><strong>HTTP消息有几种？</strong></p>
+<p> 两种，一个请求消息，一个响应消息。</p>
+</li>
+<li><p><strong>请求和响应的定义</strong></p>
+<ol>
+<li>当浏览器向服务器发送请求数据的时候，即http请求消息</li>
+<li>当服务器向浏览器发送响应数据的时候，即http响应消息</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h4 id="HTTP请求消息"><a href="#HTTP请求消息" class="headerlink" title="HTTP请求消息"></a>HTTP请求消息</h4><ol>
+<li><p><strong>http请求包含几个部分？</strong></p>
+<p> 三个部分，请求方式，资源路径，http版本</p>
+</li>
+<li><p><strong>http常用的请求方式</strong></p>
+<table>
+<thead>
+<tr>
+<th>请求方式</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GET</td>
+<td>请求获取请求行URL所标识的资源</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>向指定资源提交数据，请求服务器进行处理</td>
+</tr>
+<tr>
+<td>HEAD</td>
+<td>请求获取由URL所标识资源的响应消息头</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>将网页放到指定的URL位置上(上传/移动)</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>请求服务器删除URL所标识的资源</td>
+</tr>
+<tr>
+<td>TRACE</td>
+<td>请求服务器回送收到的请求消息，主要用于测试和诊断</td>
+</tr>
+<tr>
+<td>CONNECT</td>
+<td>保留将来使用</td>
+</tr>
+<tr>
+<td>OPTIONS</td>
+<td>请求查询服务器的性能，或查询与资源相关的选项和需求</td>
+</tr>
+</tbody></table>
+<h6 id="注意：浏览器表单默认的是GET请求"><a href="#注意：浏览器表单默认的是GET请求" class="headerlink" title="注意：浏览器表单默认的是GET请求"></a><em>注意：浏览器表单默认的是GET请求</em></h6><table>
+<thead>
+<tr>
+<th>请求方式</th>
+<th>区别</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GET</td>
+<td>请求方式的参数信息都会在URL地址栏显示，而且通过请求参数传递数据，所以最多不超过1KB大小</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>请求内容隐藏在实体内容中，通过实体内容进行数据传递，所以没有数据大小限制</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>请求头字段</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Accept:text/html</td>
+<td>客户端希望接收HTML文本</td>
+</tr>
+<tr>
+<td>Accept:image/gif</td>
+<td>客户端希望接收GIF格式的图像资源</td>
+</tr>
+<tr>
+<td>Accept:image/*</td>
+<td>客户端可以接收所有image格式的子类型</td>
+</tr>
+<tr>
+<td>Accept:*/*</td>
+<td>客户端可以接收任意类型的数据</td>
+</tr>
+<tr>
+<td>Accept-Charset</td>
+<td>告知服务端，客户端所用的字符集</td>
+</tr>
+<tr>
+<td>Accept-Encoding</td>
+<td>用于指定客户端能够进行解码的数据编码方式</td>
+</tr>
+<tr>
+<td>Accept-Language</td>
+<td>客户端期望服务端返回那个国家的语言文档</td>
+</tr>
+<tr>
+<td>Host</td>
+<td>指定资源所在的主机和端口号</td>
+</tr>
+<tr>
+<td>Max-Forward</td>
+<td>指当前请求可以经过的代理服务器数量,每经过一个，数量减一</td>
+</tr>
+<tr>
+<td>Referer</td>
+<td>单击超链接向服务器发送GET请求时，浏览器会在发送的请求中加上该字段(防止盗链)</td>
+</tr>
+<tr>
+<td>User-Agent</td>
+<td>指定浏览器或者其他客户端程序所使用的操作系统及版本，浏览器及版本，浏览器渲染引擎，浏览器语言</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+<h4 id="HTTP响应消息"><a href="#HTTP响应消息" class="headerlink" title="HTTP响应消息"></a>HTTP响应消息</h4><ol>
+<li><p><strong>HTTP响应消息包含几个部分</strong></p>
+<p> 三个部分，响应状态行、响应消息头实体内容</p>
+</li>
+<li><p><strong>响应状态行</strong></p>
+<ol>
+<li><p><em>HTTP版本</em><br> 1.0、1.1</p>
+</li>
+<li><p><em>状态码及描述信息</em></p>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>描述信息</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1xx</td>
+<td>请求已经接受，需要继续处理</td>
+</tr>
+<tr>
+<td>2xx</td>
+<td>请求已经被服务器成功理解并接受</td>
+</tr>
+<tr>
+<td>3xx</td>
+<td>为完成请求，客户端需进一步细化请求</td>
+</tr>
+<tr>
+<td>4xx</td>
+<td>客户端的请求有错误</td>
+</tr>
+<tr>
+<td>5xx</td>
+<td>服务端出现错误</td>
+</tr>
+</tbody></table>
+</li>
+<li><p><em>常用的状态码</em></p>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>状态信息</th>
+<th>描述信息</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>200</td>
+<td>正常</td>
+<td>客户端请求成功，响应消息返回正常的请求结果</td>
+</tr>
+<tr>
+<td>400</td>
+<td>请求无效</td>
+<td>客户端不正确的语法格式</td>
+</tr>
+<tr>
+<td>403</td>
+<td>禁止</td>
+<td>服务端理解客户端的请求，但是拒绝处理</td>
+</tr>
+<tr>
+<td>404</td>
+<td>找不到</td>
+<td>表示服务器不存在客户端存在的资源</td>
+</tr>
+<tr>
+<td>500</td>
+<td>内部服务器错误</td>
+<td>大部分情况下是服务器端的CGI，jsp, ASP出现错误</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+</li>
+<li><p><strong>响应消息头</strong></p>
+<ol>
+<li><p><em>说明</em></p>
+<p> 服务器端向客户端传递附加信息，包括服务程序名，被请求资源需要的认证方式，重定向地址，客户端请求资源的最后修改时间。</p>
+</li>
+<li><p><em>常见的响应消息头</em></p>
+<table>
+<thead>
+<tr>
+<th>响应消息头</th>
+<th>描述内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Accept-Range</td>
+<td>说明服务器是否接收客户端使用Range请求头字段请求资源</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>指出当前网页文档可以在客户端或代理服务器中缓存的有效时间</td>
+</tr>
+<tr>
+<td>Etag</td>
+<td>用于向客户端传送代表实体内容特征的标记信息，这些标记信息也称为实体标签，每个版本资源的实体标签是不同的，通过这个标签可以判断不同时间下，同一资源路径下的实体内容是否相同</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>用于通知客户端获取请求文档的新地址</td>
+</tr>
+<tr>
+<td>Retry-After</td>
+<td>该字段可以与503状态码配合使用，告诉客户端什么时候可以重新发送请求，也可以与任何一个3xx状态码配合使用，告诉客户端处理重定向的最小延时时间</td>
+</tr>
+<tr>
+<td>Server</td>
+<td>用于指定服务器软件产品的名称</td>
+</tr>
+<tr>
+<td>Vary</td>
+<td>用于指定影响了服务器所生成的响应内容的那些请求头字段名</td>
+</tr>
+<tr>
+<td>Refresh</td>
+<td>用于告诉浏览器自动刷新页面的时间，是以秒为基本单位</td>
+</tr>
+<tr>
+<td>Content-Disposition</td>
+<td>用于服务器希望浏览器直接处理响应的实体内容，而是让用户选择将实体内容保存到一个文件中</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+</li>
+<li><p><strong>实体内容</strong></p>
+<p> 服务器根据客户端的请求所做出的处理结果</p>
+</li>
+</ol>
+<h4 id="HTTP-请求或响应-消息中的其他字段"><a href="#HTTP-请求或响应-消息中的其他字段" class="headerlink" title="HTTP(请求或响应)消息中的其他字段"></a>HTTP(请求或响应)消息中的其他字段</h4><ol>
+<li><p><strong>通用字段</strong></p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>字段描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cache-Control</td>
+<td>用于通知位于客户端与服务器之间的代理服务器如何使用已缓存的页面</td>
+</tr>
+<tr>
+<td>Connection</td>
+<td>用于指定处理完本次请求/响应后，客户端与服务器是否还要保持连接</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>用于表示HTTP消息产生的当前时间</td>
+</tr>
+<tr>
+<td>Pragma</td>
+<td>通知代理服务器和客户端如何使用缓存页面-</td>
+</tr>
+<tr>
+<td>Transfer-Encoding</td>
+<td>通过该字段通知客户端响应数据的长度，因为HTTP1.1协议是持久化协议</td>
+</tr>
+<tr>
+<td>Via</td>
+<td>用于指定HTTP消息所途径的代理服务器所使用的协议与主机名</td>
+</tr>
+<tr>
+<td>Warning</td>
+<td>用于说明其他头字段和状态码不能说明的一些警告信息</td>
+</tr>
+</tbody></table>
+</li>
+<li><p><strong>实体头字段</strong>   </p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>字段描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Allow</td>
+<td>指定请求资源所支持的请求方式</td>
+</tr>
+<tr>
+<td>Content-Language</td>
+<td>用于指定返回网页文档的国家语言类型</td>
+</tr>
+<tr>
+<td>Content-Length</td>
+<td>用于表示实体内容的长度</td>
+</tr>
+<tr>
+<td>Content-Location</td>
+<td>用于指定响应消息中实体内容的实际位置路径(当一个请求资源有多个国家语言版本的时候，每个国家语言版本都有自己的位置，这时，请求资源路径和响应的实体内容的实际位置路径可能是不同的)</td>
+</tr>
+<tr>
+<td>Content-Type</td>
+<td></td>
+</tr>
+<tr>
+<td>Content-Encoding</td>
+<td>用于指定实体内容的压缩编码格式，服务器端对实体内容的压缩不影响实体内容的MIME类型，被压缩的实体内容在客户端被解压的时候，MIME类型与Content-Type头字段指定的类型一致</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2020-07-06T02:44:34.615Z" itemprop="dateUpdated">2020-07-06 10:44:34</time>
+    最后更新：<time datetime="2020-07-06T02:58:10.215Z" itemprop="dateUpdated">2020-07-06 10:58:10</time>
 </span>
 
 
@@ -280,7 +642,8 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/8ac28a0d/&title=《https基础概念》 — huowy'blog&source=这个文章-博主不想让其他人看见哟~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/8ac28a0d/&title=《https基础概念》 — huowy'blog&source=Http协议
+什么是HTTP协议？ HTTP协议是一种超文本传输协议，是一种请求，响应式协议。" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -315,6 +678,20 @@
     </div>
 
     
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/posts/60bfaa8b/" id="post-prev" class="post-nav-link">
+        <h4 class="title" >
+          上一篇：小情话第两百零二则
+        </h4>
+      </a>
+    </div>
+  
+
+  
+</nav>
+
 
 
     
@@ -419,7 +796,8 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/8ac28a0d/&title=《https基础概念》 — huowy'blog&source=这个文章-博主不想让其他人看见哟~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/8ac28a0d/&title=《https基础概念》 — huowy'blog&source=Http协议
+什么是HTTP协议？ HTTP协议是一种超文本传输协议，是一种请求，响应式协议。" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
