@@ -698,6 +698,22 @@
     
 
     
+<section class="comments" id="comments">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: '1dc31eb83c4c03880ee6',
+            clientSecret: '9a1cdc70758a0604f4d46d8686fc92a3065bc70e',
+            repo: 'pinglun',
+            owner: 'CarefulHuo',
+            admin: ['CarefulHuo']
+        });
+        gitalk.render('gitalk-container');
+    </script>
+</section>
+
 
     
 
