@@ -54,7 +54,7 @@
 <meta property="og:description" content="生活不止眼前的苟且">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-04T16:27:05.000Z">
-<meta property="article:modified_time" content="2020-07-07T01:47:40.318Z">
+<meta property="article:modified_time" content="2020-07-28T13:18:54.243Z">
 <meta property="article:author" content="huowy">
 <meta name="twitter:card" content="summary">
     
@@ -217,7 +217,53 @@
     <article class="page-article fade" itemprop="blogPage">
         
             <div class="post-content page-content" id="page-content" itemprop="pageContent">
-                <pre><code>                  _oo0oo_  
+                <body>
+    <audio loop="loop" id="bg-music">
+        <source src="https://images-tomcat.oss-cn-hongkong.aliyuncs.com/saraNussaraPungprasert.mp3" />
+    </audio>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+            autoPlayMusic();
+            audioAutoPlay();
+        });
+    function audioAutoPlay() {
+        var audio = document.getElementById('bg-music');
+        audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+            }, false);
+        }
+    // 音乐播放
+    function autoPlayMusic() {
+        // 自动播放音乐效果，解决浏览器或者APP自动播放问题
+        function musicInBrowserHandler() {
+            musicPlay(true);
+            document.body.removeEventListener('touchstart', musicInBrowserHandler);
+            }
+        document.body.addEventListener('touchstart', musicInBrowserHandler);
+            // 自动播放音乐效果，解决微信自动播放问题
+            function musicInWeixinHandler() {
+                musicPlay(true);
+        document.addEventListener("WeixinJSBridgeReady", function () {
+                musicPlay(true);
+            }, false);
+        document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
+            }
+        document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
+    }
+    function musicPlay(isPlay) {
+        var media = document.querySelector('#bg-music');
+        if (isPlay && media.paused) {
+            media.play();
+        }
+        if (!isPlay && !media.paused) {
+            media.pause();
+            }
+        };
+</script>
+
+<pre><code>                  _oo0oo_  
                  o8888888o                     
                  88&quot; . &quot;88                  
                  (| -_- |)                     
