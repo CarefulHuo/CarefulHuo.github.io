@@ -6,13 +6,13 @@
     
     
     
-    <title>小情话第二百五十八则 | huowy&#39;blog</title>
+    <title>服务器性能问题排查 | huowy&#39;blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
     
     
-    <meta name="keywords" content="Little Love">
+    <meta name="keywords" content="Server">
     
     
 
@@ -46,17 +46,17 @@
 
 
     
-    <meta name="description" content="这个文章-博主不想让其他人看见哟~">
+    <meta name="description" content="服务器性能问题一般有两种：高内存占用、高CPU占用，比如应用程序高内存占用，可能是因为文件读写、频繁的IO、内存频繁GC，进一步占用了内存和CPU；比如应用程序高CPU占用，可能是因为大任务计算、死循环、卡死、不断超时或者重试。所以需要具体问题具体分析。　　高内存占用现象是应用响应慢、内存溢出、应用进程直接死掉。体现到代码里面可能是死锁^1和饥饿^2，因为资源不释放;需要关注，空闲可用内存还有">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小情话第二百五十八则">
-<meta property="og:url" content="https://carefulhuo.github.io/posts/bfd2cf27/index.html">
+<meta property="og:title" content="服务器性能问题排查">
+<meta property="og:url" content="https://carefulhuo.github.io/posts/acb0bcb4/index.html">
 <meta property="og:site_name" content="huowy&#39;blog">
-<meta property="og:description" content="这个文章-博主不想让其他人看见哟~">
+<meta property="og:description" content="服务器性能问题一般有两种：高内存占用、高CPU占用，比如应用程序高内存占用，可能是因为文件读写、频繁的IO、内存频繁GC，进一步占用了内存和CPU；比如应用程序高CPU占用，可能是因为大任务计算、死循环、卡死、不断超时或者重试。所以需要具体问题具体分析。　　高内存占用现象是应用响应慢、内存溢出、应用进程直接死掉。体现到代码里面可能是死锁^1和饥饿^2，因为资源不释放;需要关注，空闲可用内存还有">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-09-22T03:34:44.000Z">
-<meta property="article:modified_time" content="2020-09-22T03:56:06.299Z">
+<meta property="article:published_time" content="2020-09-22T07:57:28.000Z">
+<meta property="article:modified_time" content="2020-09-22T09:32:11.766Z">
 <meta property="article:author" content="huowy">
-<meta property="article:tag" content="博客文章密码">
+<meta property="article:tag" content="Server">
 <meta name="twitter:card" content="summary">
     
         <link rel="alternate" type="application/atom+xml" title="huowy&#39;blog" href="/atom.xml">
@@ -166,7 +166,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">小情话第二百五十八则</div>
+        <div class="flex-col header-title ellipsis">服务器性能问题排查</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -203,20 +203,20 @@
 
 <div class="container body-wrap">
     
-<article id="post-little-love-258"
+<article id="post-server-troubleshooting"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">小情话第二百五十八则</h1>
+        <h1 class="post-card-title">服务器性能问题排查</h1>
         <div class="post-meta">
             <i class="icon icon-lg icon-calendar-o"></i>
             发表于
-            <time class="post-time" title="2020-09-22 11:34:44" datetime="2020-09-22T03:34:44.000Z"  itemprop="datePublished">2020-09-22</time>
+            <time class="post-time" title="2020-09-22 15:57:28" datetime="2020-09-22T07:57:28.000Z"  itemprop="datePublished">2020-09-22</time>
 
             <br id="mybreak"/>
             
 	<i class="icon icon-lg icon-folder-o"></i>
-	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/">程序员的浪漫</a></li></ul>
+	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a></li></ul>
 
 
             <i>·</i>
@@ -232,27 +232,20 @@
             阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">输入密码，查看文章。</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="5d10fcdeab8a66dcdee9634ed6cabdb2e1bede708a65b09abeac37e219600062">31d9193a51abffb9261ee8fc031a1983f07bc29c7df533ed51d1e31456f369af6e57e10f2d22b1fcb2eeb68a6c888bf2c6d519c4354d214a068fb4d2919217209ada2e4265e9fb365c977f3566f796b25718d6edf5eb94013eed095efff79b2d6b2e7276c75e621fd2d525a53aa7e68463d642620f7c52d179bf4223ba0c9cd6851b882fd66324f4353e450aa082133876cd39be849e00ed49bf9bfc1fa54ef4c367cdf4569ff3867c89ff826a714d18515787d788e9bf7df603e868ba2b674f39a0bf1a3d212b22eda88cbe03d203c00f089e835a8a49ea79a5c4cdf90feee493b384f984a6a66cb8cbc17f01e9fca230891d8a57aba34ecde7ffb3107f187154afeae16e62a2deb6f64f113b87a629e41db29e5d64020a195b8dcfa93de6335c4dcb016412e02ca5582b9c9c0760b01e8e53b67834e94a72e8372a69ffcc90f3604b941c361ff281b20acb333556ad4feedee7685844720f045e0a0b7f1ed48af6e85f3f785c850672dda20cde8293225096e361c5541db38fd4b37a8d80ae3bebf37b3be09288230102fd5cfa822619911d1f299268a4d060ed266336229874a37ee8670a45f8e192f8c4726a006462bdbe7c25c9f54ce9f838df22adfe29a76c076c360df9540849309796a2ee4814b1cfdc36f221399c06a003e1339dde1758bb03db98646ca9d8c3c77a61f9374ff9eec5c42ae3bd06828bd01f0a6e5682e4cce08a6a18ee1fd95bff14094ffd38e198d9b69984e6785619a1f33791ce9b38ba6a8847c0be2804207812ff960f21efeb262bc67716f256a0d9197b03f805f474978e9e73789a2929e2e4a69ccdcaddd7b1f91a74babff534eb0d7eb0b0a29e74f78f0e6e16fdd26f95e11a0ae055376a58ff7841bd668eeccbc52a0a926283a85b6b75aca04a9c71390139b0c99cbb78e965bd3261593d0d256c62e6867f1884c01325d7e4c3fbbaab2203d2d8ca7562d1ab482f46aec6edd567a3226eca8f261e1d9735e69766cf4f38dd8f48ef69340a910aa55ab0e7138aad62e40db17d3bedf09e03b11fd0473488c498b6e2ddca50b3a17bfdda384c730fddaaa33efcc7630d14ab5dd58820e20a4fdaea8858dbed22e98788be2bf26a32f54cc12226e08d02a01edd96168ba1d52c8cea654a473c8d4d49e9f3f6cdb3d7332307529a05108c8753bbe303692e54bd14a57b6b60fb8ead3f02e3583c105ded2883413097605946ac1f4612222f1c63272e81a1f55c0a100f068c56516cfc3d7665e0b68f4e3ee3856cc0301f12f86a84e8b208c75710b7d1b477e84fc143e08c36bffdc303caaca18cc2c8769c7d56dddbbb05aed175ea465f2874bccf7b1aadeead9026dc3cd8b2956f15b22f0b8b62960b791f39935807ec568f5d9ea1e6148018ad0fffa609f6abab8d636a0bc58d0c1c3e5c7977056e4ac8265b0128df84875667b2c116f5421715839dee983e778dd27478754e69f3fb593161a31410cb76f992dd57625193efc3842909ba79c6b5acf1754deb62f39fada8b18bdceffc6a936479c3e11700232a7560ae69603bcbd8492a8e4d937d3ac9b78c64bb4d4ab209233333fd9ccd76ddb653cf0e83207750608eed34a72704068aae054c54f84f69f999e7e2603b329a825ee6476bb0b85dc4258e72f4afc39288b8c49df37d9c3edfc240cf32b0fb40d61243781a146008d2f047f2ceadfc5602031938816f5eb9660fc40243049dab45fd6ba4ebef037df21decb10ec3f8af7967be648ac8007687dc69f42979c980754e0dbfe88592ccf2c04004068bb8fb823892c8613dfda1159985739803d49b25487d523856c3fda3ffee84cd512b03f09c7421f87f19344796d7f40fca0998efca25d9c9f2dd80472105146d3d0ce50c853457aab7b0de6efae8e086d2dfabedaed94293a0cf351e2f1eab608805b0361cf85cc8007b14e99c44083b80e3a43406514a1163511053526f300fcc6389aee82269d8b3f1f23a9fb7a02f0715a37aeaccaf999f4b9d8c0c0ce32a8e08d0c5def48bc0488dd9ab89ea4da2de6b25a94fb35fe41b3650c7314b0f5f92ccc57185998786eda49b441eb85701025348b223759b57cfe3f67a451e23d1a411585e413e90b1eac061212f403eb11c984e694b1a12a14f97660b2e613da35869f7ec2fd2cedbd52c0c75229383fc9e44906de9d0320488126577c75c443419d023b801aa70ff9743a07b8460b06ec4e6a535867f43ba45b4907ca2257c6ddfc8f566621689368ba0ab2f40a006378b56c1ca9997511be929d809c993e788a3b3542b563f4bc7adb22485cfd743d012ceb5fc2b851c9e1f7ffa494572a1ab59d052d0219833e6351925bc6a4aea21dac5dcbd694b37570ab9060cc14950acd02ee3f92873ac5fb8e9a21e5354d5b7f8e51d7b223619355cf33ce4bee857c5b1715f25d6a65ef977ce088a97291e73c521da6f21b19ca745f138590ff3d8b691a2654615b8d2f228f28f1eab7e4534da1776f1c13ff184f9193325ce68ceec5ab569f57a472e19ab795a3112b8c61bd1cf72cbd6924faaaa94691d0f2b40b047770ed18ee0826057a87714b9ad91631469d0c31ffd9bfdf301b8b7029dfdef8d056ea4adc5e5f9c835caa98757262904d345c8e93095863aaec19e14934087f779b1d2de5cf80c1559854b7bcdd87677b9d4b741f581368974ba853b4f72000143a248c3239cf6fcd31e76c829202864e5857f01470ebba5ad6737bfd0cf9cfda3540af207b8f456f3396b19743b309fd524074062be497da31d8d19ed6e7ba5228c96c44964d91a5c1f77a232fda669a58dc5be33c0f0d7d0a26a626c4538271742772e963a0b8ce1b5f77c5c5000d821b369667266fd58f9688ba94e86ece72adeb6f248d16c6d663923b3f2ba3cc41a2c076b7d47c754eac687410cc066701dffd76c81bfef3b823ef78788186adb5a2ea1d30e265870a267a01732a015f7974361a752b4ceb94ff891cd007be7b9f97d008e9b4fecfa5d4df8af88ad45282d0ef569a189968d20744c9c7a690ab582b7e125dda01dcf7af3cfcb9dbe8787dd3762c9de50cc1dbb8d5998dca4120cdbc5786131f048029f6fb64dabf4a5935dcc8cabd3dea3eeef89fc1ee4b8f64c9238d197414d205bd2</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+            <p>　　服务器性能问题一般有两种：高内存占用、高CPU占用，比如应用程序高内存占用，可能是因为文件读写、频繁的IO、内存频繁GC，进一步占用了内存和CPU；比如应用程序高CPU占用，可能是因为大任务计算、死循环、卡死、不断超时或者重试。所以需要具体问题具体分析。<br>　　高内存占用现象是应用响应慢、内存溢出、应用进程直接死掉。体现到代码里面可能是死锁<a href="由于执行顺序的原因，互相持有对方正在等待的锁；多个线程在相同的资源上发生等待">^1</a>和饥饿<a href="高优先级线程一直占用CPU，导致低优先级线程一直处于一个等待进入同步块的状态">^2</a>，因为资源不释放;需要关注，空闲可用内存还有多少，buff^[(Page Cache)是一种高速缓存，用于CPU和内存之间的缓冲 ,是文件系统的cache。]和cache[^5]还有多少；<br>　　高CPU占用现象是应用进程还活着，但是页面出不来，不响应。体现到代码里面可能是存在活锁<a href="并未产生线程阻塞，但是由于某种问题的存在，导致无法继续执行的情况">^3</a>。在CPU占用高的情况下，需要知道是用户（user）还是系统（sys）的占用率高，如果是user的CPU占用高，说明应用在做消耗CPU过高的操作；如果是sys的CPU占用高，说明系统在做大量的IO的操作；如果占用率高的线程频繁变动，则可能是CPU时间片不断调度，线程唤醒一下而后换另一个线程跑，需要看多线程任务是否存在大计算问题，以及线程池设置是否合适！</p>
+
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2020-09-22T03:56:06.299Z" itemprop="dateUpdated">2020-09-22 11:56:06</time>
+    最后更新：<time datetime="2020-09-22T09:32:11.766Z" itemprop="dateUpdated">2020-09-22 17:32:11</time>
 </span>
 
 
         
-        原文链接：<a href="/posts/bfd2cf27/" target="_blank" rel="external">https://carefulhuo.github.io/posts/bfd2cf27/</a>
+        原文链接：<a href="/posts/acb0bcb4/" target="_blank" rel="external">https://carefulhuo.github.io/posts/acb0bcb4/</a>
         
     </div>
     <footer>
@@ -274,7 +267,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Little-Love/" rel="tag">Little Love</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Server/" rel="tag">Server</a></li></ul>
 
 
             
@@ -284,7 +277,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/bfd2cf27/&title=《小情话第二百五十八则》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/acb0bcb4/&title=《服务器性能问题排查》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -294,22 +287,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/bfd2cf27/&title=《小情话第二百五十八则》 — huowy'blog&source=这个文章-博主不想让其他人看见哟~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/acb0bcb4/&title=《服务器性能问题排查》 — huowy'blog&source=小布丁的成长日记" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/bfd2cf27/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/acb0bcb4/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《小情话第二百五十八则》 — huowy'blog&url=https://carefulhuo.github.io/posts/bfd2cf27/&via=https://carefulhuo.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《服务器性能问题排查》 — huowy'blog&url=https://carefulhuo.github.io/posts/acb0bcb4/&via=https://carefulhuo.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/bfd2cf27/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/acb0bcb4/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -332,9 +325,9 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/posts/acb0bcb4/" id="post-prev" class="post-nav-link">
+      <a href="/posts/c51fee78/" id="post-prev" class="post-nav-link">
         <h4 class="title" >
-          上一篇：服务器性能问题排查
+          上一篇：小情话第二百五十九则
         </h4>
       </a>
     </div>
@@ -342,8 +335,8 @@
 
   
     <div class="waves-block waves-effect next">
-      <a href="/posts/48b9e764/" id="post-next" class="post-nav-link">
-        <h4 class="title" data-hover="下一篇：小情话第二百五十七则">下一篇：小情话第二百五十七则</h4>
+      <a href="/posts/bfd2cf27/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：小情话第二百五十八则">下一篇：小情话第二百五十八则</h4>
       </a>
     </div>
   
@@ -459,7 +452,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/bfd2cf27/&title=《小情话第二百五十八则》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/acb0bcb4/&title=《服务器性能问题排查》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -469,22 +462,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/bfd2cf27/&title=《小情话第二百五十八则》 — huowy'blog&source=这个文章-博主不想让其他人看见哟~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/acb0bcb4/&title=《服务器性能问题排查》 — huowy'blog&source=小布丁的成长日记" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/bfd2cf27/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/acb0bcb4/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《小情话第二百五十八则》 — huowy'blog&url=https://carefulhuo.github.io/posts/bfd2cf27/&via=https://carefulhuo.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《服务器性能问题排查》 — huowy'blog&url=https://carefulhuo.github.io/posts/acb0bcb4/&via=https://carefulhuo.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/bfd2cf27/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/acb0bcb4/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -495,7 +488,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p class="wechatshare">扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJUlEQVR42u3ay47CMAwFUP7/pzvSbBnCtV1GIjldofJoThbGjzwe8XX9Xq/uP787ufPqWTdcGBgYX8u4ltea8fzu+rvrhb767nptGBgY5zCqi+sBepsS/QFgYGBgLH96EmR7YAwMDIxqMM0/37uDgYGBkRexVXBesibB+rZaHAMD4wsZ1cHAf77+4HwDAwPjSxhX8aoWsZNmXGFVGBgYWzPyYxB54Tpp/U/KWgwMjF0ZectsUmpODmpEySIGBsYBjF4B2RsbJMicjYGBcQIjScgmD66G6dFRDAwMjE0Z1WSul0pWy9Q8TcTAwDiHUQ2RCSxvqFVDPAYGBkaSkPWK0tFC10knBgbGAYxJ8+tz48x1oYuBgXEyo1pYJkvsbcQo4GJgYGzEmBwFyxO4XvjOn46BgbE3Iw+I+WeSEDlpyf1xBwMDY2tGUnzmheV80dVhJwYGxgmMPKW7q4itAqLDHxgYGFszkp++K+zmS+wdI8PAwNiVkQ8AqsXtJGUsj0IxMDAOYORNrjzJy49QVLfvTRGLgYGxHSNP8pKksFqy5sVwYQaLgYGxHeMqXs19CgaQSRvuzf8GBgbGpoze8ax5yywvgHsDAwwMjP0YSZCdv853rrnfGBgYBzCqQbYXpnvjhyS5xMDAwEgWUS2Ak18obCIGBgZGXIImwbTaRIs2CAMD4wBGfmCr173Lh53N4hYDA2NrxqSArLb7q2nfXS08DAyMr2X8AEKbapgQ5T7pAAAAAElFTkSuQmCC" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACK0lEQVR42u3ay46DMBBEUf7/p4mUbWJTVW0yQ/t6FUUT4DBSq1/HIZ/zfUafP8/oCvrfHHccGDBgPJZxTs/oBvNvPh9l9CKy1/SFCgMGjA0YSpBVQuFpHoUxfzYYMGDAUIJgnT0P4jBgwIDhMua/ykrWPwi4MGDAeCBDT92UkLqqAL6lFocBA8YDGfXBwH2ffzrfgAEDxr9kZK2xSgjOgu/FU8GAAaM1Qy8m9eQvu1oWXe2aGAYMGC0Y2ff6mpc7yDSeDQYMGE0Zbuv/l0NNY2wAAwaMDRhry8vKssXiWhwGDBjtGJU00S44y8XzRW4LAwaMRgy3cabfQE8rKwnil/8JDBgw2jGyBC5LCitrFhfXhAEDRmuGXqzqMHd4UBlhwoABYx9G1gLL0kH9pegvCwYMGDDcdn+luVbaGYEBA0ZrRrb4lS1Y6AWwXfTCgAGjKUNvdWWFq9uAU64gDS9hwICxAcNtsbmjzSzUDp8NBgwYrRn6gkVWdtaLXjvDhQEDRjtGtsiVtfiVVr67lAYDBozdGG4rX0/m9II2Q8KAAaM3Qw+FWdh1ee5CGAwYMHZgnOap3N5t6hnDURgwYLRm6MddodCTQpeqB3EYMGB0YrgjRnc8oCd8evG8YFIKAwaMBzLcFr8eHFeBL34FAwYMGOYIQU8ls8g5TA1hwIABQ16eqKeV9nwDBgwYGzDcoKmkg25yqTwPDBgw9mS4g4FlyZy5VFECwIAB46mMF7YVFBkvNMrzAAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
 
