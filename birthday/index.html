@@ -5,7 +5,6 @@
     <title>宝宝，生日快乐！</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/img/love.png?v=6.3.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!-- <meta itemprop="image" content="./img/love.png?v=6.3.0" /> -->
     <style>
         html {
             height: 100%;
@@ -90,6 +89,10 @@
 <div class="cs">
     <img src="https://images-tomcat.oss-cn-hongkong.aliyuncs.com/birthday.jpg" id="logo">
 </div>
+<audio loop="loop" id="bg-music">
+    <source src="https://images-tomcat.oss-cn-hongkong.aliyuncs.com/happyBirthday.mp3" />
+    <!-- <source src="https://images-tomcat.oss-cn-hongkong.aliyuncs.com/letsGetMarried.mp3" /> -->
+</audio>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #ed3073;">
     世界已经有你
@@ -574,9 +577,60 @@
     }());
     S.init();
 </script>
-<!--//音乐可改-->
-<audio autoplay="autoplay" loop="loop">
-    <source src="http://m10.music.126.net/20180509183512/5ae461e9a42675d782840bf139b05c60/ymusic/e492/ea7a/6a27/8799d19e52d9bbe3ae15febb03d7efdb.mp3" type="audio/mpeg">
-</audio>
+<script>
+    $(document).ready(function(){
+                autoPlayMusic();
+                audioAutoPlay();
+            });
+ 
+            // function openmusic(){
+            //     autoPlayMusic();
+            //     audioAutoPlay();
+            //     $(".close_music_div").css({"display":"block"});
+            //     $(".open_music_div").css({"display":"none"});
+            // }
+ 
+            // function pauseAuto(){
+            //     var audio = document.getElementById('bg-music');
+            //     audio.pause();
+            //     $(".close_music_div").css({"display":"none"});
+            //     $(".open_music_div").css({"display":"block"});
+            // }
+ 
+            function audioAutoPlay() {
+                var audio = document.getElementById('bg-music');
+                audio.play();
+                document.addEventListener("WeixinJSBridgeReady", function () {
+                    audio.play();
+                }, false);
+            }
+            // 音乐播放
+            function autoPlayMusic() {
+                // 自动播放音乐效果，解决浏览器或者APP自动播放问题
+                function musicInBrowserHandler() {
+                    musicPlay(true);
+                    document.body.removeEventListener('touchstart', musicInBrowserHandler);
+                }
+                document.body.addEventListener('touchstart', musicInBrowserHandler);
+                // 自动播放音乐效果，解决微信自动播放问题
+                function musicInWeixinHandler() {
+                    musicPlay(true);
+                    document.addEventListener("WeixinJSBridgeReady", function () {
+                        musicPlay(true);
+                    }, false);
+                    document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
+                }
+                document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
+            }
+            function musicPlay(isPlay) {
+                var media = document.querySelector('#bg-music');
+                if (isPlay && media.paused) {
+                    media.play();
+                }
+                if (!isPlay && !media.paused) {
+                    media.pause();
+                }
+            };
+</script>
 </body>
 </html>
