@@ -86,13 +86,13 @@
 </head>
 
 <body>
-<div class="cs">
-    <img src="https://images-tomcat.oss-cn-hongkong.aliyuncs.com/birthday.jpg" id="logo">
-</div>
 <audio loop="loop" id="bg-music">
     <source src="https://images-tomcat.oss-cn-hongkong.aliyuncs.com/happyBirthday.mp3" />
     <!-- <source src="https://images-tomcat.oss-cn-hongkong.aliyuncs.com/letsGetMarried.mp3" /> -->
 </audio>
+<div class="cs">
+    <img src="https://images-tomcat.oss-cn-hongkong.aliyuncs.com/birthday.jpg" id="logo">
+</div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #ed3073;">
     世界已经有你
@@ -118,7 +118,7 @@
         span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
     }
     show_date_time();
-    
+
     $(document).ready(function(){
                 autoPlayMusic();
                 audioAutoPlay();
