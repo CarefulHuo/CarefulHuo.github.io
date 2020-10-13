@@ -87,9 +87,8 @@
 </head>
 
 <body>
-<!--&lt;!&ndash;更改为你女朋友的头像&ndash;&gt;-->
 <div class="cs">
-    <img src="https://images-tomcat.oss-cn-hongkong.aliyuncs.com/little_love_215.jpg" id="logo">
+    <img src="https://images-tomcat.oss-cn-hongkong.aliyuncs.com/birthday.jpg" id="logo">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #ed3073;">
@@ -122,7 +121,6 @@
         init: function () {
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
-            //想说的话
             S.UI.simulate("亲爱的|生日快乐|#countdown 3|#rectangle 15x15|#circle 12 |#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
