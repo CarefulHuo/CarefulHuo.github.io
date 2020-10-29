@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2020-10-28T05:19:42.212Z</updated>
+  <updated>2020-10-29T04:58:49.465Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
@@ -17,11 +17,53 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>小情话第二百八十一则</title>
+    <link href="https://carefulhuo.github.io/posts/e3c3628a/"/>
+    <id>https://carefulhuo.github.io/posts/e3c3628a/</id>
+    <published>2020-10-29T04:46:06.000Z</published>
+    <updated>2020-10-29T04:58:49.465Z</updated>
+    
+    <summary type="html">
+    
+      这个文章-博主不想让其他人看见哟~
+    
+    </summary>
+    
+    
+      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    
+      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lambdda表达式</title>
+    <link href="https://carefulhuo.github.io/posts/9f889f1d/"/>
+    <id>https://carefulhuo.github.io/posts/9f889f1d/</id>
+    <published>2020-10-28T11:03:38.000Z</published>
+    <updated>2020-10-28T14:40:07.747Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　在Java的语言世界里面，除了基本的数据类型，一切都是对象，例如：String字符串、每个对象实例、数组这些都是对象。在Java中方法是不能完全独立存在的，不能将方法作为参数或者返回值给实例。&lt;strong&gt;注意&lt;/strong&gt;：方法(Method),函数(Function)，在Java中是没有函数的，因为Java是一个面向对象编程的语言；函数更多的意义是用来表述面向过程的语言；又或者说”函数是大家的函数，方法是类的方法”，不过，不用这么纠结，我们可以认为在Java中方法就是函数，函数就是方法。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaApi" scheme="https://carefulhuo.github.io/categories/JavaApi/"/>
+    
+    
+      <category term="JavaApi" scheme="https://carefulhuo.github.io/tags/JavaApi/"/>
+    
+  </entry>
+  
+  <entry>
     <title>小情话第二百八十则</title>
     <link href="https://carefulhuo.github.io/posts/9a3b9c82/"/>
     <id>https://carefulhuo.github.io/posts/9a3b9c82/</id>
     <published>2020-10-28T05:01:17.000Z</published>
-    <updated>2020-10-28T05:19:42.212Z</updated>
+    <updated>2020-10-28T05:20:40.346Z</updated>
     
     <summary type="html">
     
@@ -379,48 +421,6 @@
     <id>https://carefulhuo.github.io/posts/24f84422/</id>
     <published>2020-09-28T04:46:30.000Z</published>
     <updated>2020-09-28T04:57:31.973Z</updated>
-    
-    <summary type="html">
-    
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
-    
-    
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
-    
-    
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小情话第二百六十三则</title>
-    <link href="https://carefulhuo.github.io/posts/93d55d47/"/>
-    <id>https://carefulhuo.github.io/posts/93d55d47/</id>
-    <published>2020-09-27T05:35:39.000Z</published>
-    <updated>2020-09-27T05:44:53.314Z</updated>
-    
-    <summary type="html">
-    
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
-    
-    
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
-    
-    
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小情话第二百六十二则</title>
-    <link href="https://carefulhuo.github.io/posts/decbfe15/"/>
-    <id>https://carefulhuo.github.io/posts/decbfe15/</id>
-    <published>2020-09-26T05:19:36.000Z</published>
-    <updated>2020-09-26T05:36:01.719Z</updated>
     
     <summary type="html">
     
