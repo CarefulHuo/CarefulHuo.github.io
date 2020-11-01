@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2020-10-31T06:35:29.186Z</updated>
+  <updated>2020-11-01T10:03:38.058Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
@@ -17,11 +17,74 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>java8中Optional静态类</title>
+    <link href="https://carefulhuo.github.io/posts/bb929634/"/>
+    <id>https://carefulhuo.github.io/posts/bb929634/</id>
+    <published>2020-11-01T09:31:08.000Z</published>
+    <updated>2020-11-01T10:03:38.058Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;Optional简介&quot;&gt;&lt;a href=&quot;#Optional简介&quot; class=&quot;headerlink&quot; title=&quot;Optional简介&quot;&gt;&lt;/a&gt;Optional简介&lt;/h4&gt;&lt;p&gt;  在Java8中的StreamAPI有很多操作都返回了Optional&lt;T&gt;对象，那么这个对象是用来干嘛的，用来解决空指针问题，产生的一个类。也可以认为这是一个容器对象，因为它可以保存类型为T的对象，也可以保存null&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaApi" scheme="https://carefulhuo.github.io/categories/JavaApi/"/>
+    
+    
+      <category term="JavaApi" scheme="https://carefulhuo.github.io/tags/JavaApi/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小情话第二百八十四则</title>
+    <link href="https://carefulhuo.github.io/posts/29e63465/"/>
+    <id>https://carefulhuo.github.io/posts/29e63465/</id>
+    <published>2020-11-01T04:48:04.000Z</published>
+    <updated>2020-11-01T06:18:06.329Z</updated>
+    
+    <summary type="html">
+    
+      这个文章-博主不想让其他人看见哟~
+    
+    </summary>
+    
+    
+      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    
+      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java8中的Stream&#39;sAPI</title>
+    <link href="https://carefulhuo.github.io/posts/cbdcb8a8/"/>
+    <id>https://carefulhuo.github.io/posts/cbdcb8a8/</id>
+    <published>2020-10-31T11:34:46.000Z</published>
+    <updated>2020-11-01T09:34:06.969Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;Stream’APi简介&quot;&gt;&lt;a href=&quot;#Stream’APi简介&quot; class=&quot;headerlink&quot; title=&quot;Stream’APi简介&quot;&gt;&lt;/a&gt;Stream’APi简介&lt;/h4&gt;&lt;p&gt;　　Stream’API是Java8中的新特性，基于Lambda表达式，对Collection(集合)的各种操作有了很大的改变，极大的提升了编码效率和代码的可读性。Stream有串行和并行两种模式，并行模式会自动创建多个线程，使用fork(join)Java7特性，来拆分任务和加速处理过程。Stream是一种类似IO流的东西，但是并不相同，实质是对集合操作的一种高度抽象，而且更重要的是，Stream不是数据结构，是不存储数据的，数据存储在底层的集合中，或者根据需要产生出来(例如Stream进行终端操作的时候，生成新的集合)。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaApi" scheme="https://carefulhuo.github.io/categories/JavaApi/"/>
+    
+    
+      <category term="JavaApi" scheme="https://carefulhuo.github.io/tags/JavaApi/"/>
+    
+  </entry>
+  
+  <entry>
     <title>小情话第二百八十三则</title>
     <link href="https://carefulhuo.github.io/posts/9ecb2d00/"/>
     <id>https://carefulhuo.github.io/posts/9ecb2d00/</id>
     <published>2020-10-31T05:37:18.000Z</published>
-    <updated>2020-10-31T06:35:29.186Z</updated>
+    <updated>2020-10-31T06:36:37.167Z</updated>
     
     <summary type="html">
     
@@ -84,7 +147,7 @@
     <link href="https://carefulhuo.github.io/posts/9f889f1d/"/>
     <id>https://carefulhuo.github.io/posts/9f889f1d/</id>
     <published>2020-10-28T11:03:38.000Z</published>
-    <updated>2020-10-29T15:55:50.317Z</updated>
+    <updated>2020-10-31T16:16:14.087Z</updated>
     
     <summary type="html">
     
@@ -358,69 +421,6 @@
     <id>https://carefulhuo.github.io/posts/71ceb43f/</id>
     <published>2020-10-13T05:06:45.000Z</published>
     <updated>2020-10-13T05:19:07.545Z</updated>
-    
-    <summary type="html">
-    
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
-    
-    
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
-    
-    
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小情话第二百六十八则</title>
-    <link href="https://carefulhuo.github.io/posts/b039560/"/>
-    <id>https://carefulhuo.github.io/posts/b039560/</id>
-    <published>2020-10-12T05:18:11.000Z</published>
-    <updated>2020-10-12T05:28:06.874Z</updated>
-    
-    <summary type="html">
-    
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
-    
-    
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
-    
-    
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小情话第二百六十七则</title>
-    <link href="https://carefulhuo.github.io/posts/fc68bd23/"/>
-    <id>https://carefulhuo.github.io/posts/fc68bd23/</id>
-    <published>2020-10-10T10:08:48.000Z</published>
-    <updated>2020-10-10T10:37:41.959Z</updated>
-    
-    <summary type="html">
-    
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
-    
-    
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
-    
-    
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小情话第二百六十六则</title>
-    <link href="https://carefulhuo.github.io/posts/2e68cabc/"/>
-    <id>https://carefulhuo.github.io/posts/2e68cabc/</id>
-    <published>2020-10-09T06:34:32.000Z</published>
-    <updated>2020-10-09T07:18:40.089Z</updated>
     
     <summary type="html">
     

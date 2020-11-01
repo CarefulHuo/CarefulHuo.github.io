@@ -54,7 +54,7 @@
 <meta property="og:description" content="在Java的语言世界里面，除了基本的数据类型，一切都是对象，例如：String字符串、每个对象实例、数组这些都是对象。在Java中方法是不能完全独立存在的，不能将方法作为参数或者返回值给实例。注意：方法(Method),函数(Function)，在Java中是没有函数的，因为Java是一个面向对象编程的语言；函数更多的意义是用来表述面向过程的语言；又或者说”函数是大家的函数，方法是类的方法”，">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-28T11:03:38.000Z">
-<meta property="article:modified_time" content="2020-10-29T15:55:50.317Z">
+<meta property="article:modified_time" content="2020-10-31T16:16:14.087Z">
 <meta property="article:author" content="huowy">
 <meta property="article:tag" content="JavaApi">
 <meta name="twitter:card" content="summary">
@@ -265,7 +265,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 代码示例</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">filterFunction</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    List&lt;Double&gt; cost = Arrays.asList(<span class="number">2.0</span>, <span class="number">4.0</span>, <span class="number">6.0</span>);</span><br><span class="line">    <span class="comment">//方式一</span></span><br><span class="line">    cost.stream().filter(x -&gt; x &gt; <span class="number">3</span>).collect(Collectors.toList()).stream().forEach(x -&gt; System.out.println(x));</span><br><span class="line">    <span class="comment">//方式二</span></span><br><span class="line">    List&lt;Double&gt; doubleCode = cost.stream().filter(x -&gt; x &gt; <span class="number">3</span>).collect(Collectors.toList());</span><br><span class="line">    doubleCode.stream().forEach(x -&gt; System.out.println(x));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></code></pre><p>  <strong>6. 与工具包java.util.function配合</strong></p>
 <pre><code>Java8除了在语言层面支持了函数式编程，而且增添了一个新包，包名叫**java.util.function**。该包包含了很多类，来支持Java的函数式编程，其中一个类是Predicate，使用java.util.function.Predicate 函数式接口以及lambda表达式，可以向API方法添加逻辑，用更少的代码支持更多的动态行为。Predicate接口非常适用于做过滤。该包下的其他类放到姐妹篇里面讲解
 
-|类名 | 作用|
+|函数式接口名 | 作用|
 | --- | --- |
 |Function&lt;T, R&gt; | 接受一个参数T，返回结果R|
 |Predicate&lt;T&gt; | 接受一个参数T，返回boolean|
@@ -274,7 +274,6 @@
 |UnaryOperator&lt;T&gt; | 继承自Function&lt;T,T&gt;，返回相同类型T的结果|
 |BiFunction&lt;T, U, R&gt;|接收两个参数T,U，返回结果R|
 |BinaryOperator&lt;T&gt;|继承自BiFunction&lt;T,T,T&gt;，返回相同类型T的结果|
-|Runnable|实际上不接受任何参数，也不返回结果|
 |Runnable|实际上不接受任何参数，也不返回结果|
 |Comparable&lt;T&gt;|实际上是接受两个相同类型的T，返回int|
 |Callable&lt;V&gt;|不接受任何参数，返回结果V|
@@ -312,7 +311,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2020-10-29T15:55:50.317Z" itemprop="dateUpdated">2020-10-29 23:55:50</time>
+    最后更新：<time datetime="2020-10-31T16:16:14.087Z" itemprop="dateUpdated">2020-11-01 00:16:14</time>
 </span>
 
 
