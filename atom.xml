@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2020-11-16T05:31:43.385Z</updated>
+  <updated>2020-11-17T05:25:33.674Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小情话第二百九十八则</title>
+    <link href="https://carefulhuo.github.io/posts/da2582ec/"/>
+    <id>https://carefulhuo.github.io/posts/da2582ec/</id>
+    <published>2020-11-17T04:46:35.000Z</published>
+    <updated>2020-11-17T05:25:33.674Z</updated>
+    
+    <summary type="html">
+    
+      这个文章-博主不想让其他人看见哟~
+    
+    </summary>
+    
+    
+      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    
+      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    
+  </entry>
   
   <entry>
     <title>小情话第二百九十七则</title>
@@ -412,27 +433,6 @@
     
     
       <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Lambdda表达式</title>
-    <link href="https://carefulhuo.github.io/posts/9f889f1d/"/>
-    <id>https://carefulhuo.github.io/posts/9f889f1d/</id>
-    <published>2020-10-28T11:03:38.000Z</published>
-    <updated>2020-10-31T16:16:14.087Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　在Java的语言世界里面，除了基本的数据类型，一切都是对象，例如：String字符串、每个对象实例、数组这些都是对象。在Java中方法是不能完全独立存在的，不能将方法作为参数或者返回值给实例。&lt;strong&gt;注意&lt;/strong&gt;：方法(Method),函数(Function)，在Java中是没有函数的，因为Java是一个面向对象编程的语言；函数更多的意义是用来表述面向过程的语言；又或者说”函数是大家的函数，方法是类的方法”，不过，不用这么纠结，我们可以认为在Java中方法就是函数，函数就是方法。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaApi" scheme="https://carefulhuo.github.io/categories/JavaApi/"/>
-    
-    
-      <category term="JavaApi" scheme="https://carefulhuo.github.io/tags/JavaApi/"/>
     
   </entry>
   
