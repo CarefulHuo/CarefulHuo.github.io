@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2020-11-20T05:32:29.394Z</updated>
+  <updated>2020-11-21T05:26:25.166Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小情话第三百零二则</title>
+    <link href="https://carefulhuo.github.io/posts/bbb8ca2b/"/>
+    <id>https://carefulhuo.github.io/posts/bbb8ca2b/</id>
+    <published>2020-11-21T05:09:47.000Z</published>
+    <updated>2020-11-21T05:26:25.166Z</updated>
+    
+    <summary type="html">
+    
+      这个文章-博主不想让其他人看见哟~
+    
+    </summary>
+    
+    
+      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    
+      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    
+  </entry>
   
   <entry>
     <title>小情话第三百零一则</title>
@@ -412,27 +433,6 @@
     
     
       <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>java8中的Stream&#39;sAPI</title>
-    <link href="https://carefulhuo.github.io/posts/cbdcb8a8/"/>
-    <id>https://carefulhuo.github.io/posts/cbdcb8a8/</id>
-    <published>2020-10-31T11:34:46.000Z</published>
-    <updated>2020-11-01T09:34:06.969Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;Stream’APi简介&quot;&gt;&lt;a href=&quot;#Stream’APi简介&quot; class=&quot;headerlink&quot; title=&quot;Stream’APi简介&quot;&gt;&lt;/a&gt;Stream’APi简介&lt;/h4&gt;&lt;p&gt;　　Stream’API是Java8中的新特性，基于Lambda表达式，对Collection(集合)的各种操作有了很大的改变，极大的提升了编码效率和代码的可读性。Stream有串行和并行两种模式，并行模式会自动创建多个线程，使用fork(join)Java7特性，来拆分任务和加速处理过程。Stream是一种类似IO流的东西，但是并不相同，实质是对集合操作的一种高度抽象，而且更重要的是，Stream不是数据结构，是不存储数据的，数据存储在底层的集合中，或者根据需要产生出来(例如Stream进行终端操作的时候，生成新的集合)。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaApi" scheme="https://carefulhuo.github.io/categories/JavaApi/"/>
-    
-    
-      <category term="JavaApi" scheme="https://carefulhuo.github.io/tags/JavaApi/"/>
     
   </entry>
   
