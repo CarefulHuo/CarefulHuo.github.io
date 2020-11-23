@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2020-11-22T07:56:02.522Z</updated>
+  <updated>2020-11-23T05:19:33.272Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小情话第三百零四则</title>
+    <link href="https://carefulhuo.github.io/posts/3f7213e6/"/>
+    <id>https://carefulhuo.github.io/posts/3f7213e6/</id>
+    <published>2020-11-23T05:10:11.000Z</published>
+    <updated>2020-11-23T05:19:33.272Z</updated>
+    
+    <summary type="html">
+    
+      这个文章-博主不想让其他人看见哟~
+    
+    </summary>
+    
+    
+      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    
+      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    
+  </entry>
   
   <entry>
     <title>小情话第三百零三则</title>
@@ -412,27 +433,6 @@
     
     
       <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>java8中Optional静态类</title>
-    <link href="https://carefulhuo.github.io/posts/bb929634/"/>
-    <id>https://carefulhuo.github.io/posts/bb929634/</id>
-    <published>2020-11-01T09:31:08.000Z</published>
-    <updated>2020-11-01T10:05:22.091Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;Optional简介&quot;&gt;&lt;a href=&quot;#Optional简介&quot; class=&quot;headerlink&quot; title=&quot;Optional简介&quot;&gt;&lt;/a&gt;Optional简介&lt;/h4&gt;&lt;p&gt;  在Java8中的StreamAPI有很多操作都返回了Optional&lt;T&gt;对象，那么这个对象是用来干嘛的，用来解决空指针问题，产生的一个类。也可以认为这是一个容器对象，因为它可以保存类型为T的对象，也可以保存null&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="JavaApi" scheme="https://carefulhuo.github.io/categories/JavaApi/"/>
-    
-    
-      <category term="JavaApi" scheme="https://carefulhuo.github.io/tags/JavaApi/"/>
     
   </entry>
   
