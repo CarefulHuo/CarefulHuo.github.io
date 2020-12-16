@@ -6,13 +6,13 @@
     
     
     
-    <title>小情话第三百二十五则 | huowy&#39;blog</title>
+    <title>deploy插件的使用 | huowy&#39;blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
     
     
-    <meta name="keywords" content="Little Love">
+    <meta name="keywords" content="Maven">
     
     
 
@@ -46,18 +46,21 @@
 
 
     
-    <meta name="description" content="这个文章-博主不想让其他人看见哟~">
+    <meta name="description" content="deploy插件的使用第一种方式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小情话第三百二十五则">
-<meta property="og:url" content="https://carefulhuo.github.io/posts/65ab57ef/index.html">
+<meta property="og:title" content="deploy插件的使用">
+<meta property="og:url" content="https://carefulhuo.github.io/posts/d4eda90d/index.html">
 <meta property="og:site_name" content="huowy&#39;blog">
-<meta property="og:description" content="这个文章-博主不想让其他人看见哟~">
+<meta property="og:description" content="deploy插件的使用第一种方式">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-12-16T05:18:08.000Z">
-<meta property="article:modified_time" content="2020-12-16T05:42:24.573Z">
+<meta property="og:image" content="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/deploy_01.png">
+<meta property="og:image" content="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/deploy_02.png">
+<meta property="article:published_time" content="2020-12-16T13:16:24.000Z">
+<meta property="article:modified_time" content="2020-12-16T13:57:00.677Z">
 <meta property="article:author" content="huowy">
-<meta property="article:tag" content="博客文章密码">
+<meta property="article:tag" content="Maven">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/deploy_01.png">
     
         <link rel="alternate" type="application/atom+xml" title="huowy&#39;blog" href="/atom.xml">
     
@@ -166,7 +169,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">小情话第三百二十五则</div>
+        <div class="flex-col header-title ellipsis">deploy插件的使用</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -203,20 +206,27 @@
 
 <div class="container body-wrap">
     
-<article id="post-little-love-325"
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#deploy插件的使用"><span class="post-toc-number">1.</span> <span class="post-toc-text">deploy插件的使用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#第一种方式"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">第一种方式</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#第二种方式"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">第二种方式</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+   
+<article id="post-mavenAbloutDeploy"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">小情话第三百二十五则</h1>
+        <h1 class="post-card-title">deploy插件的使用</h1>
         <div class="post-meta">
             <i class="icon icon-lg icon-calendar-o"></i>
             发表于
-            <time class="post-time" title="2020-12-16 13:18:08" datetime="2020-12-16T05:18:08.000Z"  itemprop="datePublished">2020-12-16</time>
+            <time class="post-time" title="2020-12-16 21:16:24" datetime="2020-12-16T13:16:24.000Z"  itemprop="datePublished">2020-12-16</time>
 
             <br id="mybreak"/>
             
 	<i class="icon icon-lg icon-folder-o"></i>
-	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/">程序员的浪漫</a></li></ul>
+	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">项目管理工具</a></li></ul>
 
 
             <i>·</i>
@@ -229,30 +239,79 @@
         </div>
         <div class="post-count-custom">
             <i class="icon icon-lg icon-comment-o"></i>
-            阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
+            阅读本文可能花费您&nbsp;<span class="post-count">2</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">输入密码，查看文章。</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="8b9e43330d0f80e0e0f9606e6d040afa7143716a2bb1fa69fcbe0ea359c0969a">e3f8d51a9951d15554484080ebe2ffbf5d9b2a8e7795956ecfcda299940f555a4915956869ddae12b97ed5065f75578a53a6240ea146f2cc64e259518e454320b30062f1e4cb29273db73d0455c021ef4080777163ce4d79bac784d01f3146d3b1deedc1754920ac7a6e3ab954941552b4d3592b0142b50d6473744877d83bb528157259c3cde704ef3c799bf31b55619e6e35bfc50e58c82117381e51bfab1952d61def1ba99157e6fa9c5d0e6189818d21370b17edc9f90cb6ac2c2253c3cf238a53d46efb25e38256f5d8b7d0fe27c908545de5316998b8640785049728ce843f21b51795ed0dee9e9ac3debe9ad4a9b7526fdf1d5074769ffd49600420c8d1c4e42d511f04e1f60d71353068feef5b500c1e2db85ef41e4140c4a776d2154a906c1ac8340ad04be733e6d691c5c2b034f28bdb4822bf78929045eabdcbe3ee63b03e6084fae32cf6a2c7ab7bfc3a1c25aa36e41a81283f7dc3e51524c14bc6b451b2eb651ea62097e660990a1b7f9866797e6f4ca66284d4beb03291c5d3cdbeac8efb551a19d9a1c1fa58f151ea140e40c370dbc8a08c6eeb009291be21fc6fb454ad2fda71d231f46a0c981911e4369a8128833ec825f001a442f5664940b530b3bcb4294394f4cddb0559d5a3277a9312bcfa6c4bdb5ba5e48313c90f96257352d9cb7fadabe2a58dfbda81b566d18d2254e3c1cdbc06fcd25d53d049033535c02c60f60a0c84bd5eb6e46049463424ad86f27f9eafa29a01c9cce7ac4e84168f5d12d16924621d64c8358c5a33ba0c2aa92cc41acc26b9fab3291656af681574995cd5eef50b12a45164a5800e542bb3b2e866e6759ac713796560c6a3c05b2dc17557e3f3d796c13214ed618d1ccfbb25305fa9ae25aafafbb0e1e4c079f9321ac2f42356cb24af7e1b2b5dcd58ac32a3c6ba88795abb3c60dab97868031fdfb71966d69c856a366da6e65f106900774ad4bf6886dc767fce7920ec0f3c32420eab21073c847403b6fba690854ff2af6dfe63f102a733246fb3e923685bd102656b0ffb70eab5344f11b7ff128374b5b05a20dd3ba645de3338a76409386ff3d3bdbb5f5ea64b1b86bafa06148317149dd4cff2c326fbf4282d8c695a18f2a2d903514ae3f20c1852623e81fc80458c9bd92a600873aaa0248f9028b3266cec50e7cc42ad837c25c08b00b563fe1c767d5039f9ea717271269cebe16e89a2489b3ee2edf395500cbbb85a3f716d164e8bcbdd155607c651608f5d9122f9e53313555d16a5bfbb4fbe10606d88e1fb612d708c93685f777d243b07a2d04cfa93a38a00a000f62e8c26d5561f9bcd5c14dab335214076e7c8d38438535bf6b71f4cb13fb9fdf64dd155e93c1e651feb4f87c3efdec163baae1e4dccd253d7fa2675608324c7c758b7681d1682a0d9f5675b5040d71e83a9efe539fafbe5daa7d6b0168f8b5c0ca7a32dbb9c137423338753ffa040964d58f38407e17591a7034bc016374cd17aba645aac37a46597ef88ae372ad284751eec19c2c5f23a23d47d3538d9b657762f9130a56124e21bd4ed6b6190a227da978793b98d02b24ec56fb884934c498686aea0ba381019c0c68ebbdcc7d783b1bc8acb10821ed3c9e54878dd0e9b797cc4134e37c8b03292e6ff693de70df88c4d838343b8ca450c01e69b9676d28f89898ea81fd41b12261934eceac49f708e6c438a3d4dfbda3f60891bae82b8c9278dccbe7bbb1fb21fbb639bc5df591f8a8ffb2e2eba544b3b3ac7079a5bb4695fa6f886d85777bc0fbd9d323802e499cbbc31a4a028ed80f17a159e0749db72c1ebe88c6116785800f67a2bdd974372daee67319ea0998badcd14417a4fd8fb2672c996e13d4c0f6b47f7e9f02980ff141ae6a7a16772006e131e017b66b234007df447531073a6d6c646e22439119a49c63e3a1ee204d8b7c601fd2d390543f670a1ea15bfe63a60b5710b141193ce40f681fb50d1685df19f4982be28f230a114e30159ac68909f16fe71cf59d3c4d85d6a0502bd2aff78bd3ea4b10a5dc66c46de7b54051562075dad62d82b8694d3000cc07f6863ae6204e618e20fc951ee7f4f0823524df0a916b35cc6f1dd6b2b83e60639165d9bd0aab9950e836a2657ca495da09d5393fe5375f7f2196a55c0371263349bc90954c62e48e3aa1e56abebb9847dd80053f6db09538383cb670d72028eba07d25e042ca20aabe7cdb05d6aa8df0bc940f86e8af7b08b362ba06faa1638c61c84e48dce841cb688f50c7f919ed193c5efaf8004de771fa2d7497a86a903198b8ca22834da21a951e0bab115bb7769ef21b7f1f617b503905fa3682131752bafdc39b4acbab121f51b1fb2c3c79a291037ede7d1d51971882466d7c664a4655af0b4aedcf1683d284687f6ef5ae253aa3c565f83586cf7839a1423ac3e6aa100d6337642e2185ec4eab25030df4eb438f552d4bd1f6d9a26c5081e3b4953b4acf92c2f105da5d784558e2157017b5db2c40f3f6eac27170b883d32162a6fa1bf384c8bef8beba1170d082d1780c99205c61c639e59131a403b2ad19839eb4847b50d6bfb0e2ff7aa225689d88015f9fceae7690b5283a462281776dbff8032a5dc69fe5ce65e61d950b99cb3b0d8ce989a853ed82fe452c0d5a0d022ea85af0496cedeb538eb59fd3075f984345c41bfb01c768341fe132e701ec6a4fd8208fe74ae947d8bcd974d9e917efc0e7e19d5ce7d06b6d2eb1a00d235199a0bba66f45582932f9d55f8153d4da86a8fa9116bee9c52d1234c5527e522b83b298d53899a</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+            <h4 id="deploy插件的使用"><a href="#deploy插件的使用" class="headerlink" title="deploy插件的使用"></a>deploy插件的使用</h4><h5 id="第一种方式"><a href="#第一种方式" class="headerlink" title="第一种方式"></a>第一种方式</h5><a id="more"></a>
+<ol>
+<li>项目引用maven之后，通过idea的侧边栏直接使用，具体位置如图所示：<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/deploy_01.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure></li>
+<li>此时项目中的pom文件配置如下图所示：<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/deploy_02.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure></li>
+<li>此时就可以上传jar包到指定的仓库</li>
+</ol>
+<hr>
+<p><strong>注意</strong>：使用该种方式如果出现下面的报错，可以使用第二种方式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:<span class="number">2.8</span><span class="number">.2</span>:deploy (<span class="keyword">default</span>-deploy) on project mdb-board: Deployment failed: repository element was not specified in the POM inside distributionManagement element or in -DaltDeploymentRepository=id::layout::url parameter -&gt; [Help <span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+
+<h5 id="第二种方式"><a href="#第二种方式" class="headerlink" title="第二种方式"></a>第二种方式</h5><ol>
+<li>打开cmd(命令提示符)(本人是win10，搞不起高大上的mbp)，进入到需上传jar的所在位置，一般位于项目的target目录下</li>
+<li>然后执行如下代码所示的maven命令即可，<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mvn deploy:deploy-file </span><br><span class="line">-DgroupId=com.ai.chinapost.crm.mdb </span><br><span class="line">-DartifactId=mdb-board-facade </span><br><span class="line">-Dversion=<span class="number">1.0</span><span class="number">.0</span>-SNAPSHOT </span><br><span class="line">-Dpacckaging=jar </span><br><span class="line">-Dfile=mdb-board-facade-<span class="number">1.0</span><span class="number">.0</span>-SNAPSHOT.jar </span><br><span class="line">-DrepositoryId=nexus-snapshots-level-<span class="number">1</span> </span><br><span class="line">-Durl=http:<span class="comment">//IP地址/nexus/content/repositories/bj-crm-snapshots/</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>DgroupId、DartifactId、Dversion、Dpacckaging要跟项目的pom文件保持一致，否则会有问题；</li>
+<li>Dfile直接写文件名即可，如果不在同一个目录下，需要在file后面写上文件的绝对路径。</li>
+<li>DrepositoryId写仓库标识id，</li>
+<li>Durl写私服的仓库地址，一般可以通过maven的setting.xml或者打开nexus-&gt;repositories菜单，可以看到该路径。</li>
+</ul>
+<p><strong>注意</strong> 使用第二种方式有如下报错的解决方案：</p>
+<ol>
+<li>第一个问题<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:<span class="number">2.7</span>:deploy-file (<span class="keyword">default</span>-cli) on project standalone-pom: Failed to deploy artifacts: Could not transfer artifact com.zhenai.dakehu:dakehu-commons:jar:<span class="number">1.0</span><span class="number">.0</span>-<span class="number">20171212.105921</span>-<span class="number">1</span> from/to maven-snapshots (http:<span class="comment">//112.124.33.150:8081/repository/maven-snapshots/): Failed to transfer file: http://112.124.33.150:8081/repository/maven-snapshots/com/zhenai/dakehu/dakehu-commons/1.0.0-SNAPSHOT/dakehu-commons-1.0.0-20171212.105921-1.jar.</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li><p>neuxs 帐号密码是否正确</p>
+</li>
+<li><p>maven setting.xml 中仓库认证的 id 不对</p>
+</li>
+<li><p><id>maven-snapshots</id> // ===》这个必须和 nexus DrepositoryId 对应的仓库标识(id)一致</p>
+</li>
+</ul>
+<ol start="2">
+<li>第二个问题<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:<span class="number">2.7</span>:deploy-file (<span class="keyword">default</span>-cli) on project standalone-pom: Cannot deploy artifact from the local repository: D:\Program Files\maven\apache-maven-<span class="number">3.5</span><span class="number">.2</span>-bin\repository\com\ai\chinapost\crm\mdb\mdb-board-facade\<span class="number">1.0</span><span class="number">.0</span>-SNAPSHOT\mdb-board-facade-<span class="number">1.0</span><span class="number">.0</span>-SNAPSHOT.jar -&gt; [Help <span class="number">1</span>]</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li>jar包的位置不对，不能在本地仓库直接上传jar包到仓库，需要修改jar包到项目的target目录下</li>
+</ul>
+<hr>
+<p><strong>小知识</strong>：</p>
+<ul>
+<li>maven package：打包到本项目，一般是在项目target目录下。</li>
+<li>maven install：打包会安装到本地仓库。</li>
+</ul>
+
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2020-12-16T05:42:24.573Z" itemprop="dateUpdated">2020-12-16 13:42:24</time>
+    最后更新：<time datetime="2020-12-16T13:57:00.677Z" itemprop="dateUpdated">2020-12-16 21:57:00</time>
 </span>
 
 
         
-        原文链接：<a href="/posts/65ab57ef/" target="_blank" rel="external">https://carefulhuo.github.io/posts/65ab57ef/</a>
+        原文链接：<a href="/posts/d4eda90d/" target="_blank" rel="external">https://carefulhuo.github.io/posts/d4eda90d/</a>
         
     </div>
     <footer>
@@ -274,7 +333,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Little-Love/" rel="tag">Little Love</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Maven/" rel="tag">Maven</a></li></ul>
 
 
             
@@ -284,7 +343,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/65ab57ef/&title=《小情话第三百二十五则》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/d4eda90d/&title=《deploy插件的使用》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -294,22 +353,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/65ab57ef/&title=《小情话第三百二十五则》 — huowy'blog&source=这个文章-博主不想让其他人看见哟~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/d4eda90d/&title=《deploy插件的使用》 — huowy'blog&source=deploy插件的使用第一种方式" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/65ab57ef/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/d4eda90d/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《小情话第三百二十五则》 — huowy'blog&url=https://carefulhuo.github.io/posts/65ab57ef/&via=https://carefulhuo.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《deploy插件的使用》 — huowy'blog&url=https://carefulhuo.github.io/posts/d4eda90d/&via=https://carefulhuo.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/65ab57ef/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/d4eda90d/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -329,21 +388,13 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/posts/d4eda90d/" id="post-prev" class="post-nav-link">
-        <h4 class="title" >
-          上一篇：deploy插件的使用
-        </h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/posts/a3592a8/" id="post-next" class="post-nav-link">
-        <h4 class="title" data-hover="下一篇：小情话第三百二十四则">下一篇：小情话第三百二十四则</h4>
+      <a href="/posts/65ab57ef/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：小情话第三百二十五则">下一篇：小情话第三百二十五则</h4>
       </a>
     </div>
   
@@ -459,7 +510,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/65ab57ef/&title=《小情话第三百二十五则》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/d4eda90d/&title=《deploy插件的使用》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -469,22 +520,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/65ab57ef/&title=《小情话第三百二十五则》 — huowy'blog&source=这个文章-博主不想让其他人看见哟~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/d4eda90d/&title=《deploy插件的使用》 — huowy'blog&source=deploy插件的使用第一种方式" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/65ab57ef/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/d4eda90d/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《小情话第三百二十五则》 — huowy'blog&url=https://carefulhuo.github.io/posts/65ab57ef/&via=https://carefulhuo.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《deploy插件的使用》 — huowy'blog&url=https://carefulhuo.github.io/posts/d4eda90d/&via=https://carefulhuo.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/65ab57ef/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/d4eda90d/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -495,7 +546,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p class="wechatshare">扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMElEQVR42u3aW26DMBAF0O5/0+kCKORem1TKcPiKUAo+jjT1PH5+4ut1uI73j99fu3O8f9uFgYHxtYzX5ZV/J3/LkXH9OXovBgbGAxhnL84fnQTN9m+TtWFgYGBcM/Jgeh2ak+CLgYGBsRNwW167BRgYGBh5ErtTemuPjB/MxTEwML6QkRfL/v/zR/obGBgYX8V4lddd5bP2aW9WhYGBMZqRB7j84HgdpvOtaRuiGBgYUxlnCWe79LVgnbcQ3sAwMDAewNgZcWgXkRTj8lWdnnAxMDAGMXYelC83D7vthmJgYDyBsdMaXGs33lWSe/N/AwMDYxDjhnL8Rp1vrcx3WyMTAwPjaxnJK9eS0jwZzvGnARcDA2MQ43+CadsYqGMpBgbGaMZ+EzFJZZO35EH59JiIgYExlJEH3LbB2S7r5mELDAyMQYx7S2Nt4WyNvfgrYWBgjGDcFWrz3cpblfVuYWBgDGIkS88bA/tjYTnvj6ohBgbGUEZ7aGtL//no2H6ii4GB8WRG+9C2L9EOotUDrBgYGIMY+UGtPTgmy8qR0bAFBgbGaEY7BJaD20NhXlvDwMCYzXiVV14ma9uT+TYV3VEMDIwRjLVRibX0dW2EYmc7MDAwJjHWilxrgbjdsnrkAgMDYzQjT27zglo+unFzLo6BgYGxdNTbCbtF0Q0DAwNjqWSWLKId14g6sRgYGOMY+UhEflhca4u2DVEMDIwnMNrUsU1i23C8dkjFwMAYyvgFyslBzxx9YOQAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJklEQVR42u3aW3LDIBAEQN//0s4BlFgzi5wqoebLpfKD5mMNw75e8XgfxvH58f2zJ8fnlw0MDIzbMt4fRzvd5FeOn/38+vPcMDAwnsP464fzn0mKZrtYydwwMDAwkqnP3t8uGQYGBsaM0RbftshiYGBgtIfYleit3TJ+8SyOgYFxQ0Yelv3/66/cb2BgYNyK8S7HLPpfD+NOZoWBgbE1Iy9wM2SyyYsOqMGSYWBg7MpIwv22FaMt1he0dGBgYDyA0bY4zOK2zws3a7z4c4eLgYGxEWN2PfC9Zot2+4iBgYGRHyZnCzHbDp78MWBgYGzKmG3Irro2aJemXlEMDIztGHmD1wqyLa9RWwYGBsamjDa4n2Xys28owjgMDIytGbNoLG8FywO4vCifBG0YGBjbMVYCsjbPyzeaFzRbYGBgbMRoQ/+kKK80arSYiIeBgXFzxnoZnT1fWY7X+hQxMDBuy8iLXRv9t6Fe3hD2S8HFwMDYjjHM58oini/BykEXAwPjmYzZVWK7KO131j0jGBgY2zFWJppvImcbwZPnGBgYD2Dk4des+Labwjaew8DA2JXxLkdbXmc3qDUVAwNja0YborUtETNSdGSdwTAwMG7LWC+ywyi/LLj1xzAwMLZjtA1h+fXkeitG9F+BgYGBERfcqwpoHv9hYGBgtEfN2SQu2G5iYGA8gNG2ROTtEStFNrmEwMDAeAKjPTrmB9cV6lUbUwwMjJszfgASM2qYoIVdkAAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
