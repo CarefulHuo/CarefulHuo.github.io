@@ -6,13 +6,13 @@
     
     
     
-    <title>huowy&#39;blog</title>
+    <title>SpringBoot配置及加载Mybatis | huowy&#39;blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
     
     
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Tools">
     
     
 
@@ -46,14 +46,17 @@
 
 
     
-    <meta name="description" content="小布丁的成长日记">
-<meta property="og:type" content="website">
-<meta property="og:title" content="huowy&#39;blog">
-<meta property="og:url" content="https://carefulhuo.github.io/index.html">
+    <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566&#x2F;** 博主使用的springBoot版本为1.5.8.RELEASE @Configuration注解标识该类为一个配置文件 @MapperScan">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringBoot配置及加载Mybatis">
+<meta property="og:url" content="https://carefulhuo.github.io/posts/d2273db3/index.html">
 <meta property="og:site_name" content="huowy&#39;blog">
-<meta property="og:description" content="小布丁的成长日记">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566&#x2F;** 博主使用的springBoot版本为1.5.8.RELEASE @Configuration注解标识该类为一个配置文件 @MapperScan">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-12-23T06:53:11.000Z">
+<meta property="article:modified_time" content="2020-12-23T08:17:31.525Z">
 <meta property="article:author" content="huowy">
+<meta property="article:tag" content="Tools">
 <meta name="twitter:card" content="summary">
     
         <link rel="alternate" type="application/atom+xml" title="huowy&#39;blog" href="/atom.xml">
@@ -69,7 +72,7 @@
 
 <body>
     <div id="loading" class="active"></div>
-    <aside id="menu"   >
+    <aside id="menu"  class="hide" >
   <div class="inner flex-row-vertical">
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
@@ -90,7 +93,7 @@
     <div class="scroll-wrap flex-col">
       <ul class="nav">
         
-              <li class="waves-block waves-effect active">
+              <li class="waves-block waves-effect">
                   <a href="/"  >
                     <i class="icon icon-lg icon-home"></i>
                     <span>主 页</span><i class="icon icon-lg icon-caret-left"></i>
@@ -163,7 +166,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">huowy&#39;blog</div>
+        <div class="flex-col header-title ellipsis">SpringBoot配置及加载Mybatis</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -180,19 +183,16 @@
         </a>
     </div>
 </header>
-<header class="content-header index-header">
+<header class="content-header post-header">
     
     
     <div class="container fade-scale">
         <div id="myheader">
             <h1 class="title">
-                 
-                    huowy&#39;blog
                 
             </h1>
             <h5 class="subtitle">
                 
-                    Learn(),Ask(),Think(),Do()
                 
             </h5>
         </div>
@@ -200,34 +200,39 @@
 
 </header>
 
+
 <div class="container body-wrap">
-    <ul class="post-list">
     
-        <li class="post-list-item fade">
-            <article id="post-springbootAboutUseMybatis"
-  class="article-card article-type-post" itemprop="blogPost">
+<article id="post-springbootAboutUseMybatis"
+  class="post-article article-type-post fade" itemprop="blogPost">
 
-    
+    <div class="post-card">
+        <h1 class="post-card-title">SpringBoot配置及加载Mybatis</h1>
+        <div class="post-meta">
+            <i class="icon icon-lg icon-calendar-o"></i>
+            发表于
+            <time class="post-time" title="2020-12-23 14:53:11" datetime="2020-12-23T06:53:11.000Z"  itemprop="datePublished">2020-12-23</time>
+
+            <br id="mybreak"/>
+            
+	<i class="icon icon-lg icon-folder-o"></i>
+	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/SpringBoot/">SpringBoot</a></li></ul>
 
 
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/d2273db3/">SpringBoot配置及加载Mybatis</a>
-    </h3>
-  
+            <i>·</i>
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>次浏览
+</span>
 
 
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2020-12-23 14:53:11" datetime="2020-12-23T06:53:11.000Z"  itemprop="datePublished">2020-12-23</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <a id="more"></a>
+        </div>
+        <div class="post-count-custom">
+            <i class="icon icon-lg icon-comment-o"></i>
+            阅读本文可能花费您&nbsp;<span class="post-count">5</span>&nbsp;分钟
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <a id="more"></a>
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> 博主使用的springBoot版本为1.5.8.RELEASE</span></span><br><span class="line"><span class="comment"> <span class="doctag">@Configuration</span>注解标识该类为一个配置文件</span></span><br><span class="line"><span class="comment"> <span class="doctag">@MapperScan</span>注解属性：</span></span><br><span class="line"><span class="comment">    1. basePackages可以设置多个mapper.xml所在的全限定包名</span></span><br><span class="line"><span class="comment">    2. annotationClass = Mapper.class (过滤的作用，只有包含注解的mybatis接口才会被扫描进去，一般不用)</span></span><br><span class="line"><span class="comment">    3. sqlSessionFactoryRef="xxxSqlSessionFactory"</span></span><br><span class="line"><span class="comment">    4. sqlSessionTemplateRef = "xxxSqlSessionTemplate"</span></span><br><span class="line"><span class="comment">    注意： 其中3,4属性在使用的时候，可以只保留3的属性，不需要3,4两个属性全都注入，</span></span><br><span class="line"><span class="comment">    原因如下：</span></span><br><span class="line"><span class="comment">    1. 我们注入的sqlSessionFactory最后在SqlSessionDaoSupport.setSqlSessionFactory被使用，并且内建了一个sqlSessionTemplate对象</span></span><br><span class="line"><span class="comment">    2. 如果我们上面的注解是sqlSessionTemplateRef，那么会走SqlSessionDaoSupport.setSqlSessionTemplate</span></span><br><span class="line"><span class="comment">    3. 如果两个注解都有，优先使用sqlSessionTemplateRef</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@MapperScan</span>(basePackages = &#123;RdsDataSourceConfig.PACKAGE&#125;,</span><br><span class="line">        sqlSessionFactoryRef = <span class="string">"rdsSqlSessionFactory"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RdsDataSourceConfig</span> </span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">final</span> String PACKAGE = <span class="string">"xxxMapper.xml的所在路径(全限定包名)"</span>;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">final</span> String MAPPER_LOCATION = <span class="string">"classpath:sqlmap/rds/*Mapper.xml(一般位于resource路径下)"</span>;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">final</span> String CONFIG_LOCATION = <span class="string">"classpath:sqlmap/mybatis-config.xml(一般位于resource路径下)"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 读取数据源配置属性，生成DruidDataSource对象</span></span><br><span class="line">    <span class="meta">@ConfigurationProperties</span>(prefix = <span class="string">"application.yml文件中的数据源配置信息地址"</span>)</span><br><span class="line">    <span class="meta">@Bean</span>(name = <span class="string">"自定义bean名称(建议与方法名一致)"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> DruidDataSource <span class="title">rdsDruidDataSource</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> DruidDataSource();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// springBoot中的事务管理器</span></span><br><span class="line">    <span class="comment">// 1. spring-boot-starter-jdbc 依赖，框架默认注入DataSourceTransactionManager 实例。</span></span><br><span class="line">    <span class="comment">// 2.  spring-boot-starter-data-jpa 依赖，框架会默认注入 JpaTransactionManager 实例。</span></span><br><span class="line">    <span class="meta">@Bean</span>(name = <span class="string">"自定义bean名称(建议与方法名一致)"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> DataSourceTransactionManager <span class="title">rdsTransactionManager</span><span class="params">()</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> DataSourceTransactionManager(rdsDruidDataSource());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 1. mybatis设置</span></span><br><span class="line">    <span class="comment">// 生成SqlSessionFactory对象</span></span><br><span class="line">    <span class="meta">@Bean</span>(name = <span class="string">"自定义bean名称(建议与方法名一致)"</span>)</span><br><span class="line">    <span class="meta">@Primary</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> SqlSessionFactory <span class="title">rdsSqlSessionFactory</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">            @Qualifier(<span class="string">"rdsDruidDataSource"</span>)</span> DataSource dataSource)</span></span><br><span class="line"><span class="function">            <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="keyword">final</span> SqlSessionFactoryBean sessionFactory = <span class="keyword">new</span> SqlSessionFactoryBean();</span><br><span class="line">        <span class="comment">// SqlSessionFactory设置数据源信息</span></span><br><span class="line">        sessionFactory.setDataSource(dataSource);</span><br><span class="line">        <span class="comment">// SqlSessionFactory设置需要被扫描到的Mapper所在路径(全限定包名)</span></span><br><span class="line">        sessionFactory.setMapperLocations(</span><br><span class="line">                <span class="keyword">new</span> PathMatchingResourcePatternResolver().getResources(MAPPER_LOCATION));</span><br><span class="line">        <span class="comment">// SqlSessionFactory设置mybatis的配置信息</span></span><br><span class="line">        sessionFactory.setConfigLocation(<span class="keyword">new</span> PathMatchingResourcePatternResolver().getResource(CONFIG_LOCATION));</span><br><span class="line">        <span class="comment">// SqlSessionFactory设置返回结果为map集合时，字段名由下划线转换为驼峰</span></span><br><span class="line">        sessionFactory.setObjectWrapperFactory(<span class="keyword">new</span> MapWrapperFactory());</span><br><span class="line">        <span class="comment">// 返回设置好的SqlSessionFactory对象</span></span><br><span class="line">        <span class="keyword">return</span> sessionFactory.getObject();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 2. jdbcTemble设置</span></span><br><span class="line">    <span class="comment">// 是spring对 jdbc操作数据库进行的封装，使得开发者可以直接在java文件中 编写sql，无需配置xml文件。</span></span><br><span class="line">    <span class="meta">@Bean</span>(name = <span class="string">"自定义bean名称(建议与方法名一致)"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> JdbcTemplate <span class="title">rdsJdbcTemplate</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">            @Qualifier(<span class="string">"rdsDruidDataSource"</span>)</span> DataSource dataSource) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> JdbcTemplate(dataSource);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -237,420 +242,133 @@
 
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- mybatis-config.xml的参数配置 --&gt;</span></span><br><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">configuration</span> <span class="meta-keyword">PUBLIC</span> <span class="meta-string">"-//mybatis.org//DTD Config 3.0//EN"</span> <span class="meta-string">"http://mybatis.org/dtd/mybatis-3-config.dtd"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 全局参数 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">settings</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 使全局的映射器启用或禁用缓存。 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"cacheEnabled"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 全局启用或禁用延迟加载。当禁用时，所有关联对象都会即时加载。 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"lazyLoadingEnabled"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 当启用时，有延迟加载属性的对象在被调用时将会完全加载任意属性。否则，每种属性将会按需要加载。 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"aggressiveLazyLoading"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 是否允许单条sql 返回多个数据集  (取决于驱动的兼容性) default:true --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"multipleResultSetsEnabled"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 是否可以使用列的别名 (取决于驱动的兼容性) default:true --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"useColumnLabel"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 允许JDBC 生成主键。需要驱动器支持。如果设为了true，这个设置将强制使用被生成的主键，有一些驱动器不兼容不过仍然可以执行。  default:false  --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"useGeneratedKeys"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 指定 MyBatis 如何自动映射 数据基表的列 NONE：不隐射　PARTIAL:部分  FULL:全部  --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"autoMappingBehavior"</span> <span class="attr">value</span>=<span class="string">"PARTIAL"</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 这是默认的执行类型  （SIMPLE: 简单； REUSE: 执行器可能重复使用prepared statements语句；BATCH: 执行器可以重复执行语句和批量更新）  --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"defaultExecutorType"</span> <span class="attr">value</span>=<span class="string">"SIMPLE"</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 使用驼峰命名法转换字段。 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"mapUnderscoreToCamelCase"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 设置本地缓存范围 session:就会有数据的共享  statement:语句范围 (这样就不会有数据的共享 ) defalut:session --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"localCacheScope"</span> <span class="attr">value</span>=<span class="string">"SESSION"</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 设置但JDBC类型为空时,某些驱动程序 要指定值,default:OTHER，插入空值时不需要指定类型 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"jdbcTypeForNull"</span> <span class="attr">value</span>=<span class="string">"NULL"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"callSettersOnNulls"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-    
-        <div class="post-more-div">
-            <a href="/posts/d2273db3/" class="post-more waves-button">
-                阅读全文 »
-            </a>
         </div>
-    </div>
-    
-    <div class="post-footer">
+
+        <blockquote class="post-copyright">
+    <div class="content">
         
+<span class="post-time">
+    最后更新：<time datetime="2020-12-23T08:17:31.525Z" itemprop="dateUpdated">2020-12-23 16:17:31</time>
+</span>
+
+
+        
+        原文链接：<a href="/posts/d2273db3/" target="_blank" rel="external">https://carefulhuo.github.io/posts/d2273db3/</a>
+        
+    </div>
+    <footer>
+        <div onclick="location.href='https://carefulhuo.github.io'">
+            <img src="/img/huowy.jpg" alt="huowy">
+            <a>huowy</a>
+        </div>
+    </footer>
+</blockquote>
+
+        
+    <div class="page-reward">
+        <nav class="myreward">
+            <a id="rewardBtn" href="javascript:;"><span>打&nbsp;赏</span><span>装成好像很多人打赏的样子</span></a>
+        </nav>
+    </div>
+
+
+
+        <div class="post-footer">
+            
 	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tools/" rel="tag">Tools</a></li></ul>
 
-    </div>
-    
-</article>
 
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-little-love-332"
-  class="article-card article-type-post" itemprop="blogPost">
-
+            
+<div class="page-share-wrap">
     
 
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/4e435a1a/">小情话第三百三十二则</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2020-12-23 13:05:56" datetime="2020-12-23T05:05:56.000Z"  itemprop="datePublished">2020-12-23</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        这个文章-博主不想让其他人看见哟~
-    
-        <div class="post-more-div">
-            <a href="/posts/4e435a1a/" class="post-more waves-button">
-                阅读全文 »
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Little-Love/" rel="tag">Little Love</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-little-love-331"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/7e55b6c2/">小情话第三百三十一则</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2020-12-22 12:47:25" datetime="2020-12-22T04:47:25.000Z"  itemprop="datePublished">2020-12-22</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        这个文章-博主不想让其他人看见哟~
-    
-        <div class="post-more-div">
-            <a href="/posts/7e55b6c2/" class="post-more waves-button">
-                阅读全文 »
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Little-Love/" rel="tag">Little Love</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-little-love-330"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/37eb9166/">小情话第三百三十则</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2020-12-21 12:49:42" datetime="2020-12-21T04:49:42.000Z"  itemprop="datePublished">2020-12-21</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        这个文章-博主不想让其他人看见哟~
-    
-        <div class="post-more-div">
-            <a href="/posts/37eb9166/" class="post-more waves-button">
-                阅读全文 »
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Little-Love/" rel="tag">Little Love</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-little-love-329"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/5f0362b5/">小情话第三百二十九则</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2020-12-20 12:42:21" datetime="2020-12-20T04:42:21.000Z"  itemprop="datePublished">2020-12-20</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        这个文章-博主不想让其他人看见哟~
-    
-        <div class="post-more-div">
-            <a href="/posts/5f0362b5/" class="post-more waves-button">
-                阅读全文 »
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Little-Love/" rel="tag">Little Love</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-little-love-328"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/25ce43ea/">小情话第三百二十八则</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2020-12-19 12:42:07" datetime="2020-12-19T04:42:07.000Z"  itemprop="datePublished">2020-12-19</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        这个文章-博主不想让其他人看见哟~
-    
-        <div class="post-more-div">
-            <a href="/posts/25ce43ea/" class="post-more waves-button">
-                阅读全文 »
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Little-Love/" rel="tag">Little Love</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-little-love-327"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/d2a56ba9/">小情话第三百二十七则</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2020-12-18 12:57:29" datetime="2020-12-18T04:57:29.000Z"  itemprop="datePublished">2020-12-18</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        这个文章-博主不想让其他人看见哟~
-    
-        <div class="post-more-div">
-            <a href="/posts/d2a56ba9/" class="post-more waves-button">
-                阅读全文 »
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Little-Love/" rel="tag">Little Love</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-little-love-326"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/a51c36/">小情话第三百二十六则</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2020-12-17 13:01:09" datetime="2020-12-17T05:01:09.000Z"  itemprop="datePublished">2020-12-17</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        这个文章-博主不想让其他人看见哟~
-    
-        <div class="post-more-div">
-            <a href="/posts/a51c36/" class="post-more waves-button">
-                阅读全文 »
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Little-Love/" rel="tag">Little Love</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-mavenAbloutDeploy"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/d4eda90d/">deploy插件的使用</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2020-12-16 21:16:24" datetime="2020-12-16T13:16:24.000Z"  itemprop="datePublished">2020-12-16</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <h4 id="deploy插件的使用"><a href="#deploy插件的使用" class="headerlink" title="deploy插件的使用"></a>deploy插件的使用</h4><h5 id="第一种方式"><a href="#第一种方式" class="headerlink" title="第一种方式"></a>第一种方式</h5>
-    
-        <div class="post-more-div">
-            <a href="/posts/d4eda90d/" class="post-more waves-button">
-                阅读全文 »
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Maven/" rel="tag">Maven</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-little-love-325"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/65ab57ef/">小情话第三百二十五则</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2020-12-16 13:18:08" datetime="2020-12-16T05:18:08.000Z"  itemprop="datePublished">2020-12-16</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        这个文章-博主不想让其他人看见哟~
-    
-        <div class="post-more-div">
-            <a href="/posts/65ab57ef/" class="post-more waves-button">
-                阅读全文 »
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Little-Love/" rel="tag">Little Love</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/d2273db3/&title=《SpringBoot配置及加载Mybatis》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/d2273db3/&title=《SpringBoot配置及加载Mybatis》 — huowy'blog&source=小布丁的成长日记" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/d2273db3/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《SpringBoot配置及加载Mybatis》 — huowy'blog&url=https://carefulhuo.github.io/posts/d2273db3/&via=https://carefulhuo.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/d2273db3/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
     </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
 
     
-<nav id="page-nav">
-    <div class="inner">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/posts/4e435a1a/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：小情话第三百三十二则">下一篇：小情话第三百三十二则</h4>
+      </a>
     </div>
+  
 </nav>
 
+
+
+    
+    
+
+    
+<section class="comments" id="comments">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        var gitalk = new Gitalk({
+            clientID: '1dc31eb83c4c03880ee6',
+            clientSecret: '9a1cdc70758a0604f4d46d8686fc92a3065bc70e',
+            repo: 'CarefulHuo.github.io',
+            owner: 'CarefulHuo',
+            admin: ['CarefulHuo']
+        });
+        gitalk.render('gitalk-container');
+    </script>
+</section>
+
+
+    
+
+
+</article>
 
 </div>
 
@@ -697,8 +415,83 @@
 
     </main>
     
+        
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        <span>感谢您的鼓励支持！</span>
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" data-img="/img/dog.png" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.png" data-alipay="/img/alipay.png">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechatPay">&nbsp;&nbsp;微信&nbsp;&nbsp;</span>
+                <span class="reward-toggle-item alipayPay">支付宝</span>
+            </div>
+        </label>
+        
+        <i class="icon icon-caret-up"></i>
+    </div>
+</div>
+
+
+    
     <div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/d2273db3/&title=《SpringBoot配置及加载Mybatis》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/d2273db3/&title=《SpringBoot配置及加载Mybatis》 — huowy'blog&source=小布丁的成长日记" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/d2273db3/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《SpringBoot配置及加载Mybatis》 — huowy'blog&url=https://carefulhuo.github.io/posts/d2273db3/&via=https://carefulhuo.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/d2273db3/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p class="wechatshare">扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACN0lEQVR42u3ay4rDMBBE0fz/T2u2ASdSVbUyoNbVKpjE1nFA9Ov1ktd4W88rz+uVz+9XNi8YMGAcyxjTNf/OcysKXnk1+t5gwIBxD+PbJvQNZRvVj+/FnmHAgAFj+njpMdPrysuCAQMGjIzx7Q6LMC5Kg2HAgAFDT1OllFJAzl/ZD3NxGDBgHMjQq+7///kn/Q0YMGAcxRjRUo5FNxDUD9kP94EBA0Zrhl7k0puUbihZuQMMGDBuYLiAejNy/n039gv/BxgwYLRg6Dy9qeBmncY9YcCAcQFDGXeoHMT1QNDuwcKAAaMRIyvE64fyrsaA1DaAAQNGU0Z28LnB3K6hDRgwYNzJcAcd3CCvfmTrbVQYMGD0ZrhDD3prU2926k+BAQPGzQx9E1lpLCv664U8GDBgdGUoB2g2YKGktRXYh7EwGDBgNGW4wxN6G6AyFmZsWtkoDBgwDme4P7ZjzGjAQn81MGDAuIHhDlgo4aP7Kzd9LZFgwIBxIGPIK0txd71dKTSEAQNGU4Y9erW1oO8W3WwSDBgwWjD0cC0rhylvTk+eF3MiMGDAaMrIiv7ZwFaFKu0TBgwYTRnDXPWmQhY4LsJWGDBgtGa4lassuc2SXmXTYQEOBgwYBzKylkBlbKKSyi4mR2DAgNGa4d5aL6VlpTrlnov2AAwYMK5kZGGcO0bmjnfAgAEDhl5EywY19BDQ7sfCgAGjHUNJYveC9cNXCihhwIDRmpEV+itNx6yF6RYBYcCA0YLxB15diYenGva5AAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
 
 
     <!-- waves按钮特效 -->
@@ -706,7 +499,7 @@
 
 <!-- 主题配置脚本 -->
 <script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
 </script>
 
 <!-- jquery -->

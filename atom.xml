@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2020-12-23T05:28:01.354Z</updated>
+  <updated>2020-12-23T08:17:31.525Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SpringBoot配置及加载Mybatis</title>
+    <link href="https://carefulhuo.github.io/posts/d2273db3/"/>
+    <id>https://carefulhuo.github.io/posts/d2273db3/</id>
+    <published>2020-12-23T06:53:11.000Z</published>
+    <updated>2020-12-23T08:17:31.525Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="SpringBoot" scheme="https://carefulhuo.github.io/categories/SpringBoot/"/>
+    
+    
+      <category term="Tools" scheme="https://carefulhuo.github.io/tags/Tools/"/>
+    
+  </entry>
   
   <entry>
     <title>小情话第三百三十二则</title>
@@ -412,27 +441,6 @@
     
     
       <category term="Mysql" scheme="https://carefulhuo.github.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小情话第三百一十七则</title>
-    <link href="https://carefulhuo.github.io/posts/90f532e6/"/>
-    <id>https://carefulhuo.github.io/posts/90f532e6/</id>
-    <published>2020-12-08T04:30:33.000Z</published>
-    <updated>2020-12-08T04:58:03.355Z</updated>
-    
-    <summary type="html">
-    
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
-    
-    
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
-    
-    
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
