@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2020-12-23T10:30:33.523Z</updated>
+  <updated>2020-12-23T10:51:20.971Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>SpringBoot配置和加载redis</title>
+    <link href="https://carefulhuo.github.io/posts/c51e64d0/"/>
+    <id>https://carefulhuo.github.io/posts/c51e64d0/</id>
+    <published>2020-12-23T10:34:30.000Z</published>
+    <updated>2020-12-23T10:51:20.971Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;redis在SpringBoot中的配置及加载&quot;&gt;&lt;a href=&quot;#redis在SpringBoot中的配置及加载&quot; class=&quot;headerlink&quot; title=&quot;redis在SpringBoot中的配置及加载&quot;&gt;&lt;/a&gt;redis在SpringBoot中的配置及加载&lt;/h5&gt;
+    
+    </summary>
+    
+    
+      <category term="SpringBoot" scheme="https://carefulhuo.github.io/categories/SpringBoot/"/>
+    
+    
+      <category term="Tools" scheme="https://carefulhuo.github.io/tags/Tools/"/>
+    
+  </entry>
+  
+  <entry>
     <title>分布式锁工具类</title>
     <link href="https://carefulhuo.github.io/posts/d5f1c4d9/"/>
     <id>https://carefulhuo.github.io/posts/d5f1c4d9/</id>
     <published>2020-12-23T09:00:09.000Z</published>
-    <updated>2020-12-23T10:30:33.523Z</updated>
+    <updated>2020-12-23T10:38:07.690Z</updated>
     
     <summary type="html">
     
@@ -404,27 +425,6 @@
     <summary type="html">
     
       &lt;p&gt;AES加密及解密(请注意方法说明和方法使用)&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Java常用工具方法" scheme="https://carefulhuo.github.io/categories/Java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E6%96%B9%E6%B3%95/"/>
-    
-    
-      <category term="Tools" scheme="https://carefulhuo.github.io/tags/Tools/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>生成哈希值</title>
-    <link href="https://carefulhuo.github.io/posts/b2a9e1a0/"/>
-    <id>https://carefulhuo.github.io/posts/b2a9e1a0/</id>
-    <published>2020-12-08T08:38:57.000Z</published>
-    <updated>2020-12-08T13:42:22.879Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;生成哈希值&lt;/p&gt;
     
     </summary>
     
