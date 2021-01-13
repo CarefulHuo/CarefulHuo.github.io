@@ -54,7 +54,7 @@
 <meta property="og:description" content="Hibernate Validator 简介　　Hibernate Validator是Hibernate项目中的一个数据校验框架，是Bean Validation 的参考实现，Hibernate Validator除了提供了JSR 303规范中所有内置constraint 的实现，还有一些附加的constraint。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-13T07:02:25.000Z">
-<meta property="article:modified_time" content="2021-01-13T08:20:29.551Z">
+<meta property="article:modified_time" content="2021-01-13T08:24:06.756Z">
 <meta property="article:author" content="huowy">
 <meta property="article:tag" content="Tools">
 <meta name="twitter:card" content="summary">
@@ -290,6 +290,11 @@
 </ul>
 <hr>
 <h4 id="其他常用的constranint"><a href="#其他常用的constranint" class="headerlink" title="其他常用的constranint"></a>其他常用的constranint</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@AssertFalse</span> <span class="meta">@AssertTrue</span>  检验<span class="keyword">boolean</span>类型的值</span><br><span class="line"></span><br><span class="line"><span class="meta">@DecimalMax</span> <span class="meta">@DecimalMin</span>  限定被标注的属性的值的大小</span><br><span class="line"></span><br><span class="line"><span class="meta">@Digits</span>(intege=,fraction=) 限定被标注的属性的整数位数和小数位数</span><br><span class="line"></span><br><span class="line"><span class="meta">@Future</span>检验给定的日期是否比现在晚</span><br><span class="line"></span><br><span class="line"><span class="meta">@Past</span>    校验给定的日期是否比现在早</span><br><span class="line"></span><br><span class="line"><span class="meta">@Max</span>检查被标注的属性的值是否小于等于给定的值</span><br><span class="line"></span><br><span class="line"><span class="meta">@Min</span>检查被标注的属性的值是否大于等于给定的值</span><br><span class="line"></span><br><span class="line"><span class="meta">@NotNull</span>检验被标注的值不为空</span><br><span class="line"></span><br><span class="line"><span class="meta">@Null</span>     检验被标注的值为空</span><br><span class="line"></span><br><span class="line"><span class="meta">@Pattern</span>(regex=,flag=)  检查该字符串是否能够在match指定的情况下被regex定义的正则表达式匹配</span><br><span class="line"></span><br><span class="line"><span class="meta">@Size</span>(min=,max=)  检查被标注元素的长度</span><br><span class="line"></span><br><span class="line"><span class="meta">@Valid</span>递归的对关联的对象进行校验</span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>文章借鉴处</strong></p>
+<ul>
+<li><a href="https://www.jianshu.com/p/0bfe2318814f" target="_blank" rel="noopener">https://www.jianshu.com/p/0bfe2318814f</a></li>
+</ul>
 
         </div>
 
@@ -297,7 +302,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2021-01-13T08:20:29.551Z" itemprop="dateUpdated">2021-01-13 16:20:29</time>
+    最后更新：<time datetime="2021-01-13T08:24:06.756Z" itemprop="dateUpdated">2021-01-13 16:24:06</time>
 </span>
 
 
