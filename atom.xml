@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2021-01-15T05:31:14.247Z</updated>
+  <updated>2021-01-15T14:39:46.458Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu 20.04.1 LTS安装OpenJDK</title>
+    <link href="https://carefulhuo.github.io/posts/91d6b55f/"/>
+    <id>https://carefulhuo.github.io/posts/91d6b55f/</id>
+    <published>2021-01-15T14:17:36.000Z</published>
+    <updated>2021-01-15T14:39:46.458Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;一-安装-OpenJDK-11&quot;&gt;&lt;a href=&quot;#一-安装-OpenJDK-11&quot; class=&quot;headerlink&quot; title=&quot;一. 安装 OpenJDK 11&quot;&gt;&lt;/a&gt;一. 安装 OpenJDK 11&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;前期准备&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;root权限或者其他sudo权限用户身份&lt;/li&gt;
+&lt;li&gt;国内软件源(防止速度过慢)&lt;/li&gt;
+&lt;li&gt;Linux版本：Ubuntu 20.04.1 LTS
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://carefulhuo.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://carefulhuo.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Win10安装Linux子系统</title>
+    <link href="https://carefulhuo.github.io/posts/d4c1f845/"/>
+    <id>https://carefulhuo.github.io/posts/d4c1f845/</id>
+    <published>2021-01-15T13:58:40.000Z</published>
+    <updated>2021-01-15T14:44:46.737Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1-根据微软的帮助文档安装&quot;&gt;&lt;a href=&quot;#1-根据微软的帮助文档安装&quot; class=&quot;headerlink&quot; title=&quot;1. 根据微软的帮助文档安装&quot;&gt;&lt;/a&gt;1. 根据微软的&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/install-win10&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;帮助文档&lt;/a&gt;安装&lt;/h4&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://carefulhuo.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://carefulhuo.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>小情话第三百四十八则</title>
@@ -383,48 +431,6 @@
     <summary type="html">
     
       &lt;h5 id=&quot;redis在SpringBoot中的配置及加载&quot;&gt;&lt;a href=&quot;#redis在SpringBoot中的配置及加载&quot; class=&quot;headerlink&quot; title=&quot;redis在SpringBoot中的配置及加载&quot;&gt;&lt;/a&gt;redis在SpringBoot中的配置及加载&lt;/h5&gt;
-    
-    </summary>
-    
-    
-      <category term="SpringBoot" scheme="https://carefulhuo.github.io/categories/SpringBoot/"/>
-    
-    
-      <category term="Tools" scheme="https://carefulhuo.github.io/tags/Tools/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>分布式锁工具类</title>
-    <link href="https://carefulhuo.github.io/posts/d5f1c4d9/"/>
-    <id>https://carefulhuo.github.io/posts/d5f1c4d9/</id>
-    <published>2020-12-23T09:00:09.000Z</published>
-    <updated>2020-12-23T10:38:07.690Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h5 id=&quot;利用redis实现分布式锁&quot;&gt;&lt;a href=&quot;#利用redis实现分布式锁&quot; class=&quot;headerlink&quot; title=&quot;利用redis实现分布式锁&quot;&gt;&lt;/a&gt;利用redis实现分布式锁&lt;/h5&gt;
-    
-    </summary>
-    
-    
-      <category term="分布式" scheme="https://carefulhuo.github.io/categories/%E5%88%86%E5%B8%83%E5%BC%8F/"/>
-    
-    
-      <category term="Tools" scheme="https://carefulhuo.github.io/tags/Tools/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SpringBoot配置及加载Mybatis</title>
-    <link href="https://carefulhuo.github.io/posts/d2273db3/"/>
-    <id>https://carefulhuo.github.io/posts/d2273db3/</id>
-    <published>2020-12-23T06:53:11.000Z</published>
-    <updated>2020-12-23T08:28:29.715Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Mybatis与springBoot的融合&lt;/p&gt;
     
     </summary>
     
