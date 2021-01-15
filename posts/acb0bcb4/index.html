@@ -46,15 +46,15 @@
 
 
     
-    <meta name="description" content="服务器性能问题一般有两种：高内存占用、高CPU占用，比如应用程序高内存占用，可能是因为文件读写、频繁的IO、内存频繁GC，进一步占用了内存和CPU；比如应用程序高CPU占用，可能是因为大任务计算、死循环、卡死、不断超时或者重试。所以需要具体问题具体分析。">
+    <meta name="description" content="服务器性能问题一般有两种：　　高内存占用、高CPU占用，比如应用程序高内存占用，可能是因为文件读写、频繁的IO、内存频繁GC，进一步占用了内存和CPU；比如应用程序高CPU占用，可能是因为大任务计算、死循环、卡死、不断超时或者重试。所以需要具体问题具体分析。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="服务器性能问题排查">
 <meta property="og:url" content="https://carefulhuo.github.io/posts/acb0bcb4/index.html">
 <meta property="og:site_name" content="huowy&#39;blog">
-<meta property="og:description" content="服务器性能问题一般有两种：高内存占用、高CPU占用，比如应用程序高内存占用，可能是因为文件读写、频繁的IO、内存频繁GC，进一步占用了内存和CPU；比如应用程序高CPU占用，可能是因为大任务计算、死循环、卡死、不断超时或者重试。所以需要具体问题具体分析。">
+<meta property="og:description" content="服务器性能问题一般有两种：　　高内存占用、高CPU占用，比如应用程序高内存占用，可能是因为文件读写、频繁的IO、内存频繁GC，进一步占用了内存和CPU；比如应用程序高CPU占用，可能是因为大任务计算、死循环、卡死、不断超时或者重试。所以需要具体问题具体分析。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-09-22T07:57:28.000Z">
-<meta property="article:modified_time" content="2020-11-04T02:57:03.947Z">
+<meta property="article:modified_time" content="2021-01-15T15:53:08.613Z">
 <meta property="article:author" content="huowy">
 <meta property="article:tag" content="Server">
 <meta name="twitter:card" content="summary">
@@ -232,9 +232,12 @@
             阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>　　服务器性能问题一般有两种：高内存占用、高CPU占用，比如应用程序高内存占用，可能是因为文件读写、频繁的IO、内存频繁GC，进一步占用了内存和CPU；比如应用程序高CPU占用，可能是因为大任务计算、死循环、卡死、不断超时或者重试。所以需要具体问题具体分析。</p>
+            <p>服务器性能问题一般有两种：<br>　　高内存占用、高CPU占用，比如应用程序高内存占用，可能是因为文件读写、频繁的IO、内存频繁GC，进一步占用了内存和CPU；比如应用程序高CPU占用，可能是因为大任务计算、死循环、卡死、不断超时或者重试。所以需要具体问题具体分析。</p>
 <a id="more"></a>
-<p>　　高内存占用现象是应用响应慢、内存溢出、应用进程直接死掉。体现到代码里面可能是死锁<a href="由于执行顺序的原因，互相持有对方正在等待的锁；多个线程在相同的资源上发生等待">1</a>和饥饿<a href="高优先级线程一直占用CPU，导致低优先级线程一直处于一个等待进入同步块的状态">2</a>，因为资源不释放;需要关注，空闲可用内存还有多少，buff[(Page Cache)是一种高速缓存，用于CPU和内存之间的缓冲 ,是文件系统的cache。]和cache[5]还有多少；<br>　　高CPU占用现象是应用进程还活着，但是页面出不来，不响应。体现到代码里面可能是存在活锁<a href="并未产生线程阻塞，但是由于某种问题的存在，导致无法继续执行的情况">3</a>。在CPU占用高的情况下，需要知道是用户（user）还是系统（sys）的占用率高，如果是user的CPU占用高，说明应用在做消耗CPU过高的操作；如果是sys的CPU占用高，说明系统在做大量的IO的操作；如果占用率高的线程频繁变动，则可能是CPU时间片不断调度，线程唤醒一下而后换另一个线程跑，需要看多线程任务是否存在大计算问题，以及线程池设置是否合适！</p>
+
+<p>　　高内存占用现象是应用响应慢、内存溢出、应用进程直接死掉。体现到代码里面可能是<strong>死锁</strong>和<strong>饥饿</strong>，因为资源不释放;需要关注，空闲可用内存还有多少，buff[(Page Cache)是一种高速缓存，用于CPU和内存之间的缓冲 ,是文件系统的cache。]和cache还有多少；</p>
+<p>　　高CPU占用现象是应用进程还活着，但是页面出不来，不响应。体现到代码里面可能是存在<strong>活锁</strong>。在CPU占用高的情况下，需要知道是用户（user）还是系统（sys）的占用率高，如果是user的CPU占用高，说明应用在做消耗CPU过高的操作；如果是sys的CPU占用高，说明系统在做大量的IO的操作；如果占用率高的线程频繁变动，则可能是CPU时间片不断调度，线程唤醒一下而后换另一个线程跑，需要看多线程任务是否存在大计算问题，以及线程池设置是否合适！</p>
+<p><strong>注释</strong>：<br>死锁：由于执行顺序的原因，互相持有对方正在等待的锁；多个线程在相同的资源上发生等待<br>饥饿：高优先级线程一直占用CPU，导致低优先级线程一直处于一个等待进入同步块的状态<br>活锁：并未产生线程阻塞，但是由于某种问题的存在，导致无法继续执行的情况</p>
 
         </div>
 
@@ -242,7 +245,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2020-11-04T02:57:03.947Z" itemprop="dateUpdated">2020-11-04 10:57:03</time>
+    最后更新：<time datetime="2021-01-15T15:53:08.613Z" itemprop="dateUpdated">2021-01-15 23:53:08</time>
 </span>
 
 
@@ -289,7 +292,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/acb0bcb4/&title=《服务器性能问题排查》 — huowy'blog&source=　　服务器性能问题一般有两种：高内存占用、高CPU占用，比如应用程序高内存占用，可能是因为文件读写、频繁的IO、内存频繁GC，进一步占用了内存和CPU；比..." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/acb0bcb4/&title=《服务器性能问题排查》 — huowy'blog&source=服务器性能问题一般有两种：　　高内存占用、高CPU占用，比如应用程序高内存占用，可能是因为文件读写、频繁的IO、内存频繁GC，进一步占用了内存和CPU；比..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -464,7 +467,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/acb0bcb4/&title=《服务器性能问题排查》 — huowy'blog&source=　　服务器性能问题一般有两种：高内存占用、高CPU占用，比如应用程序高内存占用，可能是因为文件读写、频繁的IO、内存频繁GC，进一步占用了内存和CPU；比..." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/acb0bcb4/&title=《服务器性能问题排查》 — huowy'blog&source=服务器性能问题一般有两种：　　高内存占用、高CPU占用，比如应用程序高内存占用，可能是因为文件读写、频繁的IO、内存频繁GC，进一步占用了内存和CPU；比..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
