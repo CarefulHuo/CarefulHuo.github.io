@@ -6,7 +6,7 @@
     
     
     
-    <title>Hibernate Validator | huowy&#39;blog</title>
+    <title>SpringBoot使用Validator校验框架 | huowy&#39;blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
@@ -48,13 +48,13 @@
     
     <meta name="description" content="Hibernate Validator 简介　　Hibernate Validator是Hibernate项目中的一个数据校验框架，是Bean Validation 的参考实现，Hibernate Validator除了提供了JSR 303规范中所有内置constraint 的实现，还有一些附加的constraint。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hibernate Validator">
+<meta property="og:title" content="SpringBoot使用Validator校验框架">
 <meta property="og:url" content="https://carefulhuo.github.io/posts/dba1824b/index.html">
 <meta property="og:site_name" content="huowy&#39;blog">
 <meta property="og:description" content="Hibernate Validator 简介　　Hibernate Validator是Hibernate项目中的一个数据校验框架，是Bean Validation 的参考实现，Hibernate Validator除了提供了JSR 303规范中所有内置constraint 的实现，还有一些附加的constraint。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-13T07:02:25.000Z">
-<meta property="article:modified_time" content="2021-01-15T15:04:33.986Z">
+<meta property="article:modified_time" content="2021-01-15T15:11:52.006Z">
 <meta property="article:author" content="huowy">
 <meta property="article:tag" content="Tools">
 <meta name="twitter:card" content="summary">
@@ -166,7 +166,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Hibernate Validator</div>
+        <div class="flex-col header-title ellipsis">SpringBoot使用Validator校验框架</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -214,7 +214,7 @@
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Hibernate Validator</h1>
+        <h1 class="post-card-title">SpringBoot使用Validator校验框架</h1>
         <div class="post-meta">
             <i class="icon icon-lg icon-calendar-o"></i>
             发表于
@@ -289,7 +289,7 @@
 </li>
 </ul>
 <hr>
-<h4 id="其他常用的constranint"><a href="#其他常用的constranint" class="headerlink" title="其他常用的constranint"></a>其他常用的constranint</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@AssertFalse</span> <span class="meta">@AssertTrue</span>  检验<span class="keyword">boolean</span>类型的值</span><br><span class="line"></span><br><span class="line"><span class="meta">@DecimalMax</span> <span class="meta">@DecimalMin</span>  限定被标注的属性的值的大小</span><br><span class="line"></span><br><span class="line"><span class="meta">@Digits</span>(intege=,fraction=) 限定被标注的属性的整数位数和小数位数</span><br><span class="line"></span><br><span class="line"><span class="meta">@Future</span>检验给定的日期是否比现在晚</span><br><span class="line"></span><br><span class="line"><span class="meta">@Past</span>    校验给定的日期是否比现在早</span><br><span class="line"></span><br><span class="line"><span class="meta">@Max</span>检查被标注的属性的值是否小于等于给定的值</span><br><span class="line"></span><br><span class="line"><span class="meta">@Min</span>检查被标注的属性的值是否大于等于给定的值</span><br><span class="line"></span><br><span class="line"><span class="meta">@NotNull</span>检验被标注的值不为空</span><br><span class="line"></span><br><span class="line"><span class="meta">@Null</span>     检验被标注的值为空</span><br><span class="line"></span><br><span class="line"><span class="meta">@Pattern</span>(regex=,flag=)  检查该字符串是否能够在match指定的情况下被regex定义的正则表达式匹配</span><br><span class="line"></span><br><span class="line"><span class="meta">@Size</span>(min=,max=)  检查被标注元素的长度</span><br><span class="line"></span><br><span class="line"><span class="meta">@Valid</span>递归的对关联的对象进行校验</span><br></pre></td></tr></table></figure>
+<h4 id="其他常用的constranint"><a href="#其他常用的constranint" class="headerlink" title="其他常用的constranint"></a>其他常用的constranint</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@AssertFalse</span> <span class="meta">@AssertTrue</span> 检验<span class="keyword">boolean</span>类型的值</span><br><span class="line"></span><br><span class="line"><span class="meta">@DecimalMax</span> <span class="meta">@DecimalMin</span> 限定被标注的属性的值的大小</span><br><span class="line"></span><br><span class="line"><span class="meta">@Digits</span>(intege=,fraction=) 限定被标注的属性的整数位数和小数位数</span><br><span class="line"></span><br><span class="line"><span class="meta">@Future</span> 检验给定的日期是否比现在晚</span><br><span class="line"></span><br><span class="line"><span class="meta">@Past</span> 校验给定的日期是否比现在早</span><br><span class="line"></span><br><span class="line"><span class="meta">@Max</span> 检查被标注的属性的值是否小于等于给定的值</span><br><span class="line"></span><br><span class="line"><span class="meta">@Min</span> 检查被标注的属性的值是否大于等于给定的值</span><br><span class="line"></span><br><span class="line"><span class="meta">@NotNull</span> 检验被标注的值不为空</span><br><span class="line"></span><br><span class="line"><span class="meta">@Null</span> 检验被标注的值为空</span><br><span class="line"></span><br><span class="line"><span class="meta">@Pattern</span>(regex=,flag=) 检查该字符串是否能够在match指定的情况下被regex定义的正则表达式匹配</span><br><span class="line"></span><br><span class="line"><span class="meta">@Size</span>(min=,max=) 检查被标注元素的长度</span><br><span class="line"></span><br><span class="line"><span class="meta">@Valid</span> 递归的对关联的对象进行校验</span><br></pre></td></tr></table></figure>
 <hr>
 <p><strong>文章借鉴处</strong></p>
 <ul>
@@ -302,7 +302,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2021-01-15T15:04:33.986Z" itemprop="dateUpdated">2021-01-15 23:04:33</time>
+    最后更新：<time datetime="2021-01-15T15:11:52.006Z" itemprop="dateUpdated">2021-01-15 23:11:52</time>
 </span>
 
 
@@ -339,7 +339,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/dba1824b/&title=《Hibernate Validator》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/dba1824b/&title=《SpringBoot使用Validator校验框架》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -349,7 +349,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/dba1824b/&title=《Hibernate Validator》 — huowy'blog&source=Hibernate Validator 简介　　Hibernate Validator是Hibernate项目中的一个数据校验框架，是Bean Valid..." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/dba1824b/&title=《SpringBoot使用Validator校验框架》 — huowy'blog&source=Hibernate Validator 简介　　Hibernate Validator是Hibernate项目中的一个数据校验框架，是Bean Valid..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -359,7 +359,7 @@
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hibernate Validator》 — huowy'blog&url=https://carefulhuo.github.io/posts/dba1824b/&via=https://carefulhuo.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《SpringBoot使用Validator校验框架》 — huowy'blog&url=https://carefulhuo.github.io/posts/dba1824b/&via=https://carefulhuo.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
@@ -514,7 +514,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/dba1824b/&title=《Hibernate Validator》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/dba1824b/&title=《SpringBoot使用Validator校验框架》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -524,7 +524,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/dba1824b/&title=《Hibernate Validator》 — huowy'blog&source=Hibernate Validator 简介　　Hibernate Validator是Hibernate项目中的一个数据校验框架，是Bean Valid..." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/dba1824b/&title=《SpringBoot使用Validator校验框架》 — huowy'blog&source=Hibernate Validator 简介　　Hibernate Validator是Hibernate项目中的一个数据校验框架，是Bean Valid..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -534,7 +534,7 @@
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hibernate Validator》 — huowy'blog&url=https://carefulhuo.github.io/posts/dba1824b/&via=https://carefulhuo.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《SpringBoot使用Validator校验框架》 — huowy'blog&url=https://carefulhuo.github.io/posts/dba1824b/&via=https://carefulhuo.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
