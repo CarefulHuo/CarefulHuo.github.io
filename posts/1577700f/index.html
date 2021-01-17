@@ -54,7 +54,7 @@
 <meta property="og:description" content="准备工作环境：Ubuntu 20.04Redis版本：5.0.7">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-17T12:50:01.000Z">
-<meta property="article:modified_time" content="2021-01-17T12:53:36.452Z">
+<meta property="article:modified_time" content="2021-01-17T13:05:52.027Z">
 <meta property="article:author" content="huowy">
 <meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
@@ -236,7 +236,7 @@
         </div>
         <div class="post-count-custom">
             <i class="icon icon-lg icon-comment-o"></i>
-            阅读本文可能花费您&nbsp;<span class="post-count">3</span>&nbsp;分钟
+            阅读本文可能花费您&nbsp;<span class="post-count">4</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             <h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><p>环境：Ubuntu 20.04<br>Redis版本：5.0.7</p>
@@ -253,7 +253,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Set to yes to apply rules to support IPv6 (no means only IPv6 on loopback</span><br><span class="line"># accepted). You will need to &#39;disable&#39; and then &#39;enable&#39; the firewall for</span><br><span class="line"># the changes to take affect.</span><br><span class="line">IPV6&#x3D;yes</span><br></pre></td></tr></table></figure>
 <p>如果是使用的 WSL ( Windows Subsystem for Linux ) 适用于 Linux 的Windows 子系统，安装的 Ubuntu 20.04，执行检查服务状态的命令提示：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System has not been booted with systemd as init system (PID 1). Can&#39;t operate.</span><br><span class="line">Failed to connect to bus: Host is down</span><br></pre></td></tr></table></figure>
-<p>原因是因为 <a href="https://github.com/MicrosoftDocs/WSL/issues/457" target="_blank" rel="noopener">WSL2</a> 没有 systemd 命令，可以执行命令：</p>
+<p>原因是因为 <a href="https://github.com/MicrosoftDocs/WSL/issues/457" target="_blank" rel="noopener">WSL2 没有 systemd 命令</a> ，可以执行命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service redis-server status</span><br></pre></td></tr></table></figure>
 <p>正常启动 Redis 显示的内容：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">* redis-server is running</span><br></pre></td></tr></table></figure>
@@ -277,6 +277,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-cli -h &lt;REDIS_IP_ADDRESS&gt; ping</span><br></pre></td></tr></table></figure>
 <p>正常响应的结果，如下面所示：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PONG</span><br></pre></td></tr></table></figure>
+<p>启动 redis 服务器后，打开终端并输入命令 redis-cli，该命令会连接本地的 redis 服务。执行命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">redis-cli</span><br><span class="line">127.0.0.1:6379&gt; ping</span><br><span class="line">PONG</span><br></pre></td></tr></table></figure>
+<p><strong>注意</strong>：执行 Redis 命令需要 Redis客户端。 redis-cli 是 Redis 的客户端，在下载的 Redis 安装包里面。</p>
 <h4 id="Redis-文档"><a href="#Redis-文档" class="headerlink" title="Redis 文档"></a>Redis 文档</h4><p>了解更多的 Redis 使用，可以访问 <a href="https://redis.io/documentation" target="_blank" rel="noopener">Redis 官网</a>!</p>
 
         </div>
@@ -285,7 +288,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2021-01-17T12:53:36.452Z" itemprop="dateUpdated">2021-01-17 20:53:36</time>
+    最后更新：<time datetime="2021-01-17T13:05:52.027Z" itemprop="dateUpdated">2021-01-17 21:05:52</time>
 </span>
 
 
