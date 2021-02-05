@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2021-02-04T05:15:31.561Z</updated>
+  <updated>2021-02-05T05:23:39.467Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小情话第三百六十六则</title>
+    <link href="https://carefulhuo.github.io/posts/800d876d/"/>
+    <id>https://carefulhuo.github.io/posts/800d876d/</id>
+    <published>2021-02-05T04:48:25.000Z</published>
+    <updated>2021-02-05T05:23:39.467Z</updated>
+    
+    <summary type="html">
+    
+      这个文章-博主不想让其他人看见哟~
+    
+    </summary>
+    
+    
+      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    
+      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    
+  </entry>
   
   <entry>
     <title>小情话第三百六十五则</title>
@@ -410,27 +431,6 @@
 &lt;li&gt;root权限或者其他sudo权限用户身份&lt;/li&gt;
 &lt;li&gt;国内软件源(防止速度过慢)&lt;/li&gt;
 &lt;li&gt;Linux版本：Ubuntu 20.04.1 LTS
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://carefulhuo.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://carefulhuo.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Win10安装Linux子系统</title>
-    <link href="https://carefulhuo.github.io/posts/d4c1f845/"/>
-    <id>https://carefulhuo.github.io/posts/d4c1f845/</id>
-    <published>2021-01-15T13:58:40.000Z</published>
-    <updated>2021-01-15T14:44:46.737Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;1-根据微软的帮助文档安装&quot;&gt;&lt;a href=&quot;#1-根据微软的帮助文档安装&quot; class=&quot;headerlink&quot; title=&quot;1. 根据微软的帮助文档安装&quot;&gt;&lt;/a&gt;1. 根据微软的&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/install-win10&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;帮助文档&lt;/a&gt;安装&lt;/h4&gt;
     
     </summary>
     
