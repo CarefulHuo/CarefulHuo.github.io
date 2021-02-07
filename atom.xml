@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2021-02-05T05:23:39.467Z</updated>
+  <updated>2021-02-07T06:22:42.199Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小情话年终篇</title>
+    <link href="https://carefulhuo.github.io/posts/520df0f2/"/>
+    <id>https://carefulhuo.github.io/posts/520df0f2/</id>
+    <published>2021-02-07T04:53:00.000Z</published>
+    <updated>2021-02-07T06:22:42.199Z</updated>
+    
+    <summary type="html">
+    
+      这个文章-博主不想让其他人看见哟~
+    
+    </summary>
+    
+    
+      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    
+      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    
+  </entry>
   
   <entry>
     <title>小情话第三百六十六则</title>
@@ -412,33 +433,6 @@
     
     
       <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu 20.04.1 LTS安装OpenJDK</title>
-    <link href="https://carefulhuo.github.io/posts/91d6b55f/"/>
-    <id>https://carefulhuo.github.io/posts/91d6b55f/</id>
-    <published>2021-01-15T14:17:36.000Z</published>
-    <updated>2021-01-15T14:39:46.458Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;一-安装-OpenJDK-11&quot;&gt;&lt;a href=&quot;#一-安装-OpenJDK-11&quot; class=&quot;headerlink&quot; title=&quot;一. 安装 OpenJDK 11&quot;&gt;&lt;/a&gt;一. 安装 OpenJDK 11&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;前期准备&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;root权限或者其他sudo权限用户身份&lt;/li&gt;
-&lt;li&gt;国内软件源(防止速度过慢)&lt;/li&gt;
-&lt;li&gt;Linux版本：Ubuntu 20.04.1 LTS
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="https://carefulhuo.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://carefulhuo.github.io/tags/Linux/"/>
     
   </entry>
   
