@@ -56,7 +56,7 @@
 <meta property="og:image" content="https://images2017.cnblogs.com/blog/1309421/201801/1309421-20180108210123191-875930636.png">
 <meta property="og:image" content="https://images2017.cnblogs.com/blog/1309421/201801/1309421-20180108212815160-82602581.png">
 <meta property="article:published_time" content="2021-07-27T11:12:52.000Z">
-<meta property="article:modified_time" content="2021-08-03T16:00:47.972Z">
+<meta property="article:modified_time" content="2021-08-07T23:10:24.401Z">
 <meta property="article:author" content="huowy">
 <meta property="article:tag" content="JavaApi">
 <meta name="twitter:card" content="summary">
@@ -206,6 +206,13 @@
 
 <div class="container body-wrap">
     
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TreeNode-内部类"><span class="post-toc-number">1.</span> <span class="post-toc-text">TreeNode 内部类</span></a></li></ol>
+        </nav>
+    </aside>
+   
 <article id="post-Java8中的HashMap"
   class="post-article article-type-post fade" itemprop="blogPost">
 
@@ -232,7 +239,7 @@
         </div>
         <div class="post-count-custom">
             <i class="icon icon-lg icon-comment-o"></i>
-            阅读本文可能花费您&nbsp;<span class="post-count">3</span>&nbsp;分钟
+            阅读本文可能花费您&nbsp;<span class="post-count">4</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             <p>####HashMap特性</p>
@@ -248,7 +255,7 @@
 <li>HashTable 读写操作是线程安全</li>
 <li>HashTable 不允许 key 、 value 任一值或同时为 null</li>
 </ol>
-<p>####HashMap中内部类<br>内部类</p>
+<p>####HashMap中内部类<br>#####内部类</p>
 <ol>
 <li>Node (static class):基于 hash 的链表节点，由 LinkedHashMap.Entry 、 TreeNode 继承实现<ul>
 <li>TreeNode (static final class) </li>
@@ -278,10 +285,13 @@
 <li>一个节点是红色或黑色</li>
 <li>根节点是黑色</li>
 <li>如果一个节点是红色，那么它的子节点必须是黑色</li>
-<li>一个节点到一个null引用的每一条路径必须包含相同数目的黑色节点(红色节点不影响)<img src="https://images2017.cnblogs.com/blog/1309421/201801/1309421-20180108210123191-875930636.png">
-<img src="https://images2017.cnblogs.com/blog/1309421/201801/1309421-20180108212815160-82602581.png">
-
-</li>
+<li>一个节点到一个null引用的每一条路径必须包含相同数目的黑色节点(红色节点不影响)</li>
+</ul>
+<p>#####两种旋转方式和一种颜色变换<br><img src="https://images2017.cnblogs.com/blog/1309421/201801/1309421-20180108210123191-875930636.png"><br><img src="https://images2017.cnblogs.com/blog/1309421/201801/1309421-20180108212815160-82602581.png"></p>
+<ul>
+<li>单旋转方式</li>
+<li>双旋转方式(需要两次反方向的单旋转)</li>
+<li>当两个子节点均为红色的时候，执行颜色变换，因为插入的是红色节点，会产生冲突。<font color ="red">例如根节点的子节点是红色，两个叶子节点变成黑色，根节点变成红色，再变成黑色。</font></li>
 </ul>
 <p>#####问题</p>
 <ol>
@@ -290,14 +300,14 @@
 <li>为什么进行颜色变换？<br><br>图示的第一种旋转，红色节点 X 的插入破坏了红黑树结构，所以进行旋转，旋转后的结构如图所示，旋转后，P 和 G 点如果维持本来的颜色，就会违背第三、四条特性，所以，进行颜色变换。</li>
 <li>与 AVL(Adelson-Velsky and Landis Tree) 树（平衡二叉查找树）比较?<br><br>红黑树不是通过递归方式，而是通过循环的方式来实现，不需要保存节点高度字段，节省内存<br>两者最坏操作时间复杂度都是O(logN)</li>
 </ol>
-
+<h4 id="TreeNode-内部类"><a href="#TreeNode-内部类" class="headerlink" title="TreeNode 内部类"></a>TreeNode 内部类</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">TreeNode</span>&lt;<span class="title">K</span>, <span class="title">V</span>&gt; <span class="keyword">extends</span> <span class="title">LinkedHashMap</span>.<span class="title">Entry</span>&lt;<span class="title">K</span>, <span class="title">V</span>&gt;</span></span><br><span class="line"><span class="class">    </span>&#123;</span><br><span class="line">        TreeNode&lt;K, V&gt; parent; <span class="comment">// red-black tree links</span></span><br><span class="line">        TreeNode&lt;K, V&gt; left;</span><br><span class="line">        TreeNode&lt;K, V&gt; right;</span><br><span class="line">        TreeNode&lt;K, V&gt; prev; <span class="comment">// needed to unlink next upon deletion</span></span><br><span class="line">        <span class="keyword">boolean</span> red;</span><br><span class="line"></span><br><span class="line">        TreeNode(<span class="keyword">int</span> hash, K key, V val, Node&lt;K, V&gt; next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">super</span>(hash, key, val, next);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="function"><span class="keyword">final</span> <span class="keyword">void</span> <span class="title">treeify</span><span class="params">(Node&lt;K,V&gt;[] tab)</span></span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            <span class="comment">// ......</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">static</span> &lt;K,V&gt; <span class="function">TreeNode&lt;K,V&gt; <span class="title">balanceInsertion</span><span class="params">(TreeNode&lt;K,V&gt; root, TreeNode&lt;K,V&gt; x)</span></span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            <span class="comment">// ......</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">static</span> &lt;K,V&gt; <span class="function">TreeNode&lt;K,V&gt; <span class="title">rotateLeft</span><span class="params">(TreeNode&lt;K,V&gt; root, TreeNode&lt;K,V&gt; p)</span></span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            <span class="comment">// ......</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">static</span> &lt;K,V&gt; <span class="function">TreeNode&lt;K,V&gt; <span class="title">rotateRight</span><span class="params">(TreeNode&lt;K,V&gt; root, TreeNode&lt;K,V&gt; p)</span></span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            <span class="comment">// ......</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// ......其余方法省略</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2021-08-03T16:00:47.972Z" itemprop="dateUpdated">2021-08-04 00:00:47</time>
+    最后更新：<time datetime="2021-08-07T23:10:24.401Z" itemprop="dateUpdated">2021-08-08 07:10:24</time>
 </span>
 
 
