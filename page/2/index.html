@@ -204,6 +204,49 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
+            <article id="post-little-love-471"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a href="/posts/9a9be269/">小情话第四百七十一则</a>
+    </h3>
+  
+
+
+
+
+     <div class="post-meta">
+        <time class="post-time" title="2021-07-28 13:02:52" datetime="2021-07-28T05:02:52.000Z"  itemprop="datePublished">2021-07-28</time>
+
+    </div>
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        这个文章-博主不想让其他人看见哟~
+    
+        <div class="post-more-div">
+            <a href="/posts/9a9be269/" class="post-more waves-button">
+                阅读全文 »
+            </a>
+        </div>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Little-Love/" rel="tag">Little Love</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
             <article id="post-Java8中的HashMap"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -227,7 +270,27 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        <p>####HashMap特性</p>
+        <p>####红黑树(red black tree)<br>#####特点</p>
+<ul>
+<li>一个节点是红色或黑色</li>
+<li>根节点是黑色</li>
+<li>如果一个节点是红色，那么它的子节点必须是黑色</li>
+<li>一个节点到一个null引用的每一条路径必须包含相同数目的黑色节点(红色节点不影响)</li>
+</ul>
+<p>#####两种旋转方式和一种颜色变换<br><img src="https://images2017.cnblogs.com/blog/1309421/201801/1309421-20180108210123191-875930636.png"><br><img src="https://images2017.cnblogs.com/blog/1309421/201801/1309421-20180108212815160-82602581.png"></p>
+<ul>
+<li>单旋转方式</li>
+<li>双旋转方式(需要两次反方向的单旋转)</li>
+<li>当两个子节点均为红色的时候，执行颜色变换，因为插入的是红色节点，会产生冲突。<font color ="red">例如根节点的子节点是红色，两个叶子节点变成黑色，根节点变成红色，再变成黑色。</font></li>
+</ul>
+<p>#####问题</p>
+<ol>
+<li>为什么插入的总是红色节点?<br><br>因为插入前，树都是构建好的，如果插入的是黑色节点，就破坏了每一条路径必须包含相同数目的黑色节点这一特性</li>
+<li>为什么进行旋转？<br><br>因为插入时总是红色节点，如果不旋转的话，违背了一个节点是红色，那么它的子节点必须是黑色这一特性</li>
+<li>为什么进行颜色变换？<br><br>图示的第一种旋转，红色节点 X 的插入破坏了红黑树结构，所以进行旋转，旋转后的结构如图所示，旋转后，P 和 G 点如果维持本来的颜色，就会违背第三、四条特性，所以，进行颜色变换。</li>
+<li>与 AVL(Adelson-Velsky and Landis Tree) 树（平衡二叉查找树）比较?<br><br>红黑树不是通过递归方式，而是通过循环的方式来实现，不需要保存节点高度字段，节省内存<br>两者最坏操作时间复杂度都是O(logN)</li>
+</ol>
+<p>####HashMap特性</p>
 <ol>
 <li>允许 key 、 value 任一值或同时为 null</li>
 <li>HashMap 的元素时无序，不稳定</li>
@@ -240,7 +303,7 @@
 <li>HashTable 读写操作是线程安全</li>
 <li>HashTable 不允许 key 、 value 任一值或同时为 null</li>
 </ol>
-<p>####HashMap中内部类<br>#####内部类</p>
+<p>####HashMap内部类<br>#####内部类简介</p>
 <ol>
 <li>Node (static class):基于 hash 的链表节点，由 LinkedHashMap.Entry 、 TreeNode 继承实现<ul>
 <li>TreeNode (static final class) </li>
@@ -262,30 +325,44 @@
 </ul>
 </li>
 </ol>
-<p>####HashMap中内部变量</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 默认桶的数量 为 16 必须是 2 的幂次方</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> DEFAULT_INITIAL_CAPACITY = <span class="number">1</span> &lt;&lt; <span class="number">4</span>; <span class="comment">// aka 16</span></span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 桶的最大数量为 2 的 30 幂次方</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> MAXIMUM_CAPACITY = <span class="number">1</span> &lt;&lt; <span class="number">30</span>;</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 桶的负载因子，当存有数据的桶的数量超过 75% ，就会扩容为 2 倍桶数量，并自动进行再散列(rehashed)</span></span><br><span class="line"><span class="comment">  * 可以查看构造函数</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">float</span> DEFAULT_LOAD_FACTOR = <span class="number">0.75f</span>;</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 桶内数据量超过这个阈值就会将桶内数据结构从链表转为红黑树</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> TREEIFY_THRESHOLD = <span class="number">8</span>;</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 桶内数据量小于这个阈值就会将桶内数据结构从红黑树退化为链表</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> UNTREEIFY_THRESHOLD = <span class="number">6</span>;</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 如果桶的数量小于 64 ，会先扩容，直至桶的数量超过 64 </span></span><br><span class="line"><span class="comment">  * 这样是为了减少形成很满的桶，因为桶的数量越多，越不容易造成桶满</span></span><br><span class="line"><span class="comment">  * 借鉴了 &lt;see&gt;https://stackoverflow.com/questions/43911369/hashmap-java-8-implementation&lt;/see&gt;</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> MIN_TREEIFY_CAPACITY = <span class="number">64</span>;</span><br></pre></td></tr></table></figure>
+<h5 id="Node-内部类"><a href="#Node-内部类" class="headerlink" title="Node 内部类"></a>Node 内部类</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Node</span>&lt;<span class="title">K</span>,<span class="title">V</span>&gt; <span class="keyword">implements</span> <span class="title">Map</span>.<span class="title">Entry</span>&lt;<span class="title">K</span>,<span class="title">V</span>&gt; </span>&#123;</span><br><span class="line">        <span class="keyword">final</span> <span class="keyword">int</span> hash;</span><br><span class="line">        <span class="keyword">final</span> K key;</span><br><span class="line">        V value;</span><br><span class="line">        Node&lt;K,V&gt; next;</span><br><span class="line"></span><br><span class="line">        Node(<span class="keyword">int</span> hash, K key, V value, Node&lt;K,V&gt; next) &#123;</span><br><span class="line">            <span class="keyword">this</span>.hash = hash;</span><br><span class="line">            <span class="keyword">this</span>.key = key;</span><br><span class="line">            <span class="keyword">this</span>.value = value;</span><br><span class="line">            <span class="keyword">this</span>.next = next;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">final</span> K <span class="title">getKey</span><span class="params">()</span>        </span>&#123; <span class="keyword">return</span> key; &#125;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">final</span> V <span class="title">getValue</span><span class="params">()</span>      </span>&#123; <span class="keyword">return</span> value; &#125;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">final</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123; <span class="keyword">return</span> key + <span class="string">"="</span> + value; &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">int</span> <span class="title">hashCode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> Objects.hashCode(key) ^ Objects.hashCode(value);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">final</span> V <span class="title">setValue</span><span class="params">(V newValue)</span> </span>&#123;</span><br><span class="line">            V oldValue = value;</span><br><span class="line">            value = newValue;</span><br><span class="line">            <span class="keyword">return</span> oldValue;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object o)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">if</span> (o == <span class="keyword">this</span>)</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> o <span class="keyword">instanceof</span> Map.Entry&lt;?, ?&gt; e</span><br><span class="line">                    &amp;&amp; Objects.equals(key, e.getKey())</span><br><span class="line">                    &amp;&amp; Objects.equals(value, e.getValue());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h5 id="TreeNode-内部类"><a href="#TreeNode-内部类" class="headerlink" title="TreeNode 内部类"></a>TreeNode 内部类</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">TreeNode</span>&lt;<span class="title">K</span>, <span class="title">V</span>&gt; <span class="keyword">extends</span> <span class="title">LinkedHashMap</span>.<span class="title">Entry</span>&lt;<span class="title">K</span>, <span class="title">V</span>&gt;</span></span><br><span class="line"><span class="class">    </span>&#123;</span><br><span class="line">        TreeNode&lt;K, V&gt; parent; <span class="comment">// red-black tree links</span></span><br><span class="line">        TreeNode&lt;K, V&gt; left;</span><br><span class="line">        TreeNode&lt;K, V&gt; right;</span><br><span class="line">        TreeNode&lt;K, V&gt; prev; <span class="comment">// needed to unlink next upon deletion</span></span><br><span class="line">        <span class="keyword">boolean</span> red;</span><br><span class="line"></span><br><span class="line">        TreeNode(<span class="keyword">int</span> hash, K key, V val, Node&lt;K, V&gt; next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">super</span>(hash, key, val, next);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="function"><span class="keyword">final</span> <span class="keyword">void</span> <span class="title">treeify</span><span class="params">(Node&lt;K,V&gt;[] tab)</span></span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            <span class="comment">// ......</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">static</span> &lt;K,V&gt; <span class="function">TreeNode&lt;K,V&gt; <span class="title">balanceInsertion</span><span class="params">(TreeNode&lt;K,V&gt; root, TreeNode&lt;K,V&gt; x)</span></span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            <span class="comment">// ......</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">static</span> &lt;K,V&gt; <span class="function">TreeNode&lt;K,V&gt; <span class="title">rotateLeft</span><span class="params">(TreeNode&lt;K,V&gt; root, TreeNode&lt;K,V&gt; p)</span></span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            <span class="comment">// ......</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">static</span> &lt;K,V&gt; <span class="function">TreeNode&lt;K,V&gt; <span class="title">rotateRight</span><span class="params">(TreeNode&lt;K,V&gt; root, TreeNode&lt;K,V&gt; p)</span></span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            <span class="comment">// ......</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// ......其余方法省略</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-<p>####红黑树(red black tree)<br>#####特点</p>
+<p>#####HashMap中内部变量</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 默认桶的数量 为 16 必须是 2 的幂次方</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> DEFAULT_INITIAL_CAPACITY = <span class="number">1</span> &lt;&lt; <span class="number">4</span>; <span class="comment">// aka 16</span></span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 桶的最大数量为 2 的 30 幂次方</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> MAXIMUM_CAPACITY = <span class="number">1</span> &lt;&lt; <span class="number">30</span>;</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 桶的负载因子，当存有数据的桶的数量超过 75% ，就会扩容为 2 倍桶数量，并自动进行再散列(rehashed)</span></span><br><span class="line"><span class="comment">  * 可以查看构造函数</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">float</span> DEFAULT_LOAD_FACTOR = <span class="number">0.75f</span>;</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 桶内数据量超过这个阈值就会将桶内数据结构从链表转为红黑树</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> TREEIFY_THRESHOLD = <span class="number">8</span>;</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 桶内数据量小于这个阈值就会将桶内数据结构从红黑树退化为链表</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> UNTREEIFY_THRESHOLD = <span class="number">6</span>;</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 如果桶的数量小于 64 ，会先扩容，直至桶的数量超过 64 </span></span><br><span class="line"><span class="comment">  * 这样是为了减少形成很满的桶，因为桶的数量越多，越不容易造成桶满</span></span><br><span class="line"><span class="comment">  * 借鉴了 &lt;see&gt;https://stackoverflow.com/questions/43911369/hashmap-java-8-implementation&lt;/see&gt;</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> MIN_TREEIFY_CAPACITY = <span class="number">64</span>;</span><br></pre></td></tr></table></figure>
+<p>####HashMap插入<br>#####1.put()方法<br>使用内部 putval()方法</p>
+<p>#####2.putval()方法</p>
 <ul>
-<li>一个节点是红色或黑色</li>
-<li>根节点是黑色</li>
-<li>如果一个节点是红色，那么它的子节点必须是黑色</li>
-<li>一个节点到一个null引用的每一条路径必须包含相同数目的黑色节点(红色节点不影响)</li>
+<li>putval方法参数说明<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">* <span class="meta">@param</span> <span class="function">hash hash <span class="keyword">for</span> <span class="title">key</span> <span class="params">(key 的 Hash 值)</span></span></span><br><span class="line"><span class="function">* @param key the key  </span></span><br><span class="line"><span class="function">* @param value the value to put</span></span><br><span class="line"><span class="function">* @param onlyIfAbsent <span class="keyword">if</span> <span class="keyword">true</span>, don't change existing <span class="title">value</span> <span class="params">(如果键存在，是否需要更新 value值，<span class="keyword">true</span> 更新 <span class="keyword">false</span> 不更新)</span></span></span><br><span class="line"><span class="function">* @param evict <span class="keyword">if</span> <span class="keyword">false</span>, the table is in creation mode.<span class="params">(如果为<span class="keyword">false</span>，表示该表处于创建模式，jdk1<span class="number">.8</span>版本里面使用该参数的方法是空实现，故暂没有作用)</span></span></span><br><span class="line"><span class="function">* @return previous value, or <span class="keyword">null</span> <span class="keyword">if</span> <span class="title">none</span><span class="params">(返回之前的值，如果没有直接返回 <span class="keyword">null</span>)</span></span></span><br></pre></td></tr></table></figure></li>
+<li>代码逻辑执行过程<br></li>
 </ul>
-<p>#####两种旋转方式和一种颜色变换<br><img src="https://images2017.cnblogs.com/blog/1309421/201801/1309421-20180108210123191-875930636.png"><br><img src="https://images2017.cnblogs.com/blog/1309421/201801/1309421-20180108212815160-82602581.png"></p>
-<ul>
-<li>单旋转方式</li>
-<li>双旋转方式(需要两次反方向的单旋转)</li>
-<li>当两个子节点均为红色的时候，执行颜色变换，因为插入的是红色节点，会产生冲突。<font color ="red">例如根节点的子节点是红色，两个叶子节点变成黑色，根节点变成红色，再变成黑色。</font></li>
-</ul>
-<p>#####问题</p>
 <ol>
-<li>为什么插入的总是红色节点?<br><br>因为插入前，树都是构建好的，如果插入的是黑色节点，就破坏了每一条路径必须包含相同数目的黑色节点这一特性</li>
-<li>为什么进行旋转？<br><br>因为插入时总是红色节点，如果不旋转的话，违背了一个节点是红色，那么它的子节点必须是黑色这一特性</li>
-<li>为什么进行颜色变换？<br><br>图示的第一种旋转，红色节点 X 的插入破坏了红黑树结构，所以进行旋转，旋转后的结构如图所示，旋转后，P 和 G 点如果维持本来的颜色，就会违背第三、四条特性，所以，进行颜色变换。</li>
-<li>与 AVL(Adelson-Velsky and Landis Tree) 树（平衡二叉查找树）比较?<br><br>红黑树不是通过递归方式，而是通过循环的方式来实现，不需要保存节点高度字段，节省内存<br>两者最坏操作时间复杂度都是O(logN)</li>
+<li><p>表是否为null或表长度是否为零，决定了是否先进行初始化。<br></p>
+<ul>
+<li>1.1 初始化表，调用方法resize()</li>
+<li>1.2 Hash计算后，如果对应桶内为null，往桶内添加数据，此时桶内使用数据结构为链表</li>
+<li>1.3 Hash计算后，如果对应桶内不为null，判断key的 Hash 值以及 key 值是否相等，<ul>
+<li>1.3.1 相等，直接覆盖</li>
+<li>1.3.2 不相等，判断节点结构是否为红黑树结构(TreeNode)实例，是则直接使用 putTreeVal() 方法</li>
+<li>1.3.3 判断节点结构是否为红黑树节点结构(TreeNode)实例，不是则直接将数据插入链表末端，并判断链表长度是否大于等于 8 ，是则开始进行将链表进化为红黑树的操作(treeifyBin)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>treeifyBin</p>
+<ul>
+<li>2.1 如果表为null或者表长度小于 64 ，则进行表长度扩容</li>
+<li>2.2 如果表最后一个桶内数据不为null，则将桶内链表的节点结构转换为TreeNode，并连成一个链表</li>
+<li>2.3 进化红黑树(treeify)</li>
+</ul>
+</li>
+<li><p>treeify</p>
+<ul>
+<li>3.1 </li>
+</ul>
+</li>
 </ol>
-<h4 id="TreeNode-内部类"><a href="#TreeNode-内部类" class="headerlink" title="TreeNode 内部类"></a>TreeNode 内部类</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">TreeNode</span>&lt;<span class="title">K</span>, <span class="title">V</span>&gt; <span class="keyword">extends</span> <span class="title">LinkedHashMap</span>.<span class="title">Entry</span>&lt;<span class="title">K</span>, <span class="title">V</span>&gt;</span></span><br><span class="line"><span class="class">    </span>&#123;</span><br><span class="line">        TreeNode&lt;K, V&gt; parent; <span class="comment">// red-black tree links</span></span><br><span class="line">        TreeNode&lt;K, V&gt; left;</span><br><span class="line">        TreeNode&lt;K, V&gt; right;</span><br><span class="line">        TreeNode&lt;K, V&gt; prev; <span class="comment">// needed to unlink next upon deletion</span></span><br><span class="line">        <span class="keyword">boolean</span> red;</span><br><span class="line"></span><br><span class="line">        TreeNode(<span class="keyword">int</span> hash, K key, V val, Node&lt;K, V&gt; next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">super</span>(hash, key, val, next);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="function"><span class="keyword">final</span> <span class="keyword">void</span> <span class="title">treeify</span><span class="params">(Node&lt;K,V&gt;[] tab)</span></span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            <span class="comment">// ......</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">static</span> &lt;K,V&gt; <span class="function">TreeNode&lt;K,V&gt; <span class="title">balanceInsertion</span><span class="params">(TreeNode&lt;K,V&gt; root, TreeNode&lt;K,V&gt; x)</span></span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            <span class="comment">// ......</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">static</span> &lt;K,V&gt; <span class="function">TreeNode&lt;K,V&gt; <span class="title">rotateLeft</span><span class="params">(TreeNode&lt;K,V&gt; root, TreeNode&lt;K,V&gt; p)</span></span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            <span class="comment">// ......</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">static</span> &lt;K,V&gt; <span class="function">TreeNode&lt;K,V&gt; <span class="title">rotateRight</span><span class="params">(TreeNode&lt;K,V&gt; root, TreeNode&lt;K,V&gt; p)</span></span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            <span class="comment">// ......</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// ......其余方法省略</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
     
         <div class="post-more-div">
             <a href="/posts/f3f77c2/" class="post-more waves-button">
@@ -648,55 +725,12 @@
 
         </li>
     
-        <li class="post-list-item fade">
-            <article id="post-little-love-462"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/834277a6/">小情话第四百六十二则</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2021-07-14 23:46:10" datetime="2021-07-14T15:46:10.000Z"  itemprop="datePublished">2021-07-14</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        这个文章-博主不想让其他人看见哟~
-    
-        <div class="post-more-div">
-            <a href="/posts/834277a6/" class="post-more waves-button">
-                阅读全文 »
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Little-Love/" rel="tag">Little Love</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
     </ul>
 
     
 <nav id="page-nav">
     <div class="inner">
-    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/30/">30</a><a class="extend next" rel="next" href="/page/3/">下一页</a>
+    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/31/">31</a><a class="extend next" rel="next" href="/page/3/">下一页</a>
     </div>
 </nav>
 
