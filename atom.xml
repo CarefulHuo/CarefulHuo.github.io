@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2021-10-22T05:59:11.982Z</updated>
+  <updated>2021-10-22T06:01:26.210Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
@@ -17,16 +17,16 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>win10 jdk 版本切换</title>
+    <title>win10 Jdk 版本切换</title>
     <link href="https://carefulhuo.github.io/posts/db12e1ad/"/>
     <id>https://carefulhuo.github.io/posts/db12e1ad/</id>
     <published>2021-10-22T05:27:06.000Z</published>
-    <updated>2021-10-22T05:59:11.982Z</updated>
+    <updated>2021-10-22T06:01:26.210Z</updated>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;环境信息&quot;&gt;&lt;a href=&quot;#环境信息&quot; class=&quot;headerlink&quot; title=&quot;环境信息&quot;&gt;&lt;/a&gt;环境信息&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;系统&lt;/strong&gt;：win10&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;jdk&lt;/strong&gt;：7、8、 11&lt;/p&gt;
+      &lt;h4 id=&quot;环境信息&quot;&gt;&lt;a href=&quot;#环境信息&quot; class=&quot;headerlink&quot; title=&quot;环境信息&quot;&gt;&lt;/a&gt;环境信息&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;系统&lt;/strong&gt;：Win 10&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;jdk&lt;/strong&gt;：7、8、11&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;安装方式&lt;/strong&gt;：可执行文件安装(exe 格式)  &lt;/p&gt;
     
     </summary>
