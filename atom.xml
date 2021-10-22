@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2021-10-22T05:21:43.319Z</updated>
+  <updated>2021-10-22T05:59:11.982Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>win10 jdk 版本切换</title>
+    <link href="https://carefulhuo.github.io/posts/db12e1ad/"/>
+    <id>https://carefulhuo.github.io/posts/db12e1ad/</id>
+    <published>2021-10-22T05:27:06.000Z</published>
+    <updated>2021-10-22T05:59:11.982Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;环境信息&quot;&gt;&lt;a href=&quot;#环境信息&quot; class=&quot;headerlink&quot; title=&quot;环境信息&quot;&gt;&lt;/a&gt;环境信息&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;系统&lt;/strong&gt;：win10&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;jdk&lt;/strong&gt;：7、8、 11&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安装方式&lt;/strong&gt;：可执行文件安装(exe 格式)  &lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Tools" scheme="https://carefulhuo.github.io/tags/Tools/"/>
+    
+  </entry>
   
   <entry>
     <title>小情话第五百二十五则</title>
@@ -400,27 +421,6 @@
     <id>https://carefulhuo.github.io/posts/f5a7e8ee/</id>
     <published>2021-09-18T05:09:33.000Z</published>
     <updated>2021-09-18T05:22:55.911Z</updated>
-    
-    <summary type="html">
-    
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
-    
-    
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
-    
-    
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小情话第五百零六则</title>
-    <link href="https://carefulhuo.github.io/posts/27a79f71/"/>
-    <id>https://carefulhuo.github.io/posts/27a79f71/</id>
-    <published>2021-09-17T04:54:39.000Z</published>
-    <updated>2021-09-17T05:48:27.451Z</updated>
     
     <summary type="html">
     

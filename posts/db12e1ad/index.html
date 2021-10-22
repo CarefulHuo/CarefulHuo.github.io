@@ -6,13 +6,13 @@
     
     
     
-    <title>小情话第五百二十五则 | huowy&#39;blog</title>
+    <title>win10 jdk 版本切换 | huowy&#39;blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
     
     
-    <meta name="keywords" content="Little Love">
+    <meta name="keywords" content="Tools">
     
     
 
@@ -48,18 +48,20 @@
 
 
     
-    <meta name="description" content="这个文章-博主不想让其他人看见哟~">
+    <meta name="description" content="环境信息系统：win10 jdk：7、8、 11 安装方式：可执行文件安装(exe 格式)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小情话第五百二十五则">
-<meta property="og:url" content="https://carefulhuo.github.io/posts/5efabbef/index.html">
+<meta property="og:title" content="win10 jdk 版本切换">
+<meta property="og:url" content="https://carefulhuo.github.io/posts/db12e1ad/index.html">
 <meta property="og:site_name" content="huowy&#39;blog">
-<meta property="og:description" content="这个文章-博主不想让其他人看见哟~">
+<meta property="og:description" content="环境信息系统：win10 jdk：7、8、 11 安装方式：可执行文件安装(exe 格式)">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-10-22T05:12:00.000Z">
-<meta property="article:modified_time" content="2021-10-22T05:21:43.319Z">
+<meta property="og:image" content="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/0dca60767fa0e3e89547e77842eaef4.png">
+<meta property="article:published_time" content="2021-10-22T05:27:06.000Z">
+<meta property="article:modified_time" content="2021-10-22T05:59:11.982Z">
 <meta property="article:author" content="huowy">
-<meta property="article:tag" content="博客文章密码">
+<meta property="article:tag" content="Tools">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/0dca60767fa0e3e89547e77842eaef4.png">
     
         <link rel="alternate" type="application/atom+xml" title="huowy&#39;blog" href="/atom.xml">
     
@@ -168,7 +170,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">小情话第五百二十五则</div>
+        <div class="flex-col header-title ellipsis">win10 jdk 版本切换</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -205,20 +207,28 @@
 
 <div class="container body-wrap">
     
-<article id="post-little-love-525"
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#环境信息"><span class="post-toc-number">1.</span> <span class="post-toc-text">环境信息</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#切换步骤"><span class="post-toc-number">2.</span> <span class="post-toc-text">切换步骤</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-jdk-安装后，一般我们会手动添加-JAVA-HOME-系统环境变量，然后将-JAVA-HOME-bin-添加到系统环境变量-Path中，如图所示"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1.  jdk 安装后，一般我们会手动添加  JAVA_HOME 系统环境变量，然后将 %JAVA_HOME%\bin 添加到系统环境变量 Path中，如图所示</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-检查以下目录是否包含-java-exe、javaw-exe、javaws-exe-三个文件，包含的话，可删除，也可不删除"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2. 检查以下目录是否包含 java.exe、javaw.exe、javaws.exe 三个文件，包含的话，可删除，也可不删除</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#3-修改系统环境变量-Path-的值，将-JAVA-HOME-bin-值移动到最上方，或-第二步目录上方即可"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">3. 修改系统环境变量 Path 的值，将  %JAVA_HOME%\bin 值移动到最上方，或 第二步目录上方即可</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#4-修改-JAVA-HOME-的值，进行-jdk-版本切换"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">4. 修改 JAVA_HOME 的值，进行 jdk 版本切换</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#5-打开-PowerShell-命令提示符-验证版本是否切换成功"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">5. 打开 PowerShell &#x2F; 命令提示符 验证版本是否切换成功</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+   
+<article id="post-jdk-switch"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">小情话第五百二十五则</h1>
+        <h1 class="post-card-title">win10 jdk 版本切换</h1>
         <div class="post-meta">
             <i class="icon icon-lg icon-calendar-o"></i>
             发表于
-            <time class="post-time" title="2021-10-22 13:12:00" datetime="2021-10-22T05:12:00.000Z"  itemprop="datePublished">2021-10-22</time>
+            <time class="post-time" title="2021-10-22 13:27:06" datetime="2021-10-22T05:27:06.000Z"  itemprop="datePublished">2021-10-22</time>
 
             <br id="mybreak"/>
             
-	<i class="icon icon-lg icon-folder-o"></i>
-	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/">程序员的浪漫</a></li></ul>
+<script>
+	mybreak.style="display:none";
+</script>
 
 
             <i>·</i>
@@ -234,27 +244,39 @@
             阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">输入密码，查看文章。</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="567ee3472522efa172796474845abf563f95239191dec59a8001692d20bd610d">d6c407b4fb9fbed66c75795be454a79cc85e5ec80b84329f73b4d3ca84a0267eb953e9759eb8dc7ac814db197a26f1473ae55f17d23fed4927148f5af604acd8a6a46be2766f1da309261fbea3bead54d0e9e7644b9fc4a96df954bd598ea7f20296c30f21e17dbd8823cb30b5e0eb63c4a35cbbc7c6a8d9a2f70398ae637e23c453177e3d545cf71d11ef11753da03b3671330bcdb6a673e2eab27e9f01825f660f05806b7e23dbb7a65707a5c96782e315f1ae7dc1380429cd682d630d3056546cc9c5b5c1e8f4941d00781184f5c85c5badf7a4ba4307da36fb6d58101dffeeb1cb6e0b602a460f2e392c7d2bca8d03f2e6a7e8e02829dcb86c324fe188f7c2040dacc92af716cef9d82235e1adfdb626d6a3563289b6c864f37bb1b980014199b9cf21f67dc1fe44b5f9cc080d3d1be031a8d992a3519ea569e874ab180bc2fe401ee78d9580340ef8700d6b38bf802adcf7e91a595243fe206711ae511bf625ee0c086dc5725b5573c7131d1e38c73e473fa967412688e703b9199ffa03e9a6c0496619fee8e9c73f7f775dcdfef3b59c0921b1098a284450a7e9f5cda9b7decd8956912e2fb478e54a00833cf1f6afb8c5dc4ebb8444987e758794a3558163d45eae468adb1486c49ef063f9dfa87a7a5681a01598cc3e0802eec1eb993a33aadf237bb73af566767b958c02cbdda82e6eed25017b7a9bc2f3ae7eef4a821d6746442bc32db5e33a68775abf0fbc222c6da74ffebafb9e07931013b493ad09186609a27936ac976de5c8020b80b2d5ad2f1568234e135a03760f484b530752c073f7b6dca65313ff670a78dbf4de5c6bce76acc5212fd3e0f6ea6382a3231e1afe0a55ab4bb47eb1a0f0a01dea2e0cb31f401be89d0456ab3b82e97182647887c98838ba64f3e338ec72059847115a28c5171a94684ca6f46ead0f028996b56a9b9804e791adf24db52880518ac1055a0699f3cdcc44847a4dc916a0bcd7a451b8c716b8763c06408638d0942ee79ec7ab54f886a0a726d088c0205a3dd49077a9ea3814a0662d00bc479625b9bab3adc12f3785efd6632e49cda8a3bb528f0b05074bea049e68f60415d5a86f59e68ca9609cdc184378245e106d51c0e54a9e8ff9fb52cb98c230563ffe8a19cef6830eb9eb3034a9ee52a6da372d4858e67fe3c3d701d1db4344b8952061ad0d10d080550fa5acdca9703024ac73d96102613a5fbe463ce86186c24e4e2282611ecc976aa92aad56d632b31953e92dc2cc2c504de5dd8e95934c85401468cfdf5a148b96113d1c1568a6df89f6502416d11b7f836addbcc326e877ef52947c0e3fdafcd33af56be1682c51549ad6cff0527fac227a244406fc66f63d88758e180b1304ef661cd0113e25a75abaa24158f1e1cc6d72a4e7736d5ed8be0817b2ddf89a6e2256edbaee82e26c0ffb9ecce3f08e47956a9e9ff2b1b494a4c35341c23889ae18099677f089512d702163605eaaed5cb4e6b283e1f902ae0de78c429bf3e995d56f3064ea673535d736a884250d597009dbd0139f7b6fca560f10f47a043fe160a52c803e64a8f1f7cd703d02132ea5222dc9d2bbf6d074a7f46d8a5519c595303040a3cdfcd4b3615338a8c7f42599275b2edda91e7c46dd144e9da0ac60cf9b3c1d2ca676e25bce23de2a43eb2bc9a61827aac6208437dd5a308357c3eb697a726c6c25f7270eb8ee3fc1819f0a9f5da36e9f076e3acd8d9ea7c1e2c51757e82022e61c1b5b62413d118585cd9b8fc58b07ad7fb7707fed5c034e6e5cf09d22aa9af623ebcdc498d5e4bd49286088b6bd734acda1c41a88ac8b59f2328322df10c9af83e4778a7f521fce479b517edeeef830628c15cd8e5acf8b0c821df3ee44d60bc7e223204b44f9c740e2b00a9d7eefd309623c2a9796c6bfa2263eedf02946937bafd3f13b42c075953de0ee5d8ec518999aa4e1553b9b0b4e189bd7584fc2c4c442ac5e26c062bd0892d373f5e31801e3fe334970193154463c1df58eee9f0fc80b302a52c22fd841326de52d024d25a36a4306b0ef890a2bca3c4eccc774757366391455448bc5abae0d1bcbe880866e89b340734f734854f442c50e00711b3c4834516a29f57c7842e3e9fa0dfcd18fa60486e948cf3734ed10ba0cdcad988d8e4808e128774ea8dbeb106e993277123bde04f16a0d1e84bbe516d6c73c916b940a87b4b2d4cc96769886a0b46b4e9a7ea1cac7f5775e78ca0844444edd58dac71fd968c15074d355f3ce603396f2bd83b1afc632d74d2b2cd556cfdfcfc28c34a31bb6f17732ef316aaff5d327ccc42c8ce4c45405f6623628f29b657f18bf58db1037be9633</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+            <h4 id="环境信息"><a href="#环境信息" class="headerlink" title="环境信息"></a>环境信息</h4><p><strong>系统</strong>：win10</p>
+<p><strong>jdk</strong>：7、8、 11</p>
+<p><strong>安装方式</strong>：可执行文件安装(exe 格式)  </p>
+<a id="more"></a>
+
+<h4 id="切换步骤"><a href="#切换步骤" class="headerlink" title="切换步骤"></a>切换步骤</h4><h5 id="1-jdk-安装后，一般我们会手动添加-JAVA-HOME-系统环境变量，然后将-JAVA-HOME-bin-添加到系统环境变量-Path中，如图所示"><a href="#1-jdk-安装后，一般我们会手动添加-JAVA-HOME-系统环境变量，然后将-JAVA-HOME-bin-添加到系统环境变量-Path中，如图所示" class="headerlink" title="1.  jdk 安装后，一般我们会手动添加  JAVA_HOME 系统环境变量，然后将 %JAVA_HOME%\bin 添加到系统环境变量 Path中，如图所示"></a>1.  jdk 安装后，一般我们会手动添加  JAVA_HOME 系统环境变量，然后将 %JAVA_HOME%\bin 添加到系统环境变量 Path中，如图所示</h5><img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/0dca60767fa0e3e89547e77842eaef4.png"/>
+
+
+
+<h5 id="2-检查以下目录是否包含-java-exe、javaw-exe、javaws-exe-三个文件，包含的话，可删除，也可不删除"><a href="#2-检查以下目录是否包含-java-exe、javaw-exe、javaws-exe-三个文件，包含的话，可删除，也可不删除" class="headerlink" title="2. 检查以下目录是否包含 java.exe、javaw.exe、javaws.exe 三个文件，包含的话，可删除，也可不删除"></a>2. 检查以下目录是否包含 java.exe、javaw.exe、javaws.exe 三个文件，包含的话，可删除，也可不删除</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-- 64 位</span><br><span class="line">C:\Program Files\Common Files\Oracle\Java\javapath</span><br><span class="line"></span><br><span class="line">-- 32 位</span><br><span class="line">C:\Program Files (x86)\Common Files\Oracle\Java\javapath</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意</strong></p>
+<ol>
+<li>如果没有找到，可以去系统环境变量 Path 中，根据 Oracle\Java\javapath 这个关键词去找</li>
+<li>上述路径，是在安装 jdk 时，Oracle 自动配置的</li>
+</ol>
+<h5 id="3-修改系统环境变量-Path-的值，将-JAVA-HOME-bin-值移动到最上方，或-第二步目录上方即可"><a href="#3-修改系统环境变量-Path-的值，将-JAVA-HOME-bin-值移动到最上方，或-第二步目录上方即可" class="headerlink" title="3. 修改系统环境变量 Path 的值，将  %JAVA_HOME%\bin 值移动到最上方，或 第二步目录上方即可"></a>3. 修改系统环境变量 Path 的值，将  %JAVA_HOME%\bin 值移动到最上方，或 第二步目录上方即可</h5><h5 id="4-修改-JAVA-HOME-的值，进行-jdk-版本切换"><a href="#4-修改-JAVA-HOME-的值，进行-jdk-版本切换" class="headerlink" title="4. 修改 JAVA_HOME 的值，进行 jdk 版本切换"></a>4. 修改 JAVA_HOME 的值，进行 jdk 版本切换</h5><h5 id="5-打开-PowerShell-命令提示符-验证版本是否切换成功"><a href="#5-打开-PowerShell-命令提示符-验证版本是否切换成功" class="headerlink" title="5. 打开 PowerShell / 命令提示符 验证版本是否切换成功"></a>5. 打开 PowerShell / 命令提示符 验证版本是否切换成功</h5><p><strong>注意</strong></p>
+<ol>
+<li>修改完 JAVA_HOME  的值之后，如果之前打开过 PowerShell / 命令提示符 窗口，而且没有关闭，需要重新打开 PowerShell / 命令提示符</li>
+</ol>
+
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2021-10-22T05:21:43.319Z" itemprop="dateUpdated">2021-10-22 13:21:43</time>
+    最后更新：<time datetime="2021-10-22T05:59:11.982Z" itemprop="dateUpdated">2021-10-22 13:59:11</time>
 </span>
 
 
         
-        原文链接：<a href="/posts/5efabbef/" target="_blank" rel="external">https://carefulhuo.github.io/posts/5efabbef/</a>
+        原文链接：<a href="/posts/db12e1ad/" target="_blank" rel="external">https://carefulhuo.github.io/posts/db12e1ad/</a>
         
     </div>
     <footer>
@@ -276,7 +298,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Little-Love/" rel="tag">Little Love</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tools/" rel="tag">Tools</a></li></ul>
 
 
             
@@ -286,7 +308,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/5efabbef/&title=《小情话第五百二十五则》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/db12e1ad/&title=《win10 jdk 版本切换》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -296,22 +318,24 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/5efabbef/&title=《小情话第五百二十五则》 — huowy'blog&source=这个文章-博主不想让其他人看见哟~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/db12e1ad/&title=《win10 jdk 版本切换》 — huowy'blog&source=环境信息系统：win10
+jdk：7、8、 11
+安装方式：可执行文件安装(exe 格式)  " data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/5efabbef/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/db12e1ad/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《小情话第五百二十五则》 — huowy'blog&url=https://carefulhuo.github.io/posts/5efabbef/&via=https://carefulhuo.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《win10 jdk 版本切换》 — huowy'blog&url=https://carefulhuo.github.io/posts/db12e1ad/&via=https://carefulhuo.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/5efabbef/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/db12e1ad/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -331,21 +355,13 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/posts/db12e1ad/" id="post-prev" class="post-nav-link">
-        <h4 class="title" >
-          上一篇：win10 jdk 版本切换
-        </h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/posts/31647ea8/" id="post-next" class="post-nav-link">
-        <h4 class="title" data-hover="下一篇：小情话第五百二十四则">下一篇：小情话第五百二十四则</h4>
+      <a href="/posts/5efabbef/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：小情话第五百二十五则">下一篇：小情话第五百二十五则</h4>
       </a>
     </div>
   
@@ -461,7 +477,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/5efabbef/&title=《小情话第五百二十五则》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/db12e1ad/&title=《win10 jdk 版本切换》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -471,22 +487,24 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/5efabbef/&title=《小情话第五百二十五则》 — huowy'blog&source=这个文章-博主不想让其他人看见哟~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/db12e1ad/&title=《win10 jdk 版本切换》 — huowy'blog&source=环境信息系统：win10
+jdk：7、8、 11
+安装方式：可执行文件安装(exe 格式)  " data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/5efabbef/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/db12e1ad/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《小情话第五百二十五则》 — huowy'blog&url=https://carefulhuo.github.io/posts/5efabbef/&via=https://carefulhuo.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《win10 jdk 版本切换》 — huowy'blog&url=https://carefulhuo.github.io/posts/db12e1ad/&via=https://carefulhuo.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/5efabbef/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/db12e1ad/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -497,7 +515,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p class="wechatshare">扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMElEQVR42u3a0WrEMAxE0f3/n06hr228dyTvgpXrp5KGJIfC1LL0euF1/a67638XuXN9z+sTS4YMGccyruVav+DuHnIn+S35NhkyZDyHsQ5ZHoVXuAgD/QOQIUOGjJuIJEHJN53rZ8qQIUNGjUGQaVkrQ4YMGZ0iluB5jJIC+CO1uAwZMg5kpI2Bb/78wf6GDBkyDmHUjsZ4jPKNIA/Zf54jQ4aM0QxeTPLNX+1ptXSNa2IZMmQcyOClI28J8FDmrYU33yBDhozRDH7QX0u2veMa6DtlyJAxlEGiLW1V1oYtamdoMmTImM2obenSRubeYYvbv4MMGTKGMtImZRqI6dazM64hQ4aMqQw+aNU/COuMWbx5pgwZMkYzauMO/FCs1hBdX0e1uAwZMsYxOsdqaciSz+WtBRkyZDyB0S8mOwf9/KPRzIgMGTKGMvjh+66XpdvNoOiVIUPGUAY/6uLh2984bi5cZciQcTiDvJ5fqTU701aBDBkynskgAZcexnWao8WWpwwZMoYyePB1Stwg9XEpK0OGjCcz+jFK4pVggmaqDBkyRjPSlQ5P9MfCeBzLkCFjKuMKV+31na0nakvIkCFjNGNX1KalaYeavleGDBkzGLzFyOOPB2I6HPamhSlDhozRjDQEeXuy/xxUi8uQIUMGiMVdcVxsG8iQIUPGzYvX13nsps2GbYErQ4aMoxhpEZtu3Xi8FtsVMmTIGM2IN2Glk67+UMXmaREZMmScwfgBdgbWLMve1/EAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACM0lEQVR42u3aS26EMBAFwLn/pSdSthHmdRsi2S5WI0DgYtHj/nw+8fH9Pa7O/z2SO8f3fN44MDAwlmV8h8d4Eck9V3cmV5O1YWBgnMMYB9kkXCYvzj9HvjYMDAyMcYhMAnS+6RzzMDAwMHqMHJmntRgYGBgzSewMMj/zei6OgYGxIKPaGPjP3y/2NzAwMBZh9EpjvWJcnu6WV4WBgbE1I08mq22D6tN60bWcE2NgYCzIqI5W5ElsNZj2Rjcu/zcwMDC2YyQls3y5ybJ6Oenl58PAwDiM8UZBPy/kVTedGBgY5zDmN3nlvHk6eb5MYjEwMLZjVAvx1aJbNemtbhBvim4YGBhbMJKF5sF3HBB7YxbRVQwMjK0Z48t5AE0wb7QwMTAwzmEkJbBqua3aGMjDceHTYGBgHMPoJZ8zbc7ysAUGBsYBjKeCYK/lWU1uLz8rBgbGAYz5zVm+oew9+ea/AgMDY1NGb5Cr+oSkLVptS2BgYJzDyBsD+flq+T7ZODZ3uBgYGFsw8mJ9r7WZND6r7YebmREMDIytGXlpbGaTV/1w0UfEwMDYmtEbyeotN98gYmBgYCQBt5kNPzS6kb8XAwPjBEYv1M5gZgY7eu/FwMDYg5EH2V66O1NcKwRZDAyMAxi9lDVpEkzNrOVvxMDAwIgbltVRjF7pLZoZwcDAwCiW2JI0NR8jezjgYmBgLMLI09SkDJe3MPPhs5skGQMDY2tGrzHQ2+T1Wp6vTItgYGCswfgBocllq0CmQFUAAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 
