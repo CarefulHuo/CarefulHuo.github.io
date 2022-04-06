@@ -6,13 +6,13 @@
     
     
     
-    <title>小情话第六百零三则 | huowy&#39;blog</title>
+    <title>Java 应用配置 GC 日志输出 | huowy&#39;blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
     
     
-    <meta name="keywords" content="Little Love">
+    <meta name="keywords" content="JVM">
     
     
 
@@ -48,18 +48,24 @@
 
 
     
-    <meta name="description" content="这个文章-博主不想让其他人看见哟~">
+    <meta name="description" content="Java 应用配置 GC日志输出文件GC 日志部分配置项基本 GC 日志信息 123-XX:+PrintGCDetails-XX:+PrintGCDateStamps-XX:+PrintGCTimeStamps  GC 后对象年龄分布信息 1-XX:+PrintTenuringDistribution    GC 后打印GC前后的堆数据 1-XX:+PrintHeapAtGC    GC会产生暂停">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小情话第六百零三则">
-<meta property="og:url" content="https://carefulhuo.github.io/posts/5e4fc4e7/index.html">
+<meta property="og:title" content="Java 应用配置 GC 日志输出">
+<meta property="og:url" content="https://carefulhuo.github.io/posts/682caf67/index.html">
 <meta property="og:site_name" content="huowy&#39;blog">
-<meta property="og:description" content="这个文章-博主不想让其他人看见哟~">
+<meta property="og:description" content="Java 应用配置 GC日志输出文件GC 日志部分配置项基本 GC 日志信息 123-XX:+PrintGCDetails-XX:+PrintGCDateStamps-XX:+PrintGCTimeStamps  GC 后对象年龄分布信息 1-XX:+PrintTenuringDistribution    GC 后打印GC前后的堆数据 1-XX:+PrintHeapAtGC    GC会产生暂停">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-06T05:04:25.000Z">
-<meta property="article:modified_time" content="2022-04-06T05:51:32.048Z">
+<meta property="og:image" content="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/4a6731f8d33bb2a861ec0dd2727f3a2.png">
+<meta property="og:image" content="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/184987aa667d55b686acb3ac312669d.png">
+<meta property="og:image" content="c:/Users/hwy/AppData/Roaming/Typora/typora-user-images/image-20220406155025905.png">
+<meta property="og:image" content="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/36ed7b2837e7c8b568229589c10a22a.png">
+<meta property="og:image" content="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/b256c20ae534d22eddba310b24ccb59.png">
+<meta property="article:published_time" content="2022-04-06T07:32:58.000Z">
+<meta property="article:modified_time" content="2022-04-06T08:28:37.000Z">
 <meta property="article:author" content="huowy">
-<meta property="article:tag" content="Little Love">
+<meta property="article:tag" content="JVM">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/4a6731f8d33bb2a861ec0dd2727f3a2.png">
     
         <link rel="alternate" type="application/atom+xml" title="huowy&#39;blog" href="/atom.xml">
     
@@ -168,7 +174,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">小情话第六百零三则</div>
+        <div class="flex-col header-title ellipsis">Java 应用配置 GC 日志输出</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -205,20 +211,27 @@
 
 <div class="container body-wrap">
     
-<article id="post-little-love-603"
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Java-应用配置-GC日志输出文件"><span class="post-toc-number">1.</span> <span class="post-toc-text">Java 应用配置 GC日志输出文件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#GC-日志部分配置项"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">GC 日志部分配置项</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#GC-日志输出格式"><span class="post-toc-number">2.</span> <span class="post-toc-text">GC 日志输出格式</span></a></li></ol>
+        </nav>
+    </aside>
+   
+<article id="post-JVMGC日志输出"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">小情话第六百零三则</h1>
+        <h1 class="post-card-title">Java 应用配置 GC 日志输出</h1>
         <div class="post-meta">
             <i class="icon icon-lg icon-calendar-o"></i>
             发表于
-            <time class="post-time" title="2022-04-06 13:04:25" datetime="2022-04-06T05:04:25.000Z"  itemprop="datePublished">2022-04-06</time>
+            <time class="post-time" title="2022-04-06 15:32:58" datetime="2022-04-06T07:32:58.000Z"  itemprop="datePublished">2022-04-06</time>
 
             <br id="mybreak"/>
             
 	<i class="icon icon-lg icon-folder-o"></i>
-	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/">程序员的浪漫</a></li></ul>
+	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/JVM/">JVM</a></li></ul>
 
 
             <i>·</i>
@@ -234,27 +247,71 @@
             阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">输入密码，查看文章。</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="c1fb58777c959ad5dc8aa570d1f57e9ea6a9154a7296acea9fbe7940527de2fe">a6308f5c54e43beb64d0fbf54b0a94c634c166dc3de9927cd0bb9d32c3a18f98ce0de84d9889623c32efc5eaaf932d558fe816d7d887802be076eebf3fd1717e944f15c3d5923ca37820cd86deae94357e2d66709c9a1e293ca9f4b57ad8b3c7b129f8bd7af0dac9ed8245c32f26575f90e5a596527fb45f7b9d1513e085790c6d8d90367c3b2c017ea329f0fae8776998f4c4efa92a2b82624b51d321301c4984f3a757cc3931a9f3f908241e5692c6dcd36c8b12c5f8c7425783a23fe9a2ffcac78c5548bb09e11baf9fa0106ef409b49d6a31348303c3be59b0945b7b8d926d50b3c576cb22dcf71cda98f3d94ae090187189a9714ba6aae936e7b460a9e51398457e8c0b002ef64029f3bc6adc6ebfff0db5f805cfc879d59cfac8f75b2ffd1151042964083e31458cd7f9175d3e336a3fd4d4af8e6494b5bdc1be1be3672287c30429accc88a576a0fa697952f2a952203844d0d59d5b6eaeb6c21ccb4d75da735ecd6b14725e9408e06da7067dfd1d20693d7fdd3abbe12427e3037eb29cf92bb16acf26e1d064b0226a6dfa09dd50da541d4f6011d066afafa7ec32a82e9a3aa28707761cca70900304a1c982e6290e6c805065dc48e0b74ff4ec46f45fdfdf7dc88c6cab052cdc29f9cb76cc8def4234c67d400c5168861a8932e075c004670226da46073c7c7f9c5a79f8da35e7a03d134b2408b0238e4c63070171f98f6c4e8b653e023c05cebe27ea20f132f289312fe0dee61913bb639242b96c3ff981c7ba50edad073ba2e997ea49aad6338d518515bc3a9677e94c1568aadab1677a8e1c008248ceced483a4e3e45c3c7c175062b4921eb43a26f9126cc79d74d42388696183f5c63e9f869b51127238c12efbfc3eec473cee5892c0fc70116d56c82ce482374453250760997c74487c30d4a0882836fca164f4c7427efb5f12e4dc073f9fe7c9d1d48800b466052d8b2145034962d818ce497a1feb4e66e04aa0c461bfbe89a3734a9a62f076e32fee70f821aa1756ca46c43c5729f48853afbd68b27f358498d9f4d905ad8af7e7eda168931359b8bf8eddf0e43a53d1bdb4e3a59bd90a39374fa138ac7849baf9f00ce889a12ebe14a351b9343b31653dfc763ef898401b758f3d1131ced2afd5ae76d7766768c366133c958882fdeed393bf7edba9b9610bf3e415e558294ce742dfff63c7afef43d0311dcc906579e214042636478af6069293a47a3ba42324ea8e277211f4750a3a7dfc69fe480ffbb6b6fdd1d69e1b082759ba425ebbec347e42a83aca9221e5b9bb9ee95a49d8f571e34634f84d15f746f1338b79d1c3a4eb5f6d1455330515f69d3579c2463389c566338f23d954114b91c25c6a86d79df00b5c31aeb917ed69d606070495ebb9ae78022bbf7f490ce96dc731936c30e9e8832187c7a4502707b869963a1be71f0459f308a07be6d236d9ffea476ac23f486d0ce2c9c5eed11baea9943281ad33a74d1b2d579e96594d4dd5e4b6a3f71949c6e64d74fedc48b35fa367d06f4cbbc75c3833abd0aa9864e32448bba626db1091efedd81bd9e563794f3a56e4dd7894e826e305b3400132810f9a572acd6e5ec1fe8998b01d45ae2bcaf9833d145568372cfbdbe5b91aa1d832b334fd6e960202f3108686da6db3e0cb5ce42a422f84995f43c8f1e7724d289c5e9d9aad22d77d227bd5f50b2f1d86df51b167352f4c319cc6be31319015fbea2da34447147e50b1463d9c706605cab244971c49055edaf8da1b9d9145fafa8ea65c16535b8624d4eb3e12b7a9571fc0bb3dd398efe510839d220cdb82efe88cd617cfa89fc53a42129baf975c044b764132efbb8fba847ee154991dfd6f520084a067a3787e61fcb351d01573f15f35a4b5ab2ea39e2325b13c39b3154a6e1b6f04bbc53ae410dc7634a7cd7cf2b36259fdcc48b4028ad7086e51209fc27ed9d2885dc46091a4ed464a9ec193a8f76d401e80d3266b18f30bbb35f612a7cf5692aed28a734c7e9eb2b0e08d266365c5d5b8d2cc8c11e86ed1351ec859651a0b63ed4ab311e1c4781bec739eec005c134b167536bc1834b460595c736ff7b6e506b3487f2192c68243cb01cb1e5f4801fb6419376886c374d87103cb089421f19754a628c5cec454659f04ef0089a443cb5177f82426e36a39d4118687693809718776f289949ca8790ed8e565e34d46fd4cf92b55346439397bf5543b05ccb32bf01d2097d845a4fb42b64c16dd8731093e5735792eb3dc8b361ac0c422ef92d3ae1e6bbe0a638de416e5985d359a384387eb990c4d4f3dd24c1318627f56724abea62dbfc93b81ee67a15d1203a5cc5eab7c557d61ffa495fe5e99a74fe8a58a6df38e3653c74d9851d53eb5ea271a14bef0bde35d84bbef1c7083d771388b965b9e629b6ce7a407df990141add39c7cf179d5acabb1a9b6b1028925c7f37231dc4c316fe0f8d7500eabb40175fedd20aa5a46d81d2361bc1119ad4e2798c23d27b7be425e5bc5e6b2432b9abef55f26f981d6a22f001f75b5e6be1a6120c1e417523eb2</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+            <h4 id="Java-应用配置-GC日志输出文件"><a href="#Java-应用配置-GC日志输出文件" class="headerlink" title="Java 应用配置 GC日志输出文件"></a>Java 应用配置 GC日志输出文件</h4><h5 id="GC-日志部分配置项"><a href="#GC-日志部分配置项" class="headerlink" title="GC 日志部分配置项"></a>GC 日志部分配置项</h5><p>基本 GC 日志信息</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-XX:+PrintGCDetails</span><br><span class="line">-XX:+PrintGCDateStamps</span><br><span class="line">-XX:+PrintGCTimeStamps</span><br></pre></td></tr></table></figure>
+
+<p>GC 后对象年龄分布信息</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:+PrintTenuringDistribution</span><br></pre></td></tr></table></figure>
+
+<img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/4a6731f8d33bb2a861ec0dd2727f3a2.png"/>
+
+<p>GC 后打印GC前后的堆数据</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:+PrintHeapAtGC</span><br></pre></td></tr></table></figure>
+
+<img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/184987aa667d55b686acb3ac312669d.png"/>
+
+<p>GC会产生暂停，打印 STW 时间(暂停时间)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:+PrintGCApplicationStoppedTime</span><br></pre></td></tr></table></figure>
+
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="C:\Users\hwy\AppData\Roaming\Typora\typora-user-images\image-20220406155025905.png" alt="image-20220406155025905" title="">
+                </div>
+                <div class="image-caption">image-20220406155025905</div>
+            </figure>
+
+<p>打印 safepoint 信息(进入STW阶段，需要找到一个合适的 safepoint )</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-XX:+PrintSafepointStatistics</span><br><span class="line">-XX:+PrintSafepointStatisticsCount=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/36ed7b2837e7c8b568229589c10a22a.png"/>
+
+<p>打印 Reference 信息 (查看强引用/弱引用/软引用/虚引用/finalize方法 是否存在问题)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:+PrintReferenceGC</span><br></pre></td></tr></table></figure>
+
+<img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/b256c20ae534d22eddba310b24ccb59.png"/>
+
+<h4 id="GC-日志输出格式"><a href="#GC-日志输出格式" class="headerlink" title="GC 日志输出格式"></a>GC 日志输出格式</h4><p>GC 日志输出的文件路径（%t 表示取当前时间作为文件名）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Xloggc:自定义路径/gc-%t.log</span><br></pre></td></tr></table></figure>
+
+<p>GC 日志文件分割</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:+UseGCLogFileRotation</span><br></pre></td></tr></table></figure>
+
+<p>GC 日志文件最多分割几个文件，超过从头开始写</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:NumberOfGcLogFiles=<span class="number">14</span></span><br></pre></td></tr></table></figure>
+
+<p>每个文件上限大小，超过就触发分割</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:GCLogFileSize=<span class="number">100</span>M</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2022-04-06T05:51:32.048Z" itemprop="dateUpdated">2022-04-06 13:51:32</time>
+    最后更新：<time datetime="2022-04-06T08:28:37.000Z" itemprop="dateUpdated">2022-04-06 16:28:37</time>
 </span>
 
 
         
-        原文链接：<a href="/posts/5e4fc4e7/" target="_blank" rel="external">https://carefulhuo.github.io/posts/5e4fc4e7/</a>
+        原文链接：<a href="/posts/682caf67/" target="_blank" rel="external">https://carefulhuo.github.io/posts/682caf67/</a>
         
     </div>
     <footer>
@@ -276,7 +333,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Little-Love/" rel="tag">Little Love</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JVM/" rel="tag">JVM</a></li></ul>
 
 
             
@@ -286,7 +343,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/5e4fc4e7/&title=《小情话第六百零三则》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/682caf67/&title=《Java 应用配置 GC 日志输出》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -296,22 +353,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/5e4fc4e7/&title=《小情话第六百零三则》 — huowy'blog&source=这个文章-博主不想让其他人看见哟~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/682caf67/&title=《Java 应用配置 GC 日志输出》 — huowy'blog&source=小布丁的成长日记" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/5e4fc4e7/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/682caf67/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《小情话第六百零三则》 — huowy'blog&url=https://carefulhuo.github.io/posts/5e4fc4e7/&via=https://carefulhuo.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Java 应用配置 GC 日志输出》 — huowy'blog&url=https://carefulhuo.github.io/posts/682caf67/&via=https://carefulhuo.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/5e4fc4e7/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/682caf67/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -331,21 +388,13 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/posts/682caf67/" id="post-prev" class="post-nav-link">
-        <h4 class="title" >
-          上一篇：Java 应用配置 GC 日志输出
-        </h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/posts/135167b5/" id="post-next" class="post-nav-link">
-        <h4 class="title" data-hover="下一篇：小情话第六百零二则">下一篇：小情话第六百零二则</h4>
+      <a href="/posts/5e4fc4e7/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：小情话第六百零三则">下一篇：小情话第六百零三则</h4>
       </a>
     </div>
   
@@ -461,7 +510,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/5e4fc4e7/&title=《小情话第六百零三则》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://carefulhuo.github.io/posts/682caf67/&title=《Java 应用配置 GC 日志输出》 — huowy'blog&pic=https://carefulhuo.github.io/img/huowy.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -471,22 +520,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/5e4fc4e7/&title=《小情话第六百零三则》 — huowy'blog&source=这个文章-博主不想让其他人看见哟~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://carefulhuo.github.io/posts/682caf67/&title=《Java 应用配置 GC 日志输出》 — huowy'blog&source=小布丁的成长日记" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/5e4fc4e7/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://carefulhuo.github.io/posts/682caf67/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《小情话第六百零三则》 — huowy'blog&url=https://carefulhuo.github.io/posts/5e4fc4e7/&via=https://carefulhuo.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Java 应用配置 GC 日志输出》 — huowy'blog&url=https://carefulhuo.github.io/posts/682caf67/&via=https://carefulhuo.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/5e4fc4e7/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://carefulhuo.github.io/posts/682caf67/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -497,7 +546,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p class="wechatshare">扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACM0lEQVR42u3aS46DQAwFwNz/0swBmIRnd2c0mOpVFCGgWFj+vV7xOU7n/P/5+t4/5/+3HQwMjNsyjo8nvyZ/ypnx+Xf0XAwMjAcw3j04CY5JCP78Wgn14p0xMDAwirfOYevPwsDAwKima0kAzYMsBgYGRrWITV4lTyKriea2WhwDA+OGjLxZ9ve/vzLfwMDAuBXjKJ71AWevGXfxVhgYGKMZeYDLE8fPYTpPE6sDUQwMjNmM9SxrPVhXl8y+kixiYGD8Y0aewFXbcHuXNi54GBgYQxm9AWSvJbdSBl9EVwwMjNGMPCxWA+56A666AoKBgfEERr4e0Vt92NWkW6rIMTAwbsvoNdTyojQJpvmo4O3TMTAwhjJ6jfuVdbHe/S8SSgwMjNGMlRBZTeaWZhdJmoiBgTGUkQN6xWc1HWwuW2BgYIxm5BeVO3bFT9bD/BJ2MTAwxjF6zbVdgbI5tahuamBgYAxi9NYsVhK+6vzx7afEwMAYzajGrmoSmYTs9XtiYGA8gZGH3eogMwmRR3wKOyMYGBhDGfkKxco4My+Mm8sWGBgYD2DkiVpy6zwpzJtuF4UrBgbGOMZRPNXwmi9e5J+p3KvDwMC4OWPXsLPabuuVxM11MQwMjBGMapOrF3CryV95FQMDA+MBjLy4ra5cVIPyhlocAwMDY1NRmofdQtMNAwMDo/iY/CV6he7FJBYDA2McI1+JSPArY9HmZ8LAwBjNqJaO1SXUXjjuDUcxMDDGMX4Axw3bGRhUB8YAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKElEQVR42u3aS27jQAwFQN//0g4w28Se99i2kVDVK8FRpC4tiObndovX/d96dP19PXpCfs/tHQsDA+PPMu5P18k9yYeYfaYfqBgYGBdgJEE2CYj3ciWM53vDwMDAeB4ik0DZHjoxMDAw3sFo//r8HgwMDIyTJPYkKc1/eXsujoGB8QcZ542B911/tL+BgYHxKxmz0tgsFCYhdbgrDAyM1Yw8mWzbBu3TZtG1zokxMDBWMGa/J0E2GSNrRzceBlwMDIxFjBeU48sSf97ULNoGGBgYqxl5eG0bmbNhi1klDQMD4zqMWUKbl9heNWwRfSAMDIx1jFkymQ9MzJqU7bgGBgbGVsYssCZJZs5o09ofnomBgbGacTLckGx01hBti3EYGBhXYLSNgbbZmSe0yXXUGMDAwFjEmD30M8W14bAFBgbGOkZ+UMtf1pbk8tJenQBjYGAsYuRB7T8Fr7LpmJ9e6wELDAyMdYz61rxYH5Tz2rdjYGBcmTFrWM4GL5JtzYbGMDAw9jFaa07KD4550B/OjGBgYKxj5CFvFsvzLSbpLgYGxhUY7TrZ7ofGwjAwMNYx7uWavb4NzXn6ioGBcQXGq0JtDp4Nos2CPgYGxiZG22JMXnzSCs33UHQzMDAwVjBmKWt7gDsvnD38LwwMDIwgLLbB+iQxfng0xMDAwIhffH6sbA+UGBgYV2C0QXOWgrbjF8VoLAYGxmpGfQgbVbpmd9ZFNwwMjG2ML3r4Zatu1VGDAAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
 
