@@ -1,441 +1,407 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>huowy&#39;blog</title>
+  <title>Huowy&#39;Blog</title>
   <icon>https://carefulhuo.github.io/icon.png</icon>
-  
-  <link href="/atom.xml" rel="self"/>
+  <subtitle>小布丁的成长日记</subtitle>
+  <link href="https://carefulhuo.github.io/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2022-05-18T05:09:35.956Z</updated>
+  <updated>2022-05-19T05:07:44.561Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
-    <name>huowy</name>
+    <name>Huowy</name>
     <email>hnzmdhwy@sina.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>小情话第六百二十八则</title>
+    <link href="https://carefulhuo.github.io/posts/22deca64.html"/>
+    <id>https://carefulhuo.github.io/posts/22deca64.html</id>
+    <published>2022-05-19T04:51:35.000Z</published>
+    <updated>2022-05-19T05:07:44.561Z</updated>
+    
+    
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
+    
+    
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    
+  </entry>
+  
+  <entry>
     <title>小情话第六百二十七则</title>
-    <link href="https://carefulhuo.github.io/posts/d5b5e227/"/>
-    <id>https://carefulhuo.github.io/posts/d5b5e227/</id>
+    <link href="https://carefulhuo.github.io/posts/d5b5e227.html"/>
+    <id>https://carefulhuo.github.io/posts/d5b5e227.html</id>
     <published>2022-05-18T04:53:00.000Z</published>
     <updated>2022-05-18T05:09:35.956Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百二十六则</title>
-    <link href="https://carefulhuo.github.io/posts/7b595b8/"/>
-    <id>https://carefulhuo.github.io/posts/7b595b8/</id>
+    <link href="https://carefulhuo.github.io/posts/7b595b8.html"/>
+    <id>https://carefulhuo.github.io/posts/7b595b8.html</id>
     <published>2022-05-17T05:02:44.000Z</published>
     <updated>2022-05-17T05:13:19.389Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百二十五则</title>
-    <link href="https://carefulhuo.github.io/posts/62bbde61/"/>
-    <id>https://carefulhuo.github.io/posts/62bbde61/</id>
+    <link href="https://carefulhuo.github.io/posts/62bbde61.html"/>
+    <id>https://carefulhuo.github.io/posts/62bbde61.html</id>
     <published>2022-05-16T05:18:30.000Z</published>
     <updated>2022-05-16T05:30:57.867Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百二十四则</title>
-    <link href="https://carefulhuo.github.io/posts/d251b26/"/>
-    <id>https://carefulhuo.github.io/posts/d251b26/</id>
+    <link href="https://carefulhuo.github.io/posts/d251b26.html"/>
+    <id>https://carefulhuo.github.io/posts/d251b26.html</id>
     <published>2022-05-13T04:58:07.000Z</published>
     <updated>2022-05-13T05:35:23.344Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百二十三则</title>
-    <link href="https://carefulhuo.github.io/posts/ba080243/"/>
-    <id>https://carefulhuo.github.io/posts/ba080243/</id>
+    <link href="https://carefulhuo.github.io/posts/ba080243.html"/>
+    <id>https://carefulhuo.github.io/posts/ba080243.html</id>
     <published>2022-05-11T04:45:27.000Z</published>
     <updated>2022-05-11T05:22:13.656Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百二十二则</title>
-    <link href="https://carefulhuo.github.io/posts/f716a111/"/>
-    <id>https://carefulhuo.github.io/posts/f716a111/</id>
+    <link href="https://carefulhuo.github.io/posts/f716a111.html"/>
+    <id>https://carefulhuo.github.io/posts/f716a111.html</id>
     <published>2022-05-10T04:46:26.000Z</published>
     <updated>2022-05-10T05:03:02.827Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百二十一则</title>
-    <link href="https://carefulhuo.github.io/posts/c7004dc9/"/>
-    <id>https://carefulhuo.github.io/posts/c7004dc9/</id>
+    <link href="https://carefulhuo.github.io/posts/c7004dc9.html"/>
+    <id>https://carefulhuo.github.io/posts/c7004dc9.html</id>
     <published>2022-05-09T04:55:37.000Z</published>
     <updated>2022-05-09T05:06:37.227Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百二十则</title>
-    <link href="https://carefulhuo.github.io/posts/f1e677d8/"/>
-    <id>https://carefulhuo.github.io/posts/f1e677d8/</id>
+    <link href="https://carefulhuo.github.io/posts/f1e677d8.html"/>
+    <id>https://carefulhuo.github.io/posts/f1e677d8.html</id>
     <published>2022-05-06T05:08:44.000Z</published>
     <updated>2022-05-06T05:35:43.672Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百一十九则</title>
-    <link href="https://carefulhuo.github.io/posts/1a43b274/"/>
-    <id>https://carefulhuo.github.io/posts/1a43b274/</id>
+    <link href="https://carefulhuo.github.io/posts/1a43b274.html"/>
+    <id>https://carefulhuo.github.io/posts/1a43b274.html</id>
     <published>2022-05-05T04:45:02.000Z</published>
     <updated>2022-05-05T05:06:56.246Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>spring事务</title>
-    <link href="https://carefulhuo.github.io/posts/7d41eccf/"/>
-    <id>https://carefulhuo.github.io/posts/7d41eccf/</id>
+    <link href="https://carefulhuo.github.io/posts/7d41eccf.html"/>
+    <id>https://carefulhuo.github.io/posts/7d41eccf.html</id>
     <published>2022-05-05T02:19:09.000Z</published>
-    <updated>2022-05-05T10:39:02.495Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h4&gt;&lt;p&gt;spring 有五个事务隔离级别：ISOLATION_DEFAULT、ISOLATION_READ_UNCOMMITTED、ISOLATION_READ_COMMITTED、ISOLATION_REPEATABLE_READ、ISOLATION_SERIALIZABLE&lt;/p&gt;
-&lt;p&gt;第一种是 Spring 默认使用 DB设置的事务隔离级别，后面四种事务隔离级别跟 Mysql 的事务隔离级别一致，下面就类比着 Mysql 的事务隔离级别，进行分析！！！&lt;/p&gt;
-    
-    </summary>
+    <updated>2022-05-18T13:13:31.435Z</updated>
     
     
-      <category term="Spring" scheme="https://carefulhuo.github.io/categories/Spring/"/>
+    <summary type="html">&lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h4&gt;&lt;p&gt;spring 有五个事务隔离级别：ISOLATION_DEFAULT、ISOLATION_READ_UNCOMMITTED、ISOLATION_READ_COMMITTED、ISOLATION_REPEATABLE_READ、ISOLATION_SERIALIZABLE&lt;/p&gt;
+&lt;p&gt;第一种是 Spring 默认使用 DB设置的事务隔离级别，后面四种事务隔离级别跟 Mysql 的事务隔离级别一致，下面就类比着 Mysql 的事务隔离级别，进行分析！！！&lt;/p&gt;</summary>
     
     
-      <category term="Spring" scheme="https://carefulhuo.github.io/tags/Spring/"/>
+    
+    <category term="Spring" scheme="https://carefulhuo.github.io/categories/Spring/"/>
+    
+    
+    <category term="Spring" scheme="https://carefulhuo.github.io/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百一十八则</title>
-    <link href="https://carefulhuo.github.io/posts/608e932b/"/>
-    <id>https://carefulhuo.github.io/posts/608e932b/</id>
+    <link href="https://carefulhuo.github.io/posts/608e932b.html"/>
+    <id>https://carefulhuo.github.io/posts/608e932b.html</id>
     <published>2022-04-28T05:19:58.000Z</published>
-    <updated>2022-05-05T02:24:02.294Z</updated>
+    <updated>2022-05-18T13:18:13.486Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;
+    <summary type="html">&lt;p&gt;</summary>
         
       
     
-    </summary>
     
     
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百一十七则</title>
-    <link href="https://carefulhuo.github.io/posts/97e5bb68/"/>
-    <id>https://carefulhuo.github.io/posts/97e5bb68/</id>
+    <link href="https://carefulhuo.github.io/posts/97e5bb68.html"/>
+    <id>https://carefulhuo.github.io/posts/97e5bb68.html</id>
     <published>2022-04-26T04:52:28.000Z</published>
     <updated>2022-04-26T05:20:09.979Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百一十六则</title>
-    <link href="https://carefulhuo.github.io/posts/45e5ccf7/"/>
-    <id>https://carefulhuo.github.io/posts/45e5ccf7/</id>
+    <link href="https://carefulhuo.github.io/posts/45e5ccf7.html"/>
+    <id>https://carefulhuo.github.io/posts/45e5ccf7.html</id>
     <published>2022-04-24T05:02:37.000Z</published>
     <updated>2022-04-24T05:15:45.694Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百一十五则</title>
-    <link href="https://carefulhuo.github.io/posts/20eb872e/"/>
-    <id>https://carefulhuo.github.io/posts/20eb872e/</id>
+    <link href="https://carefulhuo.github.io/posts/20eb872e.html"/>
+    <id>https://carefulhuo.github.io/posts/20eb872e.html</id>
     <published>2022-04-22T04:57:24.000Z</published>
     <updated>2022-04-22T05:28:54.081Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百一十四则</title>
-    <link href="https://carefulhuo.github.io/posts/4f754269/"/>
-    <id>https://carefulhuo.github.io/posts/4f754269/</id>
+    <link href="https://carefulhuo.github.io/posts/4f754269.html"/>
+    <id>https://carefulhuo.github.io/posts/4f754269.html</id>
     <published>2022-04-21T04:57:13.000Z</published>
     <updated>2022-04-21T05:15:26.893Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>Maven配置文件属性解析</title>
-    <link href="https://carefulhuo.github.io/posts/57464dbe/"/>
-    <id>https://carefulhuo.github.io/posts/57464dbe/</id>
+    <link href="https://carefulhuo.github.io/posts/57464dbe.html"/>
+    <id>https://carefulhuo.github.io/posts/57464dbe.html</id>
     <published>2022-04-20T11:24:09.000Z</published>
-    <updated>2022-04-20T13:56:29.771Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;前置信息&quot;&gt;&lt;a href=&quot;#前置信息&quot; class=&quot;headerlink&quot; title=&quot;前置信息&quot;&gt;&lt;/a&gt;前置信息&lt;/h4&gt;&lt;h5 id=&quot;Maven-版本：apache-maven-3-5-2&quot;&gt;&lt;a href=&quot;#Maven-版本：apache-maven-3-5-2&quot; class=&quot;headerlink&quot; title=&quot;Maven 版本：apache-maven-3.5.2&quot;&gt;&lt;/a&gt;Maven 版本：apache-maven-3.5.2&lt;/h5&gt;
-    
-    </summary>
+    <updated>2022-05-19T16:53:24.099Z</updated>
     
     
-      <category term="项目管理工具" scheme="https://carefulhuo.github.io/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    <summary type="html">&lt;h4 id=&quot;前置信息&quot;&gt;&lt;a href=&quot;#前置信息&quot; class=&quot;headerlink&quot; title=&quot;前置信息&quot;&gt;&lt;/a&gt;前置信息&lt;/h4&gt;&lt;h5 id=&quot;Maven-版本&quot;&gt;&lt;a href=&quot;#Maven-版本&quot; class=&quot;headerlink&quot; title=&quot;Maven 版本&quot;&gt;&lt;/a&gt;Maven 版本&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;apache-maven-3.5.2&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
-      <category term="Maven" scheme="https://carefulhuo.github.io/tags/Maven/"/>
+    
+    <category term="项目管理工具" scheme="https://carefulhuo.github.io/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Maven" scheme="https://carefulhuo.github.io/tags/Maven/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百一十三则</title>
-    <link href="https://carefulhuo.github.io/posts/f8585b0c/"/>
-    <id>https://carefulhuo.github.io/posts/f8585b0c/</id>
+    <link href="https://carefulhuo.github.io/posts/f8585b0c.html"/>
+    <id>https://carefulhuo.github.io/posts/f8585b0c.html</id>
     <published>2022-04-20T05:06:48.000Z</published>
     <updated>2022-04-20T05:17:54.170Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百一十二则</title>
-    <link href="https://carefulhuo.github.io/posts/b546f85e/"/>
-    <id>https://carefulhuo.github.io/posts/b546f85e/</id>
+    <link href="https://carefulhuo.github.io/posts/b546f85e.html"/>
+    <id>https://carefulhuo.github.io/posts/b546f85e.html</id>
     <published>2022-04-19T04:58:34.000Z</published>
     <updated>2022-04-19T05:27:56.133Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
   <entry>
     <title>小情话第六百一十一则</title>
-    <link href="https://carefulhuo.github.io/posts/85501486/"/>
-    <id>https://carefulhuo.github.io/posts/85501486/</id>
+    <link href="https://carefulhuo.github.io/posts/85501486.html"/>
+    <id>https://carefulhuo.github.io/posts/85501486.html</id>
     <published>2022-04-18T04:58:56.000Z</published>
     <updated>2022-04-18T05:14:38.372Z</updated>
     
-    <summary type="html">
     
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
+    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
     
     
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
+    
+    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
     
     
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小情话第六百一十则</title>
-    <link href="https://carefulhuo.github.io/posts/74631ad1/"/>
-    <id>https://carefulhuo.github.io/posts/74631ad1/</id>
-    <published>2022-04-15T05:03:31.000Z</published>
-    <updated>2022-04-15T05:18:25.301Z</updated>
-    
-    <summary type="html">
-    
-      这个文章-博主不想让其他人看见哟~
-    
-    </summary>
-    
-    
-      <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
-    
-    
-      <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
+    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
     
   </entry>
   
