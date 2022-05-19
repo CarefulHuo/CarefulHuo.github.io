@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="spring事务, Huowy&#39;Blog">
+    <meta name="keywords" content="Spring事务, Huowy&#39;Blog">
     <meta name="description" content="小布丁的成长日记">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -26,7 +26,7 @@
 </script>
 
         <title>
-            spring事务 | Huowy&#39;Blog
+            Spring事务 | Huowy&#39;Blog
         </title>
         <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
@@ -360,12 +360,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">spring事务</h1>
+                    <h1 class="description center-align post-title">Spring事务</h1>
                 </div>
             </div>
         </div>
@@ -542,7 +542,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>spring 有五个事务隔离级别：ISOLATION_DEFAULT、ISOLATION_READ_UNCOMMITTED、ISOLATION_READ_COMMITTED、ISOLATION_REPEATABLE_READ、ISOLATION_SERIALIZABLE</p>
+                <h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>Spring 有五个事务隔离级别：ISOLATION_DEFAULT、ISOLATION_READ_UNCOMMITTED、ISOLATION_READ_COMMITTED、ISOLATION_REPEATABLE_READ、ISOLATION_SERIALIZABLE</p>
 <p>第一种是 Spring 默认使用 DB设置的事务隔离级别，后面四种事务隔离级别跟 Mysql 的事务隔离级别一致，下面就类比着 Mysql 的事务隔离级别，进行分析！！！</p>
 <span id="more"></span>
 
@@ -590,13 +590,25 @@
 <h5 id="SERIALIZABLE"><a href="#SERIALIZABLE" class="headerlink" title="SERIALIZABLE"></a>SERIALIZABLE</h5><ul>
 <li>可串行化(<font color="red">不会出现</font>脏读、不可重复读，幻读)(隔离级别最高，并发性能最低)</li>
 </ul>
-<h5 id="读读操作-不会阻塞，两个读操作互不影响"><a href="#读读操作-不会阻塞，两个读操作互不影响" class="headerlink" title="读读操作(不会阻塞，两个读操作互不影响)"></a>读读操作(不会阻塞，两个读操作互不影响)</h5><img src="medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/ReadOrRead.png">
+<h5 id="读读操作"><a href="#读读操作" class="headerlink" title="读读操作"></a>读读操作</h5><ul>
+<li>不会阻塞，两个读操作互不影响</li>
+</ul>
+<img src="medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/ReadOrRead.png">
 
-<h6 id="读写操作-会产生阻塞，读操作提交之后，写操作才会执行"><a href="#读写操作-会产生阻塞，读操作提交之后，写操作才会执行" class="headerlink" title="读写操作(会产生阻塞，读操作提交之后，写操作才会执行)"></a>读写操作(会产生阻塞，读操作提交之后，写操作才会执行)</h6><img src="medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Read-Write.png">
+<h6 id="读写操作"><a href="#读写操作" class="headerlink" title="读写操作"></a>读写操作</h6><ul>
+<li>会产生阻塞，读操作提交之后，写操作才会执行</li>
+</ul>
+<img src="medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Read-Write.png">
 
-<h5 id="写读操作-会阻塞，写操作提交之后，读操作才会执行"><a href="#写读操作-会阻塞，写操作提交之后，读操作才会执行" class="headerlink" title="写读操作(会阻塞，写操作提交之后，读操作才会执行)"></a>写读操作(会阻塞，写操作提交之后，读操作才会执行)</h5><img src="medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Write-Read.png">
+<h5 id="写读操作"><a href="#写读操作" class="headerlink" title="写读操作"></a>写读操作</h5><ul>
+<li>会阻塞，写操作提交之后，读操作才会执行</li>
+</ul>
+<img src="medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Write-Read.png">
 
-<h5 id="写写操作-会阻塞，前面的写操作提交之后，后面的写操作才会执行"><a href="#写写操作-会阻塞，前面的写操作提交之后，后面的写操作才会执行" class="headerlink" title="写写操作(会阻塞，前面的写操作提交之后，后面的写操作才会执行)"></a>写写操作(会阻塞，前面的写操作提交之后，后面的写操作才会执行)</h5><img src="medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Write-Write.png">
+<h5 id="写写操作"><a href="#写写操作" class="headerlink" title="写写操作"></a>写写操作</h5><ul>
+<li>会阻塞，前面的写操作提交之后，后面的写操作才会执行</li>
+</ul>
+<img src="medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Write-Write.png">
 
 <h4 id="事务传播行为"><a href="#事务传播行为" class="headerlink" title="事务传播行为"></a>事务传播行为</h4><ul>
 <li>在 Spring-tx 的 jar 包中， TransactionDefinition 接口定义了七种事务传播行为：</li>

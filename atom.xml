@@ -207,14 +207,14 @@
   </entry>
   
   <entry>
-    <title>spring事务</title>
+    <title>Spring事务</title>
     <link href="https://carefulhuo.github.io/posts/7d41eccf.html"/>
     <id>https://carefulhuo.github.io/posts/7d41eccf.html</id>
     <published>2022-05-05T02:19:09.000Z</published>
-    <updated>2022-05-19T17:44:21.483Z</updated>
+    <updated>2022-05-19T17:51:34.295Z</updated>
     
     
-    <summary type="html">&lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h4&gt;&lt;p&gt;spring 有五个事务隔离级别：ISOLATION_DEFAULT、ISOLATION_READ_UNCOMMITTED、ISOLATION_READ_COMMITTED、ISOLATION_REPEATABLE_READ、ISOLATION_SERIALIZABLE&lt;/p&gt;
+    <summary type="html">&lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h4&gt;&lt;p&gt;Spring 有五个事务隔离级别：ISOLATION_DEFAULT、ISOLATION_READ_UNCOMMITTED、ISOLATION_READ_COMMITTED、ISOLATION_REPEATABLE_READ、ISOLATION_SERIALIZABLE&lt;/p&gt;
 &lt;p&gt;第一种是 Spring 默认使用 DB设置的事务隔离级别，后面四种事务隔离级别跟 Mysql 的事务隔离级别一致，下面就类比着 Mysql 的事务隔离级别，进行分析！！！&lt;/p&gt;</summary>
     
     
