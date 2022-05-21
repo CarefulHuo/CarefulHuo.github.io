@@ -16,6 +16,15 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y2BMG1SZ8"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3Y2BMG1SZ8');
+</script>
+
         <title>
             Huowy&#39;Blog
         </title>
@@ -34,9 +43,9 @@
 
         <script src="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 6.0.0">
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Huowy'Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Huowy'Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -109,22 +118,22 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/contact" class="waves-effect waves-light">
+    <a href="/friends" class="waves-effect waves-light">
       
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>留言</span>
+      <span>友链</span>
     </a>
     
   </li>
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/friends" class="waves-effect waves-light">
+    <a href="/contact" class="waves-effect waves-light">
       
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
-      <span>友链</span>
+      <span>留言</span>
     </a>
     
   </li>
@@ -226,22 +235,22 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/contact" class="waves-effect waves-light">
+		<a href="/friends" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-comments"></i>
+			    <i class="fa-fw fas fa-address-book"></i>
 			
-			留言
+			友链
 		</a>
           
         </li>
         
         <li class="m-nav-item">
 	  
-		<a href="/friends" class="waves-effect waves-light">
+		<a href="/contact" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-address-book"></i>
+			    <i class="fa-fw fas fa-comments"></i>
 			
-			友链
+			留言
 		</a>
           
         </li>
@@ -392,13 +401,6 @@
 
 
 <div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-        <div id="prev-cover" class="left waves-effect carousel-control">
-            <i class="icon fa fa-angle-left"></i>
-        </div>
-        <div id="next-cover" class="right waves-effect carousel-control">
-            <i class="icon fa fa-angle-right"></i>
-        </div>
     
 
     <div class="carousel-item red white-text bg-cover about-cover">
@@ -602,32 +604,11 @@ GC 后对象年龄分布信息
 
         let carouselIntervalId;
         
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
 
         function restartPlay() {
             
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
         };
 
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
         
     });
 </script>
@@ -636,6 +617,117 @@ GC 后对象年龄分布信息
 
 <main class="content">
 
+    
+    <div id="indexCard" class="index-card">
+        <div class="container ">
+            <div class="card">
+                <div class="card-content">
+                    
+
+                    
+
+                    
+
+                    
+                    <div id="recommend-sections" class="recommend">
+                        
+
+
+
+
+
+<div class="title"><i class="far fa-thumbs-up"></i>&nbsp;&nbsp;推荐文章</div>
+
+<div class="row">
+
+    
+    
+    <div class="col s12" >
+        
+            <div class="post-card" style="background-image: url('https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/16.jpg')">
+            
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                        
+                            <a href="/categories/JVM/" class="category">JVM</a>
+                        
+                    
+                </div>
+                <a href="/posts/682caf67.html">
+                    <h3 class="post-title">Java 应用配置 GC 日志输出</h3>
+                </a>
+                <p class="post-description">Java 应用配置 GC日志输出文件GC 日志部分配置项
+
+基本 GC 日志信息
+-XX:+PrintGCDetails
+-XX:+PrintGCDateStamps
+-</p>
+                <a href="/posts/682caf67.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
+                    <i class="icon far fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12 m6" data-aos="zoom-in-up">
+        
+            <div class="post-card" style="background-image: url('https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/11.jpg')">
+            
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                        
+                            <a href="/categories/SpringBoot/" class="category">SpringBoot</a>
+                        
+                    
+                </div>
+                <a href="/posts/dba1824b.html">
+                    <h3 class="post-title">SpringBoot使用Validator校验框架</h3>
+                </a>
+                <p class="post-description">Hibernate Validator 简介　　Hibernate Validator是Hibernate项目中的一个数据校验框架，是Bea</p>
+                <a href="/posts/dba1824b.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
+                    <i class="icon far fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12 m6" data-aos="zoom-in-up">
+        
+            <div class="post-card" style="background-image: url('https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/21.jpg')">
+            
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                        
+                            <a href="/categories/Spring/" class="category">Spring</a>
+                        
+                    
+                </div>
+                <a href="/posts/7d41eccf.html">
+                    <h3 class="post-title">Spring事务</h3>
+                </a>
+                <p class="post-description">简介Spring 有五个事务隔离级别：ISOLATION_DEFAULT、ISOLATION_READ_UNCOMMITTED、ISOLAT</p>
+                <a href="/posts/7d41eccf.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%)" target="_blank">
+                    <i class="icon far fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
     
 
     

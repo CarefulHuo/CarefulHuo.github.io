@@ -230,7 +230,7 @@
     <link href="https://carefulhuo.github.io/posts/7d41eccf.html"/>
     <id>https://carefulhuo.github.io/posts/7d41eccf.html</id>
     <published>2022-05-05T02:19:09.000Z</published>
-    <updated>2022-05-19T17:51:34.295Z</updated>
+    <updated>2022-05-21T14:34:59.053Z</updated>
     
     
     <summary type="html">&lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h4&gt;&lt;p&gt;Spring 有五个事务隔离级别：ISOLATION_DEFAULT、ISOLATION_READ_UNCOMMITTED、ISOLATION_READ_COMMITTED、ISOLATION_REPEATABLE_READ、ISOLATION_SERIALIZABLE&lt;/p&gt;
