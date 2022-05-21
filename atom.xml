@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Huowy&#39;Blog</title>
   <icon>https://carefulhuo.github.io/icon.png</icon>
-  <subtitle>小布丁的成长日记</subtitle>
+  <subtitle>Huowy&#39;Blog</subtitle>
   <link href="https://carefulhuo.github.io/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
