@@ -43,10 +43,10 @@
 
         <script src="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 6.0.0">
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Huowy'Blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Huowy'Blog" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</head>
 
 
 
@@ -515,14 +515,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.1k
+                    4.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    17 分
+                    19 分
                 </div>
                 
 
@@ -594,78 +594,78 @@
 </ul>
 </li>
 </ol>
-<h5 id="Node-内部类"><a href="#Node-内部类" class="headerlink" title="Node 内部类"></a>Node 内部类</h5><pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">Node</span><span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> <span class="token keyword">implements</span> <span class="token class-name">Map<span class="token punctuation">.</span>Entry</span><span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> <span class="token punctuation">{</span>
+<h5 id="Node-内部类"><a href="#Node-内部类" class="headerlink" title="Node 内部类"></a>Node 内部类</h5><pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">Node</span><span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> <span class="token keyword">implements</span> <span class="token class-name">Map<span class="token punctuation">.</span>Entry</span><span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">final</span> <span class="token keyword">int</span> hash<span class="token punctuation">;</span>
         <span class="token keyword">final</span> K key<span class="token punctuation">;</span>
         V value<span class="token punctuation">;</span>
-        Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> next<span class="token punctuation">;</span>
+        Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> next<span class="token punctuation">;</span>
 
-        <span class="token function">Node</span><span class="token punctuation">(</span><span class="token keyword">int</span> hash<span class="token punctuation">,</span> K key<span class="token punctuation">,</span> V value<span class="token punctuation">,</span> Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">Node</span><span class="token punctuation">(</span><span class="token keyword">int</span> hash<span class="token punctuation">,</span> K key<span class="token punctuation">,</span> V value<span class="token punctuation">,</span> Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> next<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token keyword">this</span><span class="token punctuation">.</span>hash <span class="token operator">=</span> hash<span class="token punctuation">;</span>
             <span class="token keyword">this</span><span class="token punctuation">.</span>key <span class="token operator">=</span> key<span class="token punctuation">;</span>
             <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> value<span class="token punctuation">;</span>
             <span class="token keyword">this</span><span class="token punctuation">.</span>next <span class="token operator">=</span> next<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
-        <span class="token keyword">public</span> <span class="token keyword">final</span> K <span class="token function">getKey</span><span class="token punctuation">(</span><span class="token punctuation">)</span>        <span class="token punctuation">{</span> <span class="token keyword">return</span> key<span class="token punctuation">;</span> <span class="token punctuation">}</span>
-        <span class="token keyword">public</span> <span class="token keyword">final</span> V <span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span>      <span class="token punctuation">{</span> <span class="token keyword">return</span> value<span class="token punctuation">;</span> <span class="token punctuation">}</span>
-        <span class="token keyword">public</span> <span class="token keyword">final</span> String <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> key <span class="token operator">+</span> <span class="token string">"="</span> <span class="token operator">+</span> value<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+        <span class="token keyword">public</span> <span class="token keyword">final</span> K <span class="token function">getKey</span><span class="token punctuation">(</span><span class="token punctuation">)</span>        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token keyword">return</span> key<span class="token punctuation">;</span> <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">public</span> <span class="token keyword">final</span> V <span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span>      <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token keyword">return</span> value<span class="token punctuation">;</span> <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">public</span> <span class="token keyword">final</span> String <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token keyword">return</span> key <span class="token operator">+</span> <span class="token string">"="</span> <span class="token operator">+</span> value<span class="token punctuation">;</span> <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
-        <span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">int</span> <span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">int</span> <span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token keyword">return</span> Objects<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span> <span class="token operator">^</span> Objects<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
-        <span class="token keyword">public</span> <span class="token keyword">final</span> V <span class="token function">setValue</span><span class="token punctuation">(</span>V newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">public</span> <span class="token keyword">final</span> V <span class="token function">setValue</span><span class="token punctuation">(</span>V newValue<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             V oldValue <span class="token operator">=</span> value<span class="token punctuation">;</span>
             value <span class="token operator">=</span> newValue<span class="token punctuation">;</span>
             <span class="token keyword">return</span> oldValue<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
-        <span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">boolean</span> <span class="token function">equals</span><span class="token punctuation">(</span>Object o<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">boolean</span> <span class="token function">equals</span><span class="token punctuation">(</span>Object o<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token keyword">if</span> <span class="token punctuation">(</span>o <span class="token operator">==</span> <span class="token keyword">this</span><span class="token punctuation">)</span>
                 <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
 
-            <span class="token keyword">return</span> o <span class="token keyword">instanceof</span> <span class="token class-name">Map<span class="token punctuation">.</span>Entry</span><span class="token operator">&lt;</span><span class="token operator">?</span><span class="token punctuation">,</span> <span class="token operator">?</span><span class="token operator">></span> e
+            <span class="token keyword">return</span> o <span class="token keyword">instanceof</span> <span class="token class-name">Map<span class="token punctuation">.</span>Entry</span><span class="token operator">&lt;</span><span class="token operator">?</span><span class="token punctuation">,</span> <span class="token operator">?</span><span class="token operator">&gt;</span> e
                     <span class="token operator">&amp;&amp;</span> Objects<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> e<span class="token punctuation">.</span><span class="token function">getKey</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
                     <span class="token operator">&amp;&amp;</span> Objects<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span> e<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
-<h5 id="TreeNode-内部类"><a href="#TreeNode-内部类" class="headerlink" title="TreeNode 内部类"></a>TreeNode 内部类</h5><pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">class</span> <span class="token class-name">TreeNode</span><span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">></span> <span class="token keyword">extends</span> <span class="token class-name">LinkedHashMap<span class="token punctuation">.</span>Entry</span><span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">></span>
-    <span class="token punctuation">{</span>
-        TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">></span> parent<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// red-black tree links</span>
-        TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">></span> left<span class="token punctuation">;</span>
-        TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">></span> right<span class="token punctuation">;</span>
-        TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">></span> prev<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// needed to unlink next upon deletion</span>
+<h5 id="TreeNode-内部类"><a href="#TreeNode-内部类" class="headerlink" title="TreeNode 内部类"></a>TreeNode 内部类</h5><pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">class</span> <span class="token class-name">TreeNode</span><span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">&gt;</span> <span class="token keyword">extends</span> <span class="token class-name">LinkedHashMap<span class="token punctuation">.</span>Entry</span><span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">&gt;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">&gt;</span> parent<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// red-black tree links</span>
+        TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">&gt;</span> left<span class="token punctuation">;</span>
+        TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">&gt;</span> right<span class="token punctuation">;</span>
+        TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">&gt;</span> prev<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// needed to unlink next upon deletion</span>
         <span class="token keyword">boolean</span> red<span class="token punctuation">;</span>
 
-        <span class="token function">TreeNode</span><span class="token punctuation">(</span><span class="token keyword">int</span> hash<span class="token punctuation">,</span> K key<span class="token punctuation">,</span> V val<span class="token punctuation">,</span> Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">></span> next<span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
+        <span class="token function">TreeNode</span><span class="token punctuation">(</span><span class="token keyword">int</span> hash<span class="token punctuation">,</span> K key<span class="token punctuation">,</span> V val<span class="token punctuation">,</span> Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">&gt;</span> next<span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token keyword">super</span><span class="token punctuation">(</span>hash<span class="token punctuation">,</span> key<span class="token punctuation">,</span> val<span class="token punctuation">,</span> next<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
-        <span class="token keyword">final</span> <span class="token keyword">void</span> <span class="token function">treeify</span><span class="token punctuation">(</span>Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span><span class="token punctuation">[</span><span class="token punctuation">]</span> tab<span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
+        <span class="token keyword">final</span> <span class="token keyword">void</span> <span class="token function">treeify</span><span class="token punctuation">(</span>Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span><span class="token punctuation">[</span><span class="token punctuation">]</span> tab<span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token comment" spellcheck="true">// ......</span>
-        <span class="token punctuation">}</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
-        <span class="token keyword">static</span> <span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> <span class="token function">balanceInsertion</span><span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> root<span class="token punctuation">,</span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> x<span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
+        <span class="token keyword">static</span> <span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> <span class="token function">balanceInsertion</span><span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> root<span class="token punctuation">,</span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> x<span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token comment" spellcheck="true">// ......</span>
-        <span class="token punctuation">}</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
-        <span class="token keyword">static</span> <span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> <span class="token function">rotateLeft</span><span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> root<span class="token punctuation">,</span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> p<span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
+        <span class="token keyword">static</span> <span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> <span class="token function">rotateLeft</span><span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> root<span class="token punctuation">,</span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> p<span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token comment" spellcheck="true">// ......</span>
-        <span class="token punctuation">}</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
-        <span class="token keyword">static</span> <span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> <span class="token function">rotateRight</span><span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> root<span class="token punctuation">,</span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> p<span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
+        <span class="token keyword">static</span> <span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> <span class="token function">rotateRight</span><span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> root<span class="token punctuation">,</span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> p<span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token comment" spellcheck="true">// ......</span>
-        <span class="token punctuation">}</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
         <span class="token comment" spellcheck="true">// ......其余方法省略</span>
-    <span class="token punctuation">}</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 <h5 id="HashMap中内部变量"><a href="#HashMap中内部变量" class="headerlink" title="HashMap中内部变量"></a>HashMap中内部变量</h5><pre class=" language-java"><code class="language-java">   <span class="token comment" spellcheck="true">/**
      * 默认桶的数量 为 16 必须是 2 的幂次方
@@ -696,7 +696,7 @@
     <span class="token comment" spellcheck="true">/**
      * 如果桶的数量小于 64 ，会先扩容，直至桶的数量超过 64
      * 这样是为了减少形成很满的桶，因为桶的数量越多，越不容易造成桶满
-     * 借鉴了 &lt;see>https://stackoverflow.com/questions/43911369/hashmap-java-8-implementation&lt;/see>
+     * 借鉴了 &lt;see&gt;https://stackoverflow.com/questions/43911369/hashmap-java-8-implementation&lt;/see&gt;
      */</span>
     <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> MIN_TREEIFY_CAPACITY <span class="token operator">=</span> <span class="token number">64</span><span class="token punctuation">;</span>
 </code></pre>
@@ -740,29 +740,29 @@
 </ol>
 <ul>
 <li><p>treeify()</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">final</span> <span class="token keyword">void</span> <span class="token function">treeify</span><span class="token punctuation">(</span>Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span><span class="token punctuation">[</span><span class="token punctuation">]</span> tab<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> root <span class="token operator">=</span> null<span class="token punctuation">;</span>
-          <span class="token keyword">for</span> <span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> x <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">,</span> next<span class="token punctuation">;</span> x <span class="token operator">!=</span> null<span class="token punctuation">;</span> x <span class="token operator">=</span> next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-              next <span class="token operator">=</span> <span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span><span class="token punctuation">)</span>x<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">final</span> <span class="token keyword">void</span> <span class="token function">treeify</span><span class="token punctuation">(</span>Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span><span class="token punctuation">[</span><span class="token punctuation">]</span> tab<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+          TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> root <span class="token operator">=</span> null<span class="token punctuation">;</span>
+          <span class="token keyword">for</span> <span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> x <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">,</span> next<span class="token punctuation">;</span> x <span class="token operator">!=</span> null<span class="token punctuation">;</span> x <span class="token operator">=</span> next<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+              next <span class="token operator">=</span> <span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span><span class="token punctuation">)</span>x<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
               x<span class="token punctuation">.</span>left <span class="token operator">=</span> x<span class="token punctuation">.</span>right <span class="token operator">=</span> null<span class="token punctuation">;</span>
-              <span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                 <span class="token comment" spellcheck="true">// 配置红黑树根节点</span>
                   x<span class="token punctuation">.</span>parent <span class="token operator">=</span> null<span class="token punctuation">;</span>
                   x<span class="token punctuation">.</span>red <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
                   root <span class="token operator">=</span> x<span class="token punctuation">;</span>
-              <span class="token punctuation">}</span>
-              <span class="token keyword">else</span> <span class="token punctuation">{</span>
+              <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+              <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                 <span class="token comment" spellcheck="true">// 存在根节点后，根据外层的for循环，知晓当前节点 x 的信息</span>
                 <span class="token comment" spellcheck="true">// 开始从上往下进行红黑树节点添加，以下的 for 循环是核心循环，进行节点添加</span>
                   K k <span class="token operator">=</span> x<span class="token punctuation">.</span>key<span class="token punctuation">;</span>
                   <span class="token keyword">int</span> h <span class="token operator">=</span> x<span class="token punctuation">.</span>hash<span class="token punctuation">;</span>
-                  Class<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">></span> kc <span class="token operator">=</span> null<span class="token punctuation">;</span>
+                  Class<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">&gt;</span> kc <span class="token operator">=</span> null<span class="token punctuation">;</span>
                   <span class="token comment" spellcheck="true">// for 循环是为了寻找一个空的节点位置，将元素放入</span>
-                  <span class="token keyword">for</span> <span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> p <span class="token operator">=</span> root<span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                  <span class="token keyword">for</span> <span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> p <span class="token operator">=</span> root<span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                     <span class="token comment" spellcheck="true">// for 循环中没有控制条件，需循环内部跳出</span>
                       <span class="token keyword">int</span> dir<span class="token punctuation">,</span> ph<span class="token punctuation">;</span>
                       K pk <span class="token operator">=</span> p<span class="token punctuation">.</span>key<span class="token punctuation">;</span>
-                      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>ph <span class="token operator">=</span> p<span class="token punctuation">.</span>hash<span class="token punctuation">)</span> <span class="token operator">></span> h<span class="token punctuation">)</span>
+                      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>ph <span class="token operator">=</span> p<span class="token punctuation">.</span>hash<span class="token punctuation">)</span> <span class="token operator">&gt;</span> h<span class="token punctuation">)</span>
                         <span class="token comment" spellcheck="true">// 节点的 Hash 值 大于 当前元素 Hash 值，放左节点</span>
                           dir <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
                       <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>ph <span class="token operator">&lt;</span> h<span class="token punctuation">)</span>
@@ -776,8 +776,8 @@
                         <span class="token comment" spellcheck="true">// 2. 如果可以，通过 compareComparables 方法进行比较</span>
                         <span class="token comment" spellcheck="true">// 判断条件中的方法没有分出胜负则使用此方法分出胜负</span>
                           dir <span class="token operator">=</span> <span class="token function">tieBreakOrder</span><span class="token punctuation">(</span>k<span class="token punctuation">,</span> pk<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                      TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> xp <span class="token operator">=</span> p<span class="token punctuation">;</span>
-                      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>p <span class="token operator">=</span> <span class="token punctuation">(</span>dir <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">?</span> p<span class="token punctuation">.</span>left <span class="token operator">:</span> p<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                      TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> xp <span class="token operator">=</span> p<span class="token punctuation">;</span>
+                      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>p <span class="token operator">=</span> <span class="token punctuation">(</span>dir <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">?</span> p<span class="token punctuation">.</span>left <span class="token operator">:</span> p<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                           x<span class="token punctuation">.</span>parent <span class="token operator">=</span> xp<span class="token punctuation">;</span>
                           <span class="token keyword">if</span> <span class="token punctuation">(</span>dir <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>
                               xp<span class="token punctuation">.</span>left <span class="token operator">=</span> x<span class="token punctuation">;</span>
@@ -786,27 +786,27 @@
                           <span class="token comment" spellcheck="true">// 维护红黑树添加节点后的结构</span>
                           root <span class="token operator">=</span> <span class="token function">balanceInsertion</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span>
                           <span class="token keyword">break</span><span class="token punctuation">;</span>
-                      <span class="token punctuation">}</span>
-                  <span class="token punctuation">}</span>
-              <span class="token punctuation">}</span>
-          <span class="token punctuation">}</span>
+                      <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+              <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+          <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">//Ensures that the given root is the first node of its bin</span>
         <span class="token comment" spellcheck="true">// 确保根节点在链表的第一个</span>
           <span class="token function">moveRootToFront</span><span class="token punctuation">(</span>tab<span class="token punctuation">,</span> root<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
+      <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 </li>
 <li><p>需要被插入的元素的key对象是否实现了 Comparable 接口</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> Class<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">></span> <span class="token function">comparableClassFor</span><span class="token punctuation">(</span>Object x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> Class<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">&gt;</span> <span class="token function">comparableClassFor</span><span class="token punctuation">(</span>Object x<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token comment" spellcheck="true">// 当前元素key 是否实现了 Comparable 接口</span>
-      <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token keyword">instanceof</span> <span class="token class-name">Comparable</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          Class<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">></span> c<span class="token punctuation">;</span> Type<span class="token punctuation">[</span><span class="token punctuation">]</span> ts<span class="token punctuation">,</span> as<span class="token punctuation">;</span> ParameterizedType p<span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token keyword">instanceof</span> <span class="token class-name">Comparable</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+          Class<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">&gt;</span> c<span class="token punctuation">;</span> Type<span class="token punctuation">[</span><span class="token punctuation">]</span> ts<span class="token punctuation">,</span> as<span class="token punctuation">;</span> ParameterizedType p<span class="token punctuation">;</span>
           <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>c <span class="token operator">=</span> x<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> String<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// bypass checks</span>
             <span class="token comment" spellcheck="true">// 如果 x 是字符串对象，直接返回，因为 String 实现了Comparable接口</span>
               <span class="token keyword">return</span> c<span class="token punctuation">;</span>
-          <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>ts <span class="token operator">=</span> c<span class="token punctuation">.</span><span class="token function">getGenericInterfaces</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>ts <span class="token operator">=</span> c<span class="token punctuation">.</span><span class="token function">getGenericInterfaces</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token comment" spellcheck="true">// 获取 x 实现了哪些接口，包含泛型接口(泛型信息)</span>
-              <span class="token keyword">for</span> <span class="token punctuation">(</span>Type t <span class="token operator">:</span> ts<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">for</span> <span class="token punctuation">(</span>Type t <span class="token operator">:</span> ts<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                   <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>t <span class="token keyword">instanceof</span> <span class="token class-name">ParameterizedType</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>
                       <span class="token punctuation">(</span><span class="token punctuation">(</span>p <span class="token operator">=</span> <span class="token punctuation">(</span>ParameterizedType<span class="token punctuation">)</span> t<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getRawType</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span>
                        Comparable<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>
@@ -817,38 +817,38 @@
                 <span class="token comment" spellcheck="true">// 如果该Comparable接口p只定义了一个泛型参数</span>
                 <span class="token comment" spellcheck="true">// 如果这一个泛型参数的类型就是c，那么返回c</span>
                       <span class="token keyword">return</span> c<span class="token punctuation">;</span>
-              <span class="token punctuation">}</span>
-          <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
+              <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+          <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+      <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
       <span class="token keyword">return</span> null<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 </li>
 <li><p>通过 Comparable 比较大小，确定节点位置</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">compareComparables</span><span class="token punctuation">(</span>Class<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">></span> kc<span class="token punctuation">,</span> Object k<span class="token punctuation">,</span> Object x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">compareComparables</span><span class="token punctuation">(</span>Class<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">&gt;</span> kc<span class="token punctuation">,</span> Object k<span class="token punctuation">,</span> Object x<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token comment" spellcheck="true">// 如果 x == null 或者 x 的实现类不是 comparableClassFor 获取的类，直接返回 0</span>
     <span class="token comment" spellcheck="true">// 如果 x != null 或者 x 的实现类是 comparableClassFor 获取的类</span>
     <span class="token comment" spellcheck="true">// 通过 Comparable 比较大小，返回比较结果</span>
       <span class="token keyword">return</span> <span class="token punctuation">(</span>x <span class="token operator">==</span> null <span class="token operator">||</span> x<span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> kc <span class="token operator">?</span> <span class="token number">0</span> <span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>Comparable<span class="token punctuation">)</span>k<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 </li>
 <li><p>插入节点后，平衡红黑树结构</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> <span class="token function">balanceInsertion</span><span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> root<span class="token punctuation">,</span>
-                                                  TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> <span class="token function">balanceInsertion</span><span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> root<span class="token punctuation">,</span>
+                                                  TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> x<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// 印证了之前说的新加入节点都是红色的</span>
         x<span class="token punctuation">.</span>red <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// xp x 的父节点</span>
         <span class="token comment" spellcheck="true">// xpp x 的祖父节点</span>
         <span class="token comment" spellcheck="true">// xppl x 的祖父的左节点</span>
         <span class="token comment" spellcheck="true">// xppr x 的祖父的右节点</span>
-          <span class="token keyword">for</span> <span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> xp<span class="token punctuation">,</span> xpp<span class="token punctuation">,</span> xppl<span class="token punctuation">,</span> xppr<span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>xp <span class="token operator">=</span> x<span class="token punctuation">.</span>parent<span class="token punctuation">)</span> <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">for</span> <span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> xp<span class="token punctuation">,</span> xpp<span class="token punctuation">,</span> xppl<span class="token punctuation">,</span> xppr<span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>xp <span class="token operator">=</span> x<span class="token punctuation">.</span>parent<span class="token punctuation">)</span> <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
               <span class="token comment" spellcheck="true">// 如果 x 的父节点是 null 说明 x 节点为 根节点</span>
               <span class="token comment" spellcheck="true">// 红黑树特性 根节点必须黑色</span>
                   x<span class="token punctuation">.</span>red <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
                   <span class="token keyword">return</span> x<span class="token punctuation">;</span>
-              <span class="token punctuation">}</span>
+              <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
               <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>xp<span class="token punctuation">.</span>red <span class="token operator">||</span> <span class="token punctuation">(</span>xpp <span class="token operator">=</span> xp<span class="token punctuation">.</span>parent<span class="token punctuation">)</span> <span class="token operator">==</span> null<span class="token punctuation">)</span>
                 <span class="token comment" spellcheck="true">// 进入 else 说明 x 不是根节点，</span>
                 <span class="token comment" spellcheck="true">// x 的父节点为黑色，可以在下面直接添加红色节点，直接返回根，</span>
@@ -858,9 +858,9 @@
             <span class="token comment" spellcheck="true">// 1. x 的父节点xp是红色的，</span>
             <span class="token comment" spellcheck="true">// 2. x 的祖父节点xpp不为空</span>
             <span class="token comment" spellcheck="true">// 这样就遇到两个红色节点相连的问题，所以必须经过颜色变换和双旋转</span>
-              <span class="token keyword">if</span> <span class="token punctuation">(</span>xp <span class="token operator">==</span> <span class="token punctuation">(</span>xppl <span class="token operator">=</span> xpp<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>xp <span class="token operator">==</span> <span class="token punctuation">(</span>xppl <span class="token operator">=</span> xpp<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                 <span class="token comment" spellcheck="true">// x 的父节点是 x 祖父节点的左节点</span>
-                  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>xppr <span class="token operator">=</span> xpp<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> xppr<span class="token punctuation">.</span>red<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>xppr <span class="token operator">=</span> xpp<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> xppr<span class="token punctuation">.</span>red<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                     <span class="token comment" spellcheck="true">// x 的祖父节点的右节点不是 null 且右节点是红色，则证明祖父节点的左节点也是红色</span>
                     <span class="token comment" spellcheck="true">// 因为红色节点下面不能再挂红色节点，所以需要将祖父节点的左右节点全部变成黑色，祖父节点变成红色(就是前面说的颜色变换)</span>
                       xppr<span class="token punctuation">.</span>red <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
@@ -869,33 +869,33 @@
                     <span class="token comment" spellcheck="true">// 为什么让 x = xpp ？因为 xpp 变成红色节点后可能与 xpp 的父节点发生冲突(两个红色节点相连)，</span>
                     <span class="token comment" spellcheck="true">// 就此形成了图示的第二种旋转，所以需要从下往上旋转</span>
                       x <span class="token operator">=</span> xpp<span class="token punctuation">;</span>
-                  <span class="token punctuation">}</span>
-                  <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                  <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                     <span class="token comment" spellcheck="true">// x 的祖父节点的右节点是 null 且右节点是黑色</span>
                     <span class="token comment" spellcheck="true">// 那么此时的结构位置就有两种情况</span>
-                    <span class="token comment" spellcheck="true">// 1. xpp->xp(xxp的左节点)->x(xp的右节点)</span>
-                      <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">==</span> xp<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token comment" spellcheck="true">// 1. xpp-&gt;xp(xxp的左节点)-&gt;x(xp的右节点)</span>
+                      <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">==</span> xp<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                         <span class="token comment" spellcheck="true">// 向左旋（图示的单旋转方式）注意进行左旋的节点是 x 的父节点</span>
                           root <span class="token operator">=</span> <span class="token function">rotateLeft</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> x <span class="token operator">=</span> xp<span class="token punctuation">)</span><span class="token punctuation">;</span>
                         <span class="token comment" spellcheck="true">// 将xp 的父节点执向 x 的祖父节点</span>
                           xpp <span class="token operator">=</span> <span class="token punctuation">(</span>xp <span class="token operator">=</span> x<span class="token punctuation">.</span>parent<span class="token punctuation">)</span> <span class="token operator">==</span> null <span class="token operator">?</span> null <span class="token operator">:</span> xp<span class="token punctuation">.</span>parent<span class="token punctuation">;</span>
-                      <span class="token punctuation">}</span>
-                      <span class="token comment" spellcheck="true">// 2. xpp->xp(xxp的左节点)->x(xp的左节点) 或者上面旋转后，也会形成这种结构</span>
-                      <span class="token keyword">if</span> <span class="token punctuation">(</span>xp <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                      <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                      <span class="token comment" spellcheck="true">// 2. xpp-&gt;xp(xxp的左节点)-&gt;x(xp的左节点) 或者上面旋转后，也会形成这种结构</span>
+                      <span class="token keyword">if</span> <span class="token punctuation">(</span>xp <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                         <span class="token comment" spellcheck="true">// x 的父节点变为黑色</span>
                           xp<span class="token punctuation">.</span>red <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-                          <span class="token keyword">if</span> <span class="token punctuation">(</span>xpp <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                          <span class="token keyword">if</span> <span class="token punctuation">(</span>xpp <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                             <span class="token comment" spellcheck="true">// x 的祖父节点变为红色</span>
                               xpp<span class="token punctuation">.</span>red <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
                               <span class="token comment" spellcheck="true">// 向右旋 （图示的单旋转方式）</span>
                               root <span class="token operator">=</span> <span class="token function">rotateRight</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> xpp<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                          <span class="token punctuation">}</span>
-                      <span class="token punctuation">}</span>
-                  <span class="token punctuation">}</span>
-              <span class="token punctuation">}</span>
-              <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                          <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                      <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+              <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+              <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                 <span class="token comment" spellcheck="true">// x 的父节点是祖父节点的右节点</span>
-                  <span class="token keyword">if</span> <span class="token punctuation">(</span>xppl <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> xppl<span class="token punctuation">.</span>red<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                  <span class="token keyword">if</span> <span class="token punctuation">(</span>xppl <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> xppl<span class="token punctuation">.</span>red<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                     <span class="token comment" spellcheck="true">// x 的祖父节点的左节点不是 null 且是红色节点</span>
                     <span class="token comment" spellcheck="true">// 那么 x 的父节点 肯定也是红色节点，这样就符合图示的第三种旋转</span>
                     <span class="token comment" spellcheck="true">// x 的祖父节点的左节点变成黑色节点，x 的父节点也变成黑色节点 ，x 的祖父节点变成红色节点</span>
@@ -905,42 +905,42 @@
                       <span class="token comment" spellcheck="true">// 为什么 x = xpp ? 因为 x 的祖父节点变成红色节点后，可能产生两个红色节点相连的冲突，即图示的第二种旋转</span>
                     <span class="token comment" spellcheck="true">// 所以将x = xpp ，进行从下而上的旋转</span>
                       x <span class="token operator">=</span> xpp<span class="token punctuation">;</span>
-                  <span class="token punctuation">}</span>
-                  <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                  <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                     <span class="token comment" spellcheck="true">// x 的祖父节点的左节点是 null 且是黑色节点，那么 x 的父节点肯定是黑色</span>
                     <span class="token comment" spellcheck="true">// 此时结构肯定有两种</span>
-                    <span class="token comment" spellcheck="true">// 1. xpp右->xp左->x</span>
-                      <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">==</span> xp<span class="token punctuation">.</span>left<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token comment" spellcheck="true">// 1. xpp右-&gt;xp左-&gt;x</span>
+                      <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">==</span> xp<span class="token punctuation">.</span>left<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                         <span class="token comment" spellcheck="true">// 向右旋</span>
                           root <span class="token operator">=</span> <span class="token function">rotateRight</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> x <span class="token operator">=</span> xp<span class="token punctuation">)</span><span class="token punctuation">;</span>
                           xpp <span class="token operator">=</span> <span class="token punctuation">(</span>xp <span class="token operator">=</span> x<span class="token punctuation">.</span>parent<span class="token punctuation">)</span> <span class="token operator">==</span> null <span class="token operator">?</span> null <span class="token operator">:</span> xp<span class="token punctuation">.</span>parent<span class="token punctuation">;</span>
-                      <span class="token punctuation">}</span>
-                      <span class="token comment" spellcheck="true">// 2. xpp右->xp右->x 或上述旋转后形成的该结构</span>
-                      <span class="token keyword">if</span> <span class="token punctuation">(</span>xp <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                      <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                      <span class="token comment" spellcheck="true">// 2. xpp右-&gt;xp右-&gt;x 或上述旋转后形成的该结构</span>
+                      <span class="token keyword">if</span> <span class="token punctuation">(</span>xp <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                           xp<span class="token punctuation">.</span>red <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-                          <span class="token keyword">if</span> <span class="token punctuation">(</span>xpp <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                          <span class="token keyword">if</span> <span class="token punctuation">(</span>xpp <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                               xpp<span class="token punctuation">.</span>red <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
                               <span class="token comment" spellcheck="true">// 向左旋</span>
                               root <span class="token operator">=</span> <span class="token function">rotateLeft</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> xpp<span class="token punctuation">)</span><span class="token punctuation">;</span>
-                          <span class="token punctuation">}</span>
-                      <span class="token punctuation">}</span>
-                  <span class="token punctuation">}</span>
-              <span class="token punctuation">}</span>
-          <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
+                          <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                      <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+              <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+          <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+      <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 </li>
 <li><p>rotateLeft</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> <span class="token function">rotateLeft</span><span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> root<span class="token punctuation">,</span>
-                                            TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> p<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> <span class="token function">rotateLeft</span><span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> root<span class="token punctuation">,</span>
+                                            TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> p<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// root 表示根节点</span>
         <span class="token comment" spellcheck="true">// p 表示 x 的父节点 xp</span>
         <span class="token comment" spellcheck="true">// pp 表示 父节点的父节点 祖父节点</span>
         <span class="token comment" spellcheck="true">// rl 表示 右节点的左节点</span>
         <span class="token comment" spellcheck="true">// r 表示 右节点</span>
         <span class="token comment" spellcheck="true">// 左旋就是将某个节点旋转为其右节点的左节点</span>
-        TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> r<span class="token punctuation">,</span> pp<span class="token punctuation">,</span> rl<span class="token punctuation">;</span>
-          <span class="token keyword">if</span> <span class="token punctuation">(</span>p <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>r <span class="token operator">=</span> p<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> r<span class="token punctuation">,</span> pp<span class="token punctuation">,</span> rl<span class="token punctuation">;</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>p <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>r <span class="token operator">=</span> p<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token comment" spellcheck="true">// 如果符合的话，p 的右节点指向 rl 否则指向 null</span>
               <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>rl <span class="token operator">=</span> p<span class="token punctuation">.</span>right <span class="token operator">=</span> r<span class="token punctuation">.</span>left<span class="token punctuation">)</span> <span class="token operator">!=</span> null<span class="token punctuation">)</span>
                   rl<span class="token punctuation">.</span>parent <span class="token operator">=</span> p<span class="token punctuation">;</span>
@@ -954,14 +954,14 @@
                   pp<span class="token punctuation">.</span>right <span class="token operator">=</span> r<span class="token punctuation">;</span>
               r<span class="token punctuation">.</span>left <span class="token operator">=</span> p<span class="token punctuation">;</span>
               p<span class="token punctuation">.</span>parent <span class="token operator">=</span> r<span class="token punctuation">;</span>
-          <span class="token punctuation">}</span>
+          <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
           <span class="token keyword">return</span> root<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
+      <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 </li>
 <li><p>图示左旋过程</p>
 <pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">// 执行完该代码，形成图示结构</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>p <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>r <span class="token operator">=</span> p<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>p <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>r <span class="token operator">=</span> p<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
   <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>rl <span class="token operator">=</span> p<span class="token punctuation">.</span>right <span class="token operator">=</span> r<span class="token punctuation">.</span>left<span class="token punctuation">)</span> <span class="token operator">!=</span> null<span class="token punctuation">)</span>
      rl<span class="token punctuation">.</span>parent <span class="token operator">=</span> p<span class="token punctuation">;</span>
 </code></pre>
@@ -996,14 +996,14 @@ p.parent = r;
 <img src="medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/ec70adec13149d9e7c470523a71d6c1.png">
 </li>
 <li><p>rotateRight</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> <span class="token function">rotateRight</span><span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> root<span class="token punctuation">,</span>
-                                             TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> p<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">static</span> <span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> <span class="token function">rotateRight</span><span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> root<span class="token punctuation">,</span>
+                                             TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> p<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// l 左节点</span>
         <span class="token comment" spellcheck="true">// pp 祖父节点</span>
         <span class="token comment" spellcheck="true">// lr 左节点的右节点</span>
         <span class="token comment" spellcheck="true">// 右旋就是将某个节点旋转为其左节点(孩子)的右节点(孩子)</span>
-        TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> l<span class="token punctuation">,</span> pp<span class="token punctuation">,</span> lr<span class="token punctuation">;</span>
-          <span class="token keyword">if</span> <span class="token punctuation">(</span>p <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>l <span class="token operator">=</span> p<span class="token punctuation">.</span>left<span class="token punctuation">)</span> <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">&gt;</span> l<span class="token punctuation">,</span> pp<span class="token punctuation">,</span> lr<span class="token punctuation">;</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>p <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>l <span class="token operator">=</span> p<span class="token punctuation">.</span>left<span class="token punctuation">)</span> <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
               <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>lr <span class="token operator">=</span> p<span class="token punctuation">.</span>left <span class="token operator">=</span> l<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token operator">!=</span> null<span class="token punctuation">)</span>
                   lr<span class="token punctuation">.</span>parent <span class="token operator">=</span> p<span class="token punctuation">;</span>
               <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>pp <span class="token operator">=</span> l<span class="token punctuation">.</span>parent <span class="token operator">=</span> p<span class="token punctuation">.</span>parent<span class="token punctuation">)</span> <span class="token operator">==</span> null<span class="token punctuation">)</span>
@@ -1014,23 +1014,23 @@ p.parent = r;
                   pp<span class="token punctuation">.</span>left <span class="token operator">=</span> l<span class="token punctuation">;</span>
               l<span class="token punctuation">.</span>right <span class="token operator">=</span> p<span class="token punctuation">;</span>
               p<span class="token punctuation">.</span>parent <span class="token operator">=</span> l<span class="token punctuation">;</span>
-          <span class="token punctuation">}</span>
+          <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
           <span class="token keyword">return</span> root<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
+      <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 <pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">// 执行完图示代码，形成右旋开始前的红黑树结构</span>
 <span class="token comment" spellcheck="true">// x 的父节点变为黑色</span>
 xp<span class="token punctuation">.</span>red <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>xpp <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>xpp <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
   <span class="token comment" spellcheck="true">// x 的祖父节点变为红色</span>
   xpp<span class="token punctuation">.</span>red <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
   <span class="token comment" spellcheck="true">// 向右旋 （图示的单旋转方式）</span>
-<span class="token punctuation">}</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 <img src="medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/0967f6452c309aca5691a5830b2509b.png"></li>
 <li><p>图示右旋过程</p>
 <pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">// 执行完图示代码，形成图示结构</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>p <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>l <span class="token operator">=</span> p<span class="token punctuation">.</span>left<span class="token punctuation">)</span> <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>p <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>l <span class="token operator">=</span> p<span class="token punctuation">.</span>left<span class="token punctuation">)</span> <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
   <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>lr <span class="token operator">=</span> p<span class="token punctuation">.</span>left <span class="token operator">=</span> l<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token operator">!=</span> null<span class="token punctuation">)</span>
       lr<span class="token punctuation">.</span>parent <span class="token operator">=</span> p<span class="token punctuation">;</span>
 </code></pre>
@@ -1567,6 +1567,60 @@ p.parent = l;
 
     <footer class="page-footer bg-color">
     
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="song"
+                   id="1830050798"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
     <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
@@ -1580,7 +1634,7 @@ p.parent = l;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">30k</span>&nbsp;字
+                class="white-color">31.3k</span>&nbsp;字
             
             
             

@@ -43,10 +43,10 @@
 
         <script src="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 6.0.0">
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Huowy'Blog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Huowy'Blog" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</head>
 
 
 
@@ -515,7 +515,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    592
+                    634
                 </div>
                 
 
@@ -552,7 +552,7 @@
 <span class="token annotation punctuation">@Component</span>
 <span class="token comment" spellcheck="true">// 引入lombokjar包，才能使用的注解</span>
 <span class="token annotation punctuation">@Slf4j</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">DistributedLock</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">DistributedLock</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> String LOCK_PREFIX <span class="token operator">=</span> <span class="token string">"REDIS_LOCK_"</span><span class="token punctuation">;</span>
     <span class="token comment" spellcheck="true">//加锁失效时间，单位:秒</span>
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> LOCK_EXPIRE <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
@@ -569,8 +569,8 @@
      * @param requestId  请求标识
      * @return 是否获取成功
      */</span>
-    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">tryLock</span><span class="token punctuation">(</span>String lockKey<span class="token punctuation">,</span> String requestId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"{}开始加锁,requestId:{}"</span><span class="token punctuation">,</span> lockKey<span class="token punctuation">,</span> requestId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">tryLock</span><span class="token punctuation">(</span>String lockKey<span class="token punctuation">,</span> String requestId<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"&amp;#123;&amp;#125;开始加锁,requestId:&amp;#123;&amp;#125;"</span><span class="token punctuation">,</span> lockKey<span class="token punctuation">,</span> requestId<span class="token punctuation">)</span><span class="token punctuation">;</span>
         String lock <span class="token operator">=</span> LOCK_PREFIX <span class="token operator">+</span> lockKey<span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// 利用lambda表达式</span>
         <span class="token comment" spellcheck="true">// setNX英文全称：SET if Not Exists</span>
@@ -579,14 +579,14 @@
         <span class="token comment" spellcheck="true">// expire方法：设置超时时间，防止死锁</span>
         <span class="token comment" spellcheck="true">// 注意其中的RedisCallback，当redis有多个实例时，数据进行主从同步时，但主redis挂掉，随机选择一个从redis作为主redis时，不会发生多个请求获取到锁。</span>
         <span class="token comment" spellcheck="true">// 原理如下：加锁时，会向多半的节点发送setNX命令，如果多半节点成功，则算加锁成功，那么释放锁的时候，需要想所有节点发送del命令</span>
-        <span class="token keyword">return</span> <span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span> redisTemplate<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">(</span>RedisCallback<span class="token punctuation">)</span> connection <span class="token operator">-</span><span class="token operator">></span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>connection<span class="token punctuation">.</span><span class="token function">setNX</span><span class="token punctuation">(</span>lock<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> requestId<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span> redisTemplate<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">(</span>RedisCallback<span class="token punctuation">)</span> connection <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>connection<span class="token punctuation">.</span><span class="token function">setNX</span><span class="token punctuation">(</span>lock<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> requestId<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                 connection<span class="token punctuation">.</span><span class="token function">expire</span><span class="token punctuation">(</span>lock<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> LOCK_EXPIRE<span class="token punctuation">)</span><span class="token punctuation">;</span>
                 <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
             <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
     <span class="token comment" spellcheck="true">/**
      * 释放分布式锁
@@ -595,18 +595,18 @@
      * @param requestId 请求标识
      * @return 是否释放成功
      */</span>
-    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">releaseLock</span><span class="token punctuation">(</span>String lockKey<span class="token punctuation">,</span> String requestId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"{}开始释放锁,requestId:{}"</span><span class="token punctuation">,</span> lockKey<span class="token punctuation">,</span> requestId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">releaseLock</span><span class="token punctuation">(</span>String lockKey<span class="token punctuation">,</span> String requestId<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">"&amp;#123;&amp;#125;开始释放锁,requestId:&amp;#123;&amp;#125;"</span><span class="token punctuation">,</span> lockKey<span class="token punctuation">,</span> requestId<span class="token punctuation">)</span><span class="token punctuation">;</span>
         String lock <span class="token operator">=</span> LOCK_PREFIX <span class="token operator">+</span> lockKey<span class="token punctuation">;</span>
         <span class="token keyword">final</span> String script <span class="token operator">=</span> <span class="token string">"if redis.call('get', KEYS[1]) == ARGV[1] then return redis.call('del', KEYS[1]) else return 0 end "</span><span class="token punctuation">;</span>
 
         <span class="token comment" spellcheck="true">// eval命令的参数(lua脚本,返回类型,脚本的参数个数,redis的key,redis的value)</span>
         <span class="token comment" spellcheck="true">// redis执行lua脚本是原子性的</span>
-        <span class="token keyword">return</span> <span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span>redisTemplate<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">(</span>RedisCallback<span class="token punctuation">)</span> connection <span class="token operator">-</span><span class="token operator">></span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span>redisTemplate<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">(</span>RedisCallback<span class="token punctuation">)</span> connection <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token keyword">return</span> connection<span class="token punctuation">.</span><span class="token function">eval</span><span class="token punctuation">(</span>script<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> ReturnType<span class="token punctuation">.</span>BOOLEAN <span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span> lock<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span>Charset<span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span><span class="token string">"UTF-8"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> requestId<span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span>Charset<span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span><span class="token string">"UTF-8"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 <pre class=" language-lua"><code class="language-lua"><span class="token comment" spellcheck="true">-- 上述释放redis锁需要redis执行的lua脚本</span>
 <span class="token comment" spellcheck="true">-- 代码含义：</span>
@@ -1115,6 +1115,60 @@
 
     <footer class="page-footer bg-color">
     
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="song"
+                   id="1830050798"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
     <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
@@ -1128,7 +1182,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">30k</span>&nbsp;字
+                class="white-color">31.3k</span>&nbsp;字
             
             
             
