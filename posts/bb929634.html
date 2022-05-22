@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="java8中Optional静态类, Huowy&#39;Blog">
+    <meta name="keywords" content="java8 中 Optional 静态类, Huowy&#39;Blog">
     <meta name="description" content="Huowy&#39;Blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -26,7 +26,7 @@
 </script>
 
         <title>
-            java8中Optional静态类 | Huowy&#39;Blog
+            java8 中 Optional 静态类 | Huowy&#39;Blog
         </title>
         <link rel="icon" type="image/jpeg" href="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/favicon.jpg">
 
@@ -43,9 +43,9 @@
 
         <script src="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Huowy'Blog" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 6.0.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Huowy'Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -360,12 +360,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">java8中Optional静态类</h1>
+                    <h1 class="description center-align post-title">java8 中 Optional 静态类</h1>
                 </div>
             </div>
         </div>
@@ -481,8 +481,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/JavaApi/">
-                                <span class="chip bg-color">JavaApi</span>
+                            <a href="/tags/API/">
+                                <span class="chip bg-color">API</span>
                             </a>
                         
                     </div>
@@ -493,8 +493,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/JavaApi/" class="post-category">
-                                JavaApi
+                            <a href="/categories/Java/" class="post-category">
+                                Java
                             </a>
                         
                     </div>
@@ -551,50 +551,50 @@
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>function<span class="token punctuation">.</span>Function<span class="token punctuation">;</span>
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>function<span class="token punctuation">.</span>Predicate<span class="token punctuation">;</span>
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>function<span class="token punctuation">.</span>Supplier<span class="token punctuation">;</span>
- 
+
 <span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">class</span> <span class="token class-name">Optional</span><span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token punctuation">{</span>
     <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> Optional<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">></span> EMPTY <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Optional</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
- 
+
     <span class="token keyword">private</span> <span class="token keyword">final</span> T value<span class="token punctuation">;</span>
- 
+
     <span class="token keyword">private</span> <span class="token function">Optional</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> null<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">&lt;</span>T<span class="token operator">></span> Optional<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token annotation punctuation">@SuppressWarnings</span><span class="token punctuation">(</span><span class="token string">"unchecked"</span><span class="token punctuation">)</span>
         Optional<span class="token operator">&lt;</span>T<span class="token operator">></span> t <span class="token operator">=</span> <span class="token punctuation">(</span>Optional<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token punctuation">)</span> EMPTY<span class="token punctuation">;</span>
         <span class="token keyword">return</span> t<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token keyword">private</span> <span class="token function">Optional</span><span class="token punctuation">(</span>T value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> Objects<span class="token punctuation">.</span><span class="token function">requireNonNull</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">&lt;</span>T<span class="token operator">></span> Optional<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token function">of</span><span class="token punctuation">(</span>T value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Optional</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token operator">&lt;</span>T<span class="token operator">></span> Optional<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token function">ofNullable</span><span class="token punctuation">(</span>T value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> value <span class="token operator">==</span> null <span class="token operator">?</span> <span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">of</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token keyword">public</span> T <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
             <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">NoSuchElementException</span><span class="token punctuation">(</span><span class="token string">"No value present"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
         <span class="token keyword">return</span> value<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isPresent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> value <span class="token operator">!=</span> null<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">ifPresent</span><span class="token punctuation">(</span>Consumer<span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">super</span> T<span class="token operator">></span> consumer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span class="token operator">!=</span> null<span class="token punctuation">)</span>
             consumer<span class="token punctuation">.</span><span class="token function">accept</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token keyword">public</span> Optional<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token function">filter</span><span class="token punctuation">(</span>Predicate<span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">super</span> T<span class="token operator">></span> predicate<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         Objects<span class="token punctuation">.</span><span class="token function">requireNonNull</span><span class="token punctuation">(</span>predicate<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isPresent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -602,7 +602,7 @@
         <span class="token keyword">else</span>
             <span class="token keyword">return</span> predicate<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token keyword">this</span> <span class="token operator">:</span> <span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token keyword">public</span> <span class="token operator">&lt;</span>U<span class="token operator">></span> Optional<span class="token operator">&lt;</span>U<span class="token operator">></span> <span class="token function">map</span><span class="token punctuation">(</span>Function<span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">super</span> T<span class="token punctuation">,</span> <span class="token operator">?</span> <span class="token keyword">extends</span> <span class="token class-name">U</span><span class="token operator">></span> mapper<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         Objects<span class="token punctuation">.</span><span class="token function">requireNonNull</span><span class="token punctuation">(</span>mapper<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isPresent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -611,7 +611,7 @@
             <span class="token keyword">return</span> Optional<span class="token punctuation">.</span><span class="token function">ofNullable</span><span class="token punctuation">(</span>mapper<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token keyword">public</span> <span class="token operator">&lt;</span>U<span class="token operator">></span> Optional<span class="token operator">&lt;</span>U<span class="token operator">></span> <span class="token function">flatMap</span><span class="token punctuation">(</span>Function<span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">super</span> T<span class="token punctuation">,</span> Optional<span class="token operator">&lt;</span>U<span class="token operator">>></span> mapper<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         Objects<span class="token punctuation">.</span><span class="token function">requireNonNull</span><span class="token punctuation">(</span>mapper<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isPresent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -620,15 +620,15 @@
             <span class="token keyword">return</span> Objects<span class="token punctuation">.</span><span class="token function">requireNonNull</span><span class="token punctuation">(</span>mapper<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token keyword">public</span> T <span class="token function">orElse</span><span class="token punctuation">(</span>T other<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> value <span class="token operator">!=</span> null <span class="token operator">?</span> value <span class="token operator">:</span> other<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token keyword">public</span> T <span class="token function">orElseGet</span><span class="token punctuation">(</span>Supplier<span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">extends</span> <span class="token class-name">T</span><span class="token operator">></span> other<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> value <span class="token operator">!=</span> null <span class="token operator">?</span> value <span class="token operator">:</span> other<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token keyword">public</span> <span class="token operator">&lt;</span>X <span class="token keyword">extends</span> <span class="token class-name">Throwable</span><span class="token operator">></span> T <span class="token function">orElseThrow</span><span class="token punctuation">(</span>Supplier<span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">extends</span> <span class="token class-name">X</span><span class="token operator">></span> exceptionSupplier<span class="token punctuation">)</span> <span class="token keyword">throws</span> X <span class="token punctuation">{</span>
         <span class="token keyword">if</span> <span class="token punctuation">(</span>value <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
             <span class="token keyword">return</span> value<span class="token punctuation">;</span>
@@ -636,26 +636,26 @@
             <span class="token keyword">throw</span> exceptionSupplier<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token annotation punctuation">@Override</span>
     <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">equals</span><span class="token punctuation">(</span>Object obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token operator">==</span> obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
             <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
- 
+
         <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span>obj <span class="token keyword">instanceof</span> <span class="token class-name">Optional</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
- 
+
         Optional<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">></span> other <span class="token operator">=</span> <span class="token punctuation">(</span>Optional<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token operator">></span><span class="token punctuation">)</span> obj<span class="token punctuation">;</span>
         <span class="token keyword">return</span> Objects<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span> other<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token annotation punctuation">@Override</span>
     <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> Objects<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token annotation punctuation">@Override</span>
     <span class="token keyword">public</span> String <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> value <span class="token operator">!=</span> null <span class="token operator">?</span> String<span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"Optional[%s]"</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token string">"Optional.empty"</span><span class="token punctuation">;</span>
@@ -666,7 +666,7 @@
 <pre class=" language-java"><code class="language-java">    <span class="token keyword">private</span> <span class="token function">Optional</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> null<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
- 
+
     <span class="token keyword">private</span> <span class="token function">Optional</span><span class="token punctuation">(</span>T value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> Objects<span class="token punctuation">.</span><span class="token function">requireNonNull</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
@@ -812,8 +812,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/JavaApi/">
-                                    <span class="chip bg-color">JavaApi</span>
+                                <a href="/tags/API/">
+                                    <span class="chip bg-color">API</span>
                                 </a>
                             
                         </div>

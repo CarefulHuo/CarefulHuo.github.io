@@ -226,22 +226,23 @@
   </entry>
   
   <entry>
-    <title>Spring事务</title>
+    <title>Spring 事务</title>
     <link href="https://carefulhuo.github.io/posts/7d41eccf.html"/>
     <id>https://carefulhuo.github.io/posts/7d41eccf.html</id>
     <published>2022-05-05T02:19:09.000Z</published>
-    <updated>2022-05-21T14:34:59.053Z</updated>
+    <updated>2022-05-22T08:10:21.012Z</updated>
     
     
-    <summary type="html">&lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h4&gt;&lt;p&gt;Spring 有五个事务隔离级别：ISOLATION_DEFAULT、ISOLATION_READ_UNCOMMITTED、ISOLATION_READ_COMMITTED、ISOLATION_REPEATABLE_READ、ISOLATION_SERIALIZABLE&lt;/p&gt;
-&lt;p&gt;第一种是 Spring 默认使用 DB设置的事务隔离级别，后面四种事务隔离级别跟 Mysql 的事务隔离级别一致，下面就类比着 Mysql 的事务隔离级别，进行分析！！！&lt;/p&gt;</summary>
+    <summary type="html">&lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h4&gt;&lt;p&gt;Spring 有五个事务隔离级别：ISOLATION_DEFAULT、ISOLATION_READ_UNCOMMITTED、ISOLATION_READ_COMMITTED、ISOLATION_REPEATABLE_READ、ISOLATION_SERIALIZABLE&lt;/p&gt;</summary>
     
     
     
     <category term="Spring" scheme="https://carefulhuo.github.io/categories/Spring/"/>
     
+    <category term="数据库" scheme="https://carefulhuo.github.io/categories/Spring/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
-    <category term="Spring" scheme="https://carefulhuo.github.io/tags/Spring/"/>
+    
+    <category term="Mysql" scheme="https://carefulhuo.github.io/tags/Mysql/"/>
     
   </entry>
   
@@ -347,11 +348,11 @@
   </entry>
   
   <entry>
-    <title>Maven配置文件属性解析</title>
+    <title>Maven 配置文件属性解析</title>
     <link href="https://carefulhuo.github.io/posts/57464dbe.html"/>
     <id>https://carefulhuo.github.io/posts/57464dbe.html</id>
     <published>2022-04-20T11:24:09.000Z</published>
-    <updated>2022-05-19T16:53:24.099Z</updated>
+    <updated>2022-05-22T07:59:09.778Z</updated>
     
     
     <summary type="html">&lt;h4 id=&quot;前置信息&quot;&gt;&lt;a href=&quot;#前置信息&quot; class=&quot;headerlink&quot; title=&quot;前置信息&quot;&gt;&lt;/a&gt;前置信息&lt;/h4&gt;&lt;h5 id=&quot;Maven-版本&quot;&gt;&lt;a href=&quot;#Maven-版本&quot; class=&quot;headerlink&quot; title=&quot;Maven 版本&quot;&gt;&lt;/a&gt;Maven 版本&lt;/h5&gt;&lt;ul&gt;
@@ -360,7 +361,7 @@
     
     
     
-    <category term="项目管理工具" scheme="https://carefulhuo.github.io/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    <category term="项目构建工具" scheme="https://carefulhuo.github.io/categories/%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
     
     
     <category term="Maven" scheme="https://carefulhuo.github.io/tags/Maven/"/>
