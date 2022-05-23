@@ -43,9 +43,9 @@
 
         <script src="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Huowy'Blog" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 6.0.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Huowy'Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -61,7 +61,7 @@
                 <a href="/" class="waves-effect waves-light">
                     <div>
                     
-                    <img src="./medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/huowy.jpg" class="logo-img" alt="LOGO">
+                    <img src="../medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/huowy.jpg" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Huowy&#39;Blog</span>
                     </div>
@@ -175,7 +175,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="./medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/huowy.jpg" class="logo-img circle responsive-img">
+        <img src="../medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/huowy.jpg" class="logo-img circle responsive-img">
         
         <div class="logo-name">Huowy&#39;Blog</div>
         <div class="logo-desc">
@@ -553,19 +553,19 @@
 <h4 id="事务并发可能产生的问题释义"><a href="#事务并发可能产生的问题释义" class="headerlink" title="事务并发可能产生的问题释义"></a>事务并发可能产生的问题释义</h4><h5 id="脏读-Dirty-Read"><a href="#脏读-Dirty-Read" class="headerlink" title="脏读 ( Dirty Read )"></a>脏读 ( Dirty Read )</h5><ul>
 <li>一个事务读取到另一个未提交事务修改过的数据</li>
 </ul>
-<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Dirty_Read.png">
+<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Dirty_Read.png">
 
 <p>session B 开启一个事务，修改了 id = 1 的 name 数据，但是 session B 事务未提交；此时 另一个 session A 事务读取到 session B 修改但没提交的 name 数据，并返回了，然后 session B 事务回滚了，那么此刻 session A 读取到的数据是不存在的，那么这种现象是脏读。(<font color="red">读未提交–该事务隔离级别会出现</font>)</p>
 <h5 id="不可重复读-Non-Repeatable-Read"><a href="#不可重复读-Non-Repeatable-Read" class="headerlink" title="不可重复读 (Non-Repeatable-Read)"></a>不可重复读 (Non-Repeatable-Read)</h5><ul>
 <li>事务 A 中，多次读取同一条数据，此时事务 A 并没有结束，事务 B 对同一条数据进行了修改，事务 A 读取到 事务 B 修改后的数据，造成了 事务 A 多次读取的数据值不一致，这种现象就是不可重复读</li>
 </ul>
-<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Non-Repeatable-Read.png">
+<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Non-Repeatable-Read.png">
 
 <p>session A 事务开启，读取到 id = 1 的 name 数据为武汉，session A 事务并未结束， session B 事务将 id = 1 的 name 数据修改为 温州，session  A 事务读取 id =1 的 name 数据为温州；session B 事务将 id  = 1 的 name 数据修改为杭州，sesssion A 事务读取 id = 1 的 name 数据为杭州；session B 事务每次修改后的数据，session A 事务都能读取到最新的数据，那么这种现象就是不可重复读。(<font color="red">读未提交，读已提交–两种事务隔离级别都可能会出现</font>)</p>
 <h5 id="幻读-Phantom"><a href="#幻读-Phantom" class="headerlink" title="幻读 (Phantom)"></a>幻读 (Phantom)</h5><ul>
 <li>一个事务读取符合某些条件的数据， 该事务未结束，此时另一个事务插入了一些符合这些条件的新数据，这个事务再次根据这些条件读取数据时，能把另一个事务插入的数据也取出来，那么这种现象叫幻读</li>
 </ul>
-<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Phantom.png">
+<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Phantom.png">
 
 <p>session A 事务开启，读取 id &gt; 0 的 name 数据为武汉，session 事务 A 未结束；session B 事务开启，插入温州市数据；session A 事务再次读取 id &gt; 0 的 name 数据，读取到武汉和温州时，这种现象就是幻读 (<font color="red">读未提交，读已提交，可重复读–三种隔离级别都可能出现</font>)</p>
 <h4 id="事务隔离级别释义"><a href="#事务隔离级别释义" class="headerlink" title="事务隔离级别释义"></a>事务隔离级别释义</h4><h5 id="DEFAULT"><a href="#DEFAULT" class="headerlink" title="DEFAULT"></a>DEFAULT</h5><ul>
@@ -574,19 +574,19 @@
 <h5 id="READ-UNCOMMITTED"><a href="#READ-UNCOMMITTED" class="headerlink" title="READ_UNCOMMITTED"></a>READ_UNCOMMITTED</h5><ul>
 <li>读未提交(会出现<font color="red">脏读，不可重复读，幻读</font>)(隔离级别最低，并发性能最高)</li>
 </ul>
-<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Read-Uncommitted.png">
+<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Read-Uncommitted.png">
 
 <p>session A 事务开启，更新 id = 1 的数据为温州；session B 的事务开启，读取到未提交事务 A 修改的数据；</p>
 <h5 id="READ-COMMITTED"><a href="#READ-COMMITTED" class="headerlink" title="READ_COMMITTED"></a>READ_COMMITTED</h5><ul>
 <li>读已提交(会出现<font color="red">不可重复读，幻读</font>)</li>
 </ul>
-<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Read-Committed.png">
+<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Read-Committed.png">
 
 <p>session A 事务开启，更新 id =1 的 name 数据，session B 事务开启，读取 id = 1 的 name 数据为 武汉；session A事务提交，session B 事务再次读取 id = 1 的name 数据为温州；也就是说 事务 B 只能读取到 事务 A 修改且提交的数据</p>
 <h5 id="REPEATABLE-READ"><a href="#REPEATABLE-READ" class="headerlink" title="REPEATABLE_READ"></a>REPEATABLE_READ</h5><ul>
 <li>可重复读(会出现<font color="red">幻读</font>)</li>
 </ul>
-<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Repeatable-Read.png">
+<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Repeatable-Read.png">
 
 <p>session A 事务开启，更新 id = 1 的 name 名称为温州，此时 session B 事务开启，读取 id = 1 的数据为 武汉</p>
 <p>session A 事务读取 id = 1 的 name 名称为温州；session A 事务提交；session B 事务提交；session B 事务再次读取 id = 1 的 name 名称为 温州；也就是说在可重复读隔离级别下，session B 事务读取 session A 事务修改后的值，需要 session A 事务修改数据且提交，session  B 当前的事务也提交。</p>
@@ -597,22 +597,22 @@
 <h6 id="读读操作"><a href="#读读操作" class="headerlink" title="读读操作"></a>读读操作</h6><ul>
 <li>不会阻塞，两个读操作互不影响</li>
 </ul>
-<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/ReadOrRead.png">
+<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/ReadOrRead.png">
 
 <h6 id="读写操作"><a href="#读写操作" class="headerlink" title="读写操作"></a>读写操作</h6><ul>
 <li>会产生阻塞，读操作提交之后，写操作才会执行</li>
 </ul>
-<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Read-Write.png">
+<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Read-Write.png">
 
 <h6 id="写读操作"><a href="#写读操作" class="headerlink" title="写读操作"></a>写读操作</h6><ul>
 <li>会阻塞，写操作提交之后，读操作才会执行</li>
 </ul>
-<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Write-Read.png">
+<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Write-Read.png">
 
 <h6 id="写写操作"><a href="#写写操作" class="headerlink" title="写写操作"></a>写写操作</h6><ul>
 <li>会阻塞，前面的写操作提交之后，后面的写操作才会执行</li>
 </ul>
-<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Write-Write.png">
+<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/Write-Write.png">
 
 <h4 id="事务传播行为"><a href="#事务传播行为" class="headerlink" title="事务传播行为"></a>事务传播行为</h4><ul>
 <li>在 Spring-tx 的 jar 包中， TransactionDefinition 接口定义了七种事务传播行为：</li>
@@ -625,12 +625,12 @@
 <h5 id="6-PROPAGATION-NEVER"><a href="#6-PROPAGATION-NEVER" class="headerlink" title="6. PROPAGATION_NEVER"></a>6. PROPAGATION_NEVER</h5><p>​	当前方法<font color="red">不支持在事务中运行，如果存在当前事务，将会抛出异常</font></p>
 <h5 id="7-PROPAGATION-NESTED"><a href="#7-PROPAGATION-NESTED" class="headerlink" title="7. PROPAGATION_NESTED"></a>7. PROPAGATION_NESTED</h5><p>​	如果当前方法<font color="red">存在一个事务正在执行，那么该方法应该运行在一个嵌套事务中</font>，被嵌套的事务(子事务)可以独立于被封装的事务(父事务)之外提交或回滚。如果封装事务存在，并且外层事务抛出异常，事务回滚，那么内层事务必须回滚，反之，内层事务并不影响外层事务。如果封装事务不存在，则跟 PROPAGATION_REQUIRED 的传播机制一致</p>
 <h4 id="事务失效的场景"><a href="#事务失效的场景" class="headerlink" title="事务失效的场景"></a>事务失效的场景</h4><h5 id="1-没有走动态代理导致事务失效的场景"><a href="#1-没有走动态代理导致事务失效的场景" class="headerlink" title="1. 没有走动态代理导致事务失效的场景"></a>1. 没有走动态代理导致事务失效的场景</h5><h5 id="1-1-访问权限问题"><a href="#1-1-访问权限问题" class="headerlink" title="1.1 访问权限问题"></a>1.1 访问权限问题</h5><p>Java 的访问权限，主要有四种：private、default、protected 、public 权限从左往右，依次变大，如果事务方法，使用错误的访问权限，事务就会出现问题，<font color="red">spring-tx 的 jar 包 中 AbstractFallbackTransactionAttributeSource#computeTransactionAttribute() 方法，事务方法必须是 public 关键字修饰的访问权限，否则会返回 null，事务就会失效</font>，所以事务方法访问权限是 private ，default ，protected 关键字修饰时，Spring不会提供事务功能</p>
-<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/20220505174927.png">
+<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/20220505174927.png">
 
-<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/20220505175024.png">
+<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/20220505175024.png">
 
 <h5 id="1-2-使用-final-、static-关键字修饰"><a href="#1-2-使用-final-、static-关键字修饰" class="headerlink" title="1.2 使用 final 、static 关键字修饰"></a>1.2 使用 final 、static 关键字修饰</h5><p>如果某个方法不想被子类重写，就需要用 final 关键字修饰，Spring 的事务是基于 AOP 实现的，如果使用 final 关键字，该方法将不会被重写，则无法通过动态代理，生成代理类，添加事务；static 关键字也无法使用动态代理，生成代理类，添加事务！</p>
-<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/20220505181232.png">
+<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/20220505181232.png">
 
 <h5 id="1-3-方法内部调用"><a href="#1-3-方法内部调用" class="headerlink" title="1.3 方法内部调用"></a>1.3 方法内部调用</h5><p>同一个类中的方法，直接内部调用，会导致事务失效，因为 spring 的 事务是通过 aop 实现的，同一个类中的方法，直接调用，相当于通过 this 关键字直接调用方法，没有通过代理类，添加事务，故事务失效！可以通过  AopContext#currentProxy() 获取代理对象，使用事务！！！</p>
 <pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@Servcie</span>
@@ -890,10 +890,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="./medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="../medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="./medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="../medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -976,7 +976,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="./medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="小情话第六百一十九则">
+                        <img src="../medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="小情话第六百一十九则">
                         
                         <span class="card-title">小情话第六百一十九则</span>
                     </div>
@@ -1025,7 +1025,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="./medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="小情话第六百一十八则">
+                        <img src="../medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="小情话第六百一十八则">
                         
                         <span class="card-title">小情话第六百一十八则</span>
                     </div>
