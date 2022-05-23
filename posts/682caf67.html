@@ -43,9 +43,9 @@
 
         <script src="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 6.0.0">
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Huowy'Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Huowy'Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -61,7 +61,7 @@
                 <a href="/" class="waves-effect waves-light">
                     <div>
                     
-                    <img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/huowy.jpg" class="logo-img" alt="LOGO">
+                    <img src="./medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/huowy.jpg" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Huowy&#39;Blog</span>
                     </div>
@@ -175,7 +175,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/huowy.jpg" class="logo-img circle responsive-img">
+        <img src="./medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/huowy.jpg" class="logo-img circle responsive-img">
         
         <div class="logo-name">Huowy&#39;Blog</div>
         <div class="logo-desc">
@@ -552,27 +552,27 @@
 <p>GC 后对象年龄分布信息</p>
 <pre class=" language-java"><code class="language-java"><span class="token operator">-</span>XX<span class="token operator">:</span><span class="token operator">+</span>PrintTenuringDistribution
 </code></pre>
-<img src="medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/4a6731f8d33bb2a861ec0dd2727f3a2.png">
+<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/4a6731f8d33bb2a861ec0dd2727f3a2.png">
 
 <p>GC 后打印GC前后的堆数据</p>
 <pre class=" language-java"><code class="language-java"><span class="token operator">-</span>XX<span class="token operator">:</span><span class="token operator">+</span>PrintHeapAtGC
 </code></pre>
-<img src="medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/184987aa667d55b686acb3ac312669d.png">
+<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/184987aa667d55b686acb3ac312669d.png">
 
 <p>GC会产生暂停，打印 STW 时间(暂停时间)</p>
 <pre class=" language-java"><code class="language-java"><span class="token operator">-</span>XX<span class="token operator">:</span><span class="token operator">+</span>PrintGCApplicationStoppedTime
 </code></pre>
-<p><img src="medias/loading.gif" data-original="C:\Users\hwy\AppData\Roaming\Typora\typora-user-images\image-20220406155025905.png" alt="image-20220406155025905"></p>
+<p><img src="./medias/loading.gif" data-original="C:\Users\hwy\AppData\Roaming\Typora\typora-user-images\image-20220406155025905.png" alt="image-20220406155025905"></p>
 <p>打印 safepoint 信息(进入STW阶段，需要找到一个合适的 safepoint )</p>
 <pre class=" language-java"><code class="language-java"><span class="token operator">-</span>XX<span class="token operator">:</span><span class="token operator">+</span>PrintSafepointStatistics
 <span class="token operator">-</span>XX<span class="token operator">:</span><span class="token operator">+</span>PrintSafepointStatisticsCount<span class="token operator">=</span><span class="token number">1</span>
 </code></pre>
-<img src="medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/36ed7b2837e7c8b568229589c10a22a.png">
+<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/36ed7b2837e7c8b568229589c10a22a.png">
 
 <p>打印 Reference 信息 (查看强引用/弱引用/软引用/虚引用/finalize方法 是否存在问题)</p>
 <pre class=" language-java"><code class="language-java"><span class="token operator">-</span>XX<span class="token operator">:</span><span class="token operator">+</span>PrintReferenceGC
 </code></pre>
-<img src="medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/b256c20ae534d22eddba310b24ccb59.png">
+<img src="./medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/b256c20ae534d22eddba310b24ccb59.png">
 
 <h4 id="GC-日志输出格式"><a href="#GC-日志输出格式" class="headerlink" title="GC 日志输出格式"></a>GC 日志输出格式</h4><p>GC 日志输出的文件路径（%t 表示取当前时间作为文件名）</p>
 <pre class=" language-java"><code class="language-java"><span class="token operator">-</span>Xloggc<span class="token operator">:</span>自定义路径<span class="token operator">/</span>gc<span class="token operator">-</span><span class="token operator">%</span>t<span class="token punctuation">.</span>log
@@ -781,10 +781,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="./medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="./medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -867,7 +867,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="GC 日志分析及优化">
+                        <img src="./medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="GC 日志分析及优化">
                         
                         <span class="card-title">GC 日志分析及优化</span>
                     </div>
@@ -916,7 +916,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="小情话第六百零三则">
+                        <img src="./medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="小情话第六百零三则">
                         
                         <span class="card-title">小情话第六百零三则</span>
                     </div>
