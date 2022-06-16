@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Maven deploy 插件的使用, Huowy&#39;Blog">
+    <meta name="keywords" content="小情话第六百三十八则, Huowy&#39;Blog">
     <meta name="description" content="Huowy&#39;Blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -26,7 +26,7 @@
 </script>
 
         <title>
-            Maven deploy 插件的使用 | Huowy&#39;Blog
+            小情话第六百三十八则 | Huowy&#39;Blog
         </title>
         <link rel="icon" type="image/jpeg" href="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/favicon.jpg">
 
@@ -360,12 +360,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Maven deploy 插件的使用</h1>
+                    <h1 class="description center-align post-title">小情话第六百三十八则</h1>
                 </div>
             </div>
         </div>
@@ -481,12 +481,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Plugs/">
-                                <span class="chip bg-color">Plugs</span>
-                            </a>
-                        
-                            <a href="/tags/Maven/">
-                                <span class="chip bg-color">Maven</span>
+                            <a href="/tags/Little-Love/">
+                                <span class="chip bg-color">Little Love</span>
                             </a>
                         
                     </div>
@@ -497,8 +493,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/" class="post-category">
-                                项目构建工具
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/" class="post-category">
+                                程序员的浪漫
                             </a>
                         
                     </div>
@@ -510,7 +506,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-12-16
+                    2022-06-16
                 </div>
                 
 
@@ -519,14 +515,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    625
+                    5
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -546,64 +542,21 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="deploy插件的使用"><a href="#deploy插件的使用" class="headerlink" title="deploy插件的使用"></a>deploy插件的使用</h4><h5 id="第一种方式"><a href="#第一种方式" class="headerlink" title="第一种方式"></a>第一种方式</h5><span id="more"></span>
-<ol>
-<li>项目引用maven之后，通过idea的侧边栏直接使用，具体位置如图所示：<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/deploy_01.png"></li>
-<li>此时项目中的pom文件配置如下图所示：<img src="../medias/loading.gif" data-original="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/deploy_02.png"></li>
-<li>此时就可以上传jar包到指定的仓库</li>
-</ol>
-<hr>
-<p><strong>注意</strong>：使用该种方式如果出现下面的报错，可以使用第二种方式</p>
-<pre class=" language-java"><code class="language-java">Failed to execute goal org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>maven<span class="token punctuation">.</span>plugins<span class="token operator">:</span>maven<span class="token operator">-</span>deploy<span class="token operator">-</span>plugin<span class="token operator">:</span><span class="token number">2.8</span><span class="token punctuation">.</span><span class="token number">2</span><span class="token operator">:</span><span class="token function">deploy</span> <span class="token punctuation">(</span><span class="token keyword">default</span><span class="token operator">-</span>deploy<span class="token punctuation">)</span> on project mdb<span class="token operator">-</span>board<span class="token operator">:</span> Deployment failed<span class="token operator">:</span> repository element was not specified in the POM inside distributionManagement element or in <span class="token operator">-</span>DaltDeploymentRepository<span class="token operator">=</span>id<span class="token operator">:</span><span class="token operator">:</span>layout<span class="token operator">:</span><span class="token operator">:</span>url parameter <span class="token operator">-</span><span class="token operator">></span> <span class="token punctuation">[</span>Help <span class="token number">1</span><span class="token punctuation">]</span>
-</code></pre>
-<h5 id="第二种方式"><a href="#第二种方式" class="headerlink" title="第二种方式"></a>第二种方式</h5><ol>
-<li>打开cmd(命令提示符)(本人是win10，搞不起高大上的mbp)，进入到需上传jar的所在位置，一般位于项目的target目录下</li>
-<li>然后执行如下代码所示的maven命令即可，<pre class=" language-java"><code class="language-java">mvn deploy<span class="token operator">:</span>deploy<span class="token operator">-</span>file
-<span class="token operator">-</span>DgroupId<span class="token operator">=</span>com<span class="token punctuation">.</span>ai<span class="token punctuation">.</span>chinapost<span class="token punctuation">.</span>crm<span class="token punctuation">.</span>mdb
-<span class="token operator">-</span>DartifactId<span class="token operator">=</span>mdb<span class="token operator">-</span>board<span class="token operator">-</span>facade
-<span class="token operator">-</span>Dversion<span class="token operator">=</span><span class="token number">1.0</span><span class="token punctuation">.</span><span class="token number">0</span><span class="token operator">-</span>SNAPSHOT
-<span class="token operator">-</span>Dpacckaging<span class="token operator">=</span>jar
-<span class="token operator">-</span>Dfile<span class="token operator">=</span>mdb<span class="token operator">-</span>board<span class="token operator">-</span>facade<span class="token operator">-</span><span class="token number">1.0</span><span class="token punctuation">.</span><span class="token number">0</span><span class="token operator">-</span>SNAPSHOT<span class="token punctuation">.</span>jar
-<span class="token operator">-</span>DrepositoryId<span class="token operator">=</span>nexus<span class="token operator">-</span>snapshots<span class="token operator">-</span>level<span class="token operator">-</span><span class="token number">1</span>
-<span class="token operator">-</span>Durl<span class="token operator">=</span>http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>IP地址<span class="token operator">/</span>nexus<span class="token operator">/</span>content<span class="token operator">/</span>repositories<span class="token operator">/</span>bj<span class="token operator">-</span>crm<span class="token operator">-</span>snapshots<span class="token operator">/</span>
-</code></pre>
-</li>
-</ol>
-<ul>
-<li>DgroupId、DartifactId、Dversion、Dpacckaging要跟项目的pom文件保持一致，否则会有问题；</li>
-<li>Dfile直接写文件名即可，如果不在同一个目录下，需要在file后面写上文件的绝对路径。</li>
-<li>DrepositoryId写仓库标识id，</li>
-<li>Durl写私服的仓库地址，一般可以通过maven的setting.xml或者打开nexus-&gt;repositories菜单，可以看到该路径。</li>
-</ul>
-<p><strong>注意</strong> 使用第二种方式有如下报错的解决方案：</p>
-<ol>
-<li>第一个问题<pre class=" language-java"><code class="language-java"> Failed to execute goal org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>maven<span class="token punctuation">.</span>plugins<span class="token operator">:</span>maven<span class="token operator">-</span>deploy<span class="token operator">-</span>plugin<span class="token operator">:</span><span class="token number">2.7</span><span class="token operator">:</span>deploy<span class="token operator">-</span><span class="token function">file</span> <span class="token punctuation">(</span><span class="token keyword">default</span><span class="token operator">-</span>cli<span class="token punctuation">)</span> on project standalone<span class="token operator">-</span>pom<span class="token operator">:</span> Failed to deploy artifacts<span class="token operator">:</span> Could not transfer artifact com<span class="token punctuation">.</span>zhenai<span class="token punctuation">.</span>dakehu<span class="token operator">:</span>dakehu<span class="token operator">-</span>commons<span class="token operator">:</span>jar<span class="token operator">:</span><span class="token number">1.0</span><span class="token punctuation">.</span><span class="token number">0</span><span class="token operator">-</span><span class="token number">20171212.105921</span><span class="token operator">-</span><span class="token number">1</span> from<span class="token operator">/</span>to maven<span class="token operator">-</span><span class="token function">snapshots</span> <span class="token punctuation">(</span>http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token number">112.124</span><span class="token punctuation">.</span><span class="token number">33.150</span><span class="token operator">:</span><span class="token number">8081</span><span class="token operator">/</span>repository<span class="token operator">/</span>maven<span class="token operator">-</span>snapshots<span class="token operator">/</span><span class="token punctuation">)</span><span class="token operator">:</span> Failed to transfer file<span class="token operator">:</span> http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token number">112.124</span><span class="token punctuation">.</span><span class="token number">33.150</span><span class="token operator">:</span><span class="token number">8081</span><span class="token operator">/</span>repository<span class="token operator">/</span>maven<span class="token operator">-</span>snapshots<span class="token operator">/</span>com<span class="token operator">/</span>zhenai<span class="token operator">/</span>dakehu<span class="token operator">/</span>dakehu<span class="token operator">-</span>commons<span class="token operator">/</span><span class="token number">1.0</span><span class="token punctuation">.</span><span class="token number">0</span><span class="token operator">-</span>SNAPSHOT<span class="token operator">/</span>dakehu<span class="token operator">-</span>commons<span class="token operator">-</span><span class="token number">1.0</span><span class="token punctuation">.</span><span class="token number">0</span><span class="token operator">-</span><span class="token number">20171212.105921</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">.</span>jar<span class="token punctuation">.</span>
-</code></pre>
-</li>
-</ol>
-<ul>
-<li><p>neuxs 帐号密码是否正确</p>
-</li>
-<li><p>maven setting.xml 中仓库认证的 id 不对</p>
-</li>
-<li><p><id>maven-snapshots</id> // ===》这个必须和 nexus DrepositoryId 对应的仓库标识(id)一致</p>
-</li>
-</ul>
-<ol start="2">
-<li>第二个问题<pre class=" language-java"><code class="language-java">Failed to execute goal org<span class="token punctuation">.</span>apache<span class="token punctuation">.</span>maven<span class="token punctuation">.</span>plugins<span class="token operator">:</span>maven<span class="token operator">-</span>deploy<span class="token operator">-</span>plugin<span class="token operator">:</span><span class="token number">2.7</span><span class="token operator">:</span>deploy<span class="token operator">-</span><span class="token function">file</span> <span class="token punctuation">(</span><span class="token keyword">default</span><span class="token operator">-</span>cli<span class="token punctuation">)</span> on project standalone<span class="token operator">-</span>pom<span class="token operator">:</span> Cannot deploy artifact from the local repository<span class="token operator">:</span> D<span class="token operator">:</span>\Program Files\maven\apache<span class="token operator">-</span>maven<span class="token operator">-</span><span class="token number">3.5</span><span class="token punctuation">.</span><span class="token number">2</span><span class="token operator">-</span>bin\repository\com\ai\chinapost\crm\mdb\mdb<span class="token operator">-</span>board<span class="token operator">-</span>facade\<span class="token number">1.0</span><span class="token punctuation">.</span><span class="token number">0</span><span class="token operator">-</span>SNAPSHOT\mdb<span class="token operator">-</span>board<span class="token operator">-</span>facade<span class="token operator">-</span><span class="token number">1.0</span><span class="token punctuation">.</span><span class="token number">0</span><span class="token operator">-</span>SNAPSHOT<span class="token punctuation">.</span>jar <span class="token operator">-</span><span class="token operator">></span> <span class="token punctuation">[</span>Help <span class="token number">1</span><span class="token punctuation">]</span>
-</code></pre>
-</li>
-</ol>
-<ul>
-<li>jar包的位置不对，不能在本地仓库直接上传jar包到仓库，需要修改jar包到项目的target目录下</li>
-</ul>
-<hr>
-<p><strong>小知识</strong>：</p>
-<ul>
-<li>maven package：打包到本项目，一般是在项目target目录下。</li>
-<li>maven install：打包会安装到本地仓库。</li>
-</ul>
-
+                <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="b9d1706ee1c5268669c1ed86a0571d1d3642c37eb4b449137c04d18abee25db5">838aa41fe32c8e42d6382e6f0aacb0f3adbd771d647c8c11135075e9cd35deece2f21acf8aeeb2b1b739ad2e49312a3a3ff3d9733396521aebe3304e5d2ff4b434c31299c8864edd027604cde9256641d9023f1d6f7cc5bb565fe89dc4fb93c9edff5e8a4a880c36add2231308f6fd1347399a8d74070ec1d28151bf7d4eb158ab4a5ea8ba169688aea424ba7d468974f9e22e69771aa0bc29909c57bb5202c2959cb5472b3cedcc333d5bb0891cf3dbf5b838c709a825f79344b4aaa648068ea80dc97ab879e2af879571b284c9b482e496b0c98c37383cb6409cd758eff4aa0d943a9613a061d7a7948267464a076caec962c34d1009b70f017e2ca5f3cf6493e084bb0226fabc2418355898a4e2495cbddce19edb3ffd94c140c6df1357d217d8c2b35300ee1cf48cb7b6dad83c61732368e62cd4c928e01f77653652e81dcba9ae1301e8f0a4bd04ce9652505cb6690ef60f8cfcad19cfa9bce3d21535a499498626b69fa49126e19131c022382f19046088d0795f115718db1858d51b088177a1fcde242220193ad4684c010e5054d2997c9b68a83a4c85f62decef71d1175d3fc35b08fbcef30e81e7421e30b48af0fef5e8768f90284ecfbe1f287c67d666960240917d28d227ef4fa59ddd1d39356c40caf56ebd14fb5eab4b46a2a31c7aab68a34b259fee5be314b2e139d9432ee424adcf0084c9ff23e8b0a72074323457c1551593b35e0440e1963a56cd35ef62d0c8846cdba93340ab421817bdbb1555150bb059106d658d302420ca5975e014ca1521713d9ae81401d3373b313f6f37f23353b79cfae195e840ecfd80d8d2756985840e7d064b58e1858b9ba343b4b302de56c24b272ff353f0184dcdddfc0b6aa38a4dce50a0924fac93e56e59f84768f408adf6feef43e4a406ab548a4afd0ffd5e109c70e0fdca28278e1fd8616fe718245f11930d826777766082f2d72952d32ce796c3b06dbfb807c7da8a730ceae18e2344aa0f174af65fe5dabdb9f2b3008e95208057c9a31ffc69e8968e4fc00d50a0f1b1f85e091344c6ea0add0fee414d3283a881a32f0b784bc4bed2075106bbd9ed6c7e9bac7c98532e51632546b299913d48d02f4df591990e8940c7b41c1a136f5ac93139d2f29bcfed86dc1475db640ca399c5f1dc9773f86a8881571ffb111ffe4a2afb011872d7612bab02f763216258e82069b5e7dd3ab48197779ea4c966f4281912ab3d09671228bf2f90f3729ca4c5e5ed2b8d5db98373210bbce48217fc1e8c743bf74d6a652ddb8d9dd549e1ef48034d2a9b7170525d46c97416f8bd7688a1ddba4861e390cbf12fa3efd8171266de21b55bbed0137fa7a0ce6c5f556effac88ec2e1e1aeb6bc380d09c6af8c889323cf86b586990fb7f8727fa6910a2549167371f3b9f3acac3f12ccbfaac07fbca6b3d271cd805cd2dc41c474c54ed0f1fc9cd6085c0c4040600920f78dc4ca9860873216e9c9b1e5251408b68c41b4a099b6a5d0c37abc0dad69ebcc0d681e0a2f298c55319b723c2245d5c1b00ecbbddfe871e9498d180492056215892abe4aa1e70d1cd6dee526b7254b9c9ddd5c2196bf3feda9d7444935a8c3a23e7462c35b221a8bdc234bf6fcea232a309f41eb9eb5a76de177b007fadf05333c06e0772ff157ddae93e32fc2de42398bc53df81a36c286490f7c6e8ef12abd59e5204dfaed6c72b7f1c8fb25b5b0a73be1012ff31f7e409ccfed0db588e5bb934833b975a07d443403ad9844c8cc8ddb19e03aa3741a5ebdc0380a8c57836fa6b4bef2ce1b4d0dfe2d6bd951aa5507f0a6e87a0cff4a79e8853cbf311a79a243b52a28a5e149b578d6ed796bce3ff73d41b6560abb4c3862c0795d1e5156d82a6f09d4027258c9d7f05fea01c1ffa13420578c040009c30e23d766215ad5918731c93b7fc19e338166cfd35a946312d00ce9f5e702ec9048acc5e21cb36c836ef5c92e418645c27a795e96baf938a6f653a14ce32b6fb44c2b5c31ceab09800828df691dd281619887626d677bceb4e6eae15fa6190e5cb6539c4a4daec59168f6c53e31a449ad7d9bbd2ea65c13cefd03ca9ce9c92f66f3be6a9e1f917861ec4f31110696dabb289a76d8e837ad570bbcabef11e3ae4b1679b3bd8c1c3dc2799154ddfc7139a811d188f5d7a61fe34a01a51a51ed44f0b43bd3cff6e24118240ff3a9078b3dfc6fd</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-wave">
+      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">输入密码</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
                 
             </div>
             <hr/>
@@ -629,7 +582,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://carefulhuo.github.io/posts/d4eda90d.html">https://carefulhuo.github.io/posts/d4eda90d.html</a>
+                    <a href="https://carefulhuo.github.io/posts/9c9bb8e1.html">https://carefulhuo.github.io/posts/9c9bb8e1.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -667,12 +620,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Plugs/">
-                                    <span class="chip bg-color">Plugs</span>
-                                </a>
-                            
-                                <a href="/tags/Maven/">
-                                    <span class="chip bg-color">Maven</span>
+                                <a href="/tags/Little-Love/">
+                                    <span class="chip bg-color">Little Love</span>
                                 </a>
                             
                         </div>
@@ -880,17 +829,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/a51c36.html">
+                <a href="/posts/9c9bb8e1.html">
                     <div class="card-image">
                         
                         
-                        <img src="../medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="小情话第三百二十六则">
+                        <img src="../medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="小情话第六百三十八则">
                         
-                        <span class="card-title">小情话第三百二十六则</span>
+                        <span class="card-title">小情话第六百三十八则</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -900,9 +850,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -915,6 +865,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -933,13 +884,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/65ab57ef.html">
+                <a href="/posts/6bf090a2.html">
                     <div class="card-image">
                         
                         
-                        <img src="../medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="小情话第三百二十五则">
+                        <img src="../medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/CarefulHuo/carefulhuo.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="小情话第六百三十七则">
                         
-                        <span class="card-title">小情话第三百二十五则</span>
+                        <span class="card-title">小情话第六百三十七则</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -950,7 +901,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-15
                             </span>
                         <span class="publish-author">
                             
