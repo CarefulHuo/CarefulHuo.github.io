@@ -6,7 +6,7 @@
   <link href="https://carefulhuo.github.io/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2022-09-01T05:28:33.329Z</updated>
+  <updated>2022-09-02T02:01:04.901Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>注解Annotation</title>
+    <link href="https://carefulhuo.github.io/posts/267d0873.html"/>
+    <id>https://carefulhuo.github.io/posts/267d0873.html</id>
+    <published>2022-09-02T01:38:06.000Z</published>
+    <updated>2022-09-02T02:01:04.901Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h3&gt;&lt;p&gt;Annotation (注解) 是 Java 5 引入的新特性。提供了一种安全的类似注释的机制，将任何信息或者元数据(metadata)</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://carefulhuo.github.io/categories/Java/"/>
+    
+    
+    <category term="Tools" scheme="https://carefulhuo.github.io/tags/Tools/"/>
+    
+  </entry>
   
   <entry>
     <title>小情话第六百八十三则</title>
@@ -364,25 +389,6 @@
     <id>https://carefulhuo.github.io/posts/e213453a.html</id>
     <published>2022-08-04T04:47:13.000Z</published>
     <updated>2022-08-04T05:12:04.259Z</updated>
-    
-    
-    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
-    
-    
-    
-    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
-    
-    
-    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小情话第六百六十四则</title>
-    <link href="https://carefulhuo.github.io/posts/8d8d807d.html"/>
-    <id>https://carefulhuo.github.io/posts/8d8d807d.html</id>
-    <published>2022-08-03T04:50:02.000Z</published>
-    <updated>2022-08-03T05:28:52.520Z</updated>
     
     
     <summary type="html">这个文章-博主不想让其他人看见哟~</summary>

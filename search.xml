@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>注解Annotation</title>
+      <link href="/posts/267d0873.html"/>
+      <url>/posts/267d0873.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>Annotation (注解) 是 Java 5 引入的新特性。提供了一种安全的类似注释的机制，将任何信息或者元数据(metadata) 与程序元素( 类、方法、成员变量等 )，关联起来。为程序元素 ( 类、方法、成员变量 )提供了更直观的注释说明，这些说明与业务逻辑无关，并提供给指定的框架或工具使用。Annotation 位于 java.lang.annotation 包下</p><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p> 注解本质是一个继承了 Annotation 接口的特殊接口，接口的具体实现类是 Java 运行时生成的动态代理类。我们通过反射获取注解时，实际返回的是 Java 运行时生成的代理类对象 ($Proxy1) 。通过代理对象调用自定义注解(接口)的方法，会最终调用 AnnotationInvocationHandler 的 Invoke 方法。</p><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><ol><li>元注解 : 描述注解的注解</li><li>自定义注解 : 根据元注解，去自定义注解(@Override、@Service)</li></ol><h3 id="元注解"><a href="#元注解" class="headerlink" title="元注解"></a>元注解</h3><ol><li><strong>@Target</strong><br> @Target 注解用来指定一个注解的使用范围，表示该注解，可以用在什么地方。该注解有一个成员变量 value ，value 的声明类型是 ElementType 数组，这就表示一个注解可以同时指定多个 ElementType 类型。ElementType 是一个枚举类，具体枚举如下：</li></ol><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">enum</span> ElementType <span class="token punctuation">{</span>      <span class="token comment" spellcheck="true">/**         Class, interface (including annotation type), or enum declaration         用于类、接口(包含注解类型的特殊接口)、枚举    */</span>       TYPE<span class="token punctuation">,</span>         <span class="token comment" spellcheck="true">/**         Field declaration (includes enum constants)         用于成员变量(包含枚举常量)    */</span>       FIELD<span class="token punctuation">,</span>         <span class="token comment" spellcheck="true">/**         Method declaration         用于方法    */</span>       METHOD<span class="token punctuation">,</span>         <span class="token comment" spellcheck="true">/**         Formal parameter declaration         用于形式参数    */</span>       PARAMETER<span class="token punctuation">,</span>         <span class="token comment" spellcheck="true">/**         Constructor declaration        用于构造函数     */</span>       CONSTRUCTOR<span class="token punctuation">,</span>         <span class="token comment" spellcheck="true">/**         Local variable declaration        用于局部变量     */</span>       LOCAL_VARIABLE<span class="token punctuation">,</span>         <span class="token comment" spellcheck="true">/**         Annotation type declaration        用于注解类型     */</span>       ANNOTATION_TYPE<span class="token punctuation">,</span>         <span class="token comment" spellcheck="true">/**         Package declaration         用于包     */</span>       PACKAGE<span class="token punctuation">,</span>         <span class="token comment" spellcheck="true">/**       * Type parameter declaration * * @since 1.8       * 用于类型参数 1.8 新增     */</span>     TYPE_PARAMETER<span class="token punctuation">,</span>         <span class="token comment" spellcheck="true">/**       * Use of a type * * @since 1.8       * 用于类型使用 1.8 新增     */</span>    TYPE_USE<span class="token punctuation">,</span>         <span class="token comment" spellcheck="true">/**       * Module declaration. * * @since 9       * 用于模块 1.9 新增     */</span>     MODULE  <span class="token punctuation">}</span></code></pre><ol start="2"><li><strong>@Documentd</strong><br>  使用 @Documentd 注解修饰的注解，会被 JavaDoc 工具提取成文档</li><li><strong>@Retention</strong><br>  @Retention 注解用于描述注解的保留策略，表示在什么级别保存该注解信息。该注解有一个变量 value，value 的声明类型是 RetentionPolicy ，RetentionPolicy 是一个枚举类，枚举如下</li></ol><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">enum</span> RetentionPolicy <span class="token punctuation">{</span>      <span class="token comment" spellcheck="true">/**      * Annotations are to be discarded by the compiler.     * 注解将被编译器丢弃，即只在原文件保留    */</span>     SOURCE<span class="token punctuation">,</span>     <span class="token comment" spellcheck="true">/**   * Annotations are to be recorded in the class file by the compiler * but need not    be retained by the VM at run time.  This is the default * behavior.    编译器将注解记录在 Class 文件中，但是运行时不会被虚拟机保留，这是所有注解的默认保留策略 */</span>     CLASS<span class="token punctuation">,</span>     <span class="token comment" spellcheck="true">/**   * Annotations are to be recorded in the class file by the compiler and * retained    by the VM at run time, so they may be read reflectively. * * @see    java.lang.reflect.AnnotatedElement     编译器将注解记录在 class 文件中，而且运行时也会被虚拟机保留，因此可以以反射的方式读取它们 */</span>    RUNTIME  <span class="token punctuation">}</span></code></pre><ol start="4"><li><strong>@Inherited</strong><br> @Inherited 注解用来指定该注解可以继承。@Inherited 注解只会影响类上的注解，而方法和属性等上面的注解的继承性不受 @Inherited 注解的影响。而且声明在方法、成员变量等处的注解，即使该注解没有使用 @Inherited 注解，那么默认也是可以继承的，除非子类重写了父类的方法或者覆盖了父类的成员变量。</li><li><strong>@Repeatable</strong><br> @Repeatable 注解是 Java 8 新增的一个元注解，用该注解来标识一个注解在一个元素上使用多次。</li></ol><h3 id="自定义注解"><a href="#自定义注解" class="headerlink" title="自定义注解"></a>自定义注解</h3><ol><li>都是由上面的元注解，组合出来的，比如 @Target @Retention @Documentd</li></ol><h3 id="注解的使用"><a href="#注解的使用" class="headerlink" title="注解的使用"></a>注解的使用</h3><ol><li>注解组合使用<ol><li>注解不能继承其他类和实现其他接口，只能组合使用</li></ol></li><li>注解与反射结合使用</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Tools </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小情话第六百八十三则</title>
       <link href="/posts/37bee95f.html"/>
       <url>/posts/37bee95f.html</url>
