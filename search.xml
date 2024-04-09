@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>系统交互造成的中文乱码问题</title>
+      <title>系统交互造成中文乱码</title>
       <link href="/posts/2673be1f.html"/>
       <url>/posts/2673be1f.html</url>
       
-        <content type="html"><![CDATA[<h3 id="系统间通过-Http-调用造成的中文乱码问题"><a href="#系统间通过-Http-调用造成的中文乱码问题" class="headerlink" title="系统间通过 Http 调用造成的中文乱码问题"></a>系统间通过 Http 调用造成的中文乱码问题</h3><h4 id="原因产生"><a href="#原因产生" class="headerlink" title="原因产生"></a>原因产生</h4><ul><li>编码格式不一致，需要使用 UTF-8 的编码格式</li></ul><h4 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h4><h5 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h5><ul><li>请求头添加 Accept-Charset 为 UTF-8</li></ul><p>第二种(适用范围很广，可以具体到单个对象属性)</p><ul><li>可以使用 Java 自带的 URLEncoder、URLDecoder，对中文进行编码和解码，<font color="red">这种方式对文件名乱码，尤其有效。</font></li></ul><pre class=" language-java"><code class="language-java">例如 A 系统向 B 系统发起 Http 请求<span class="token number">1</span><span class="token punctuation">.</span>A系统的中文通过 java<span class="token punctuation">.</span>net<span class="token punctuation">.</span>URLEncoder#<span class="token function">encode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 编码<span class="token number">2</span><span class="token punctuation">.</span>B系统的中文通过 java<span class="token punctuation">.</span>net<span class="token punctuation">.</span>URLDecoder#<span class="token function">decode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 解码</code></pre>]]></content>
+        <content type="html"><![CDATA[<h3 id="系统间通过-Http-调用造成中文乱码"><a href="#系统间通过-Http-调用造成中文乱码" class="headerlink" title="系统间通过 Http 调用造成中文乱码"></a>系统间通过 Http 调用造成中文乱码</h3><h4 id="原因产生"><a href="#原因产生" class="headerlink" title="原因产生"></a>原因产生</h4><ul><li>编码格式不一致，需要使用 UTF-8 的编码格式</li></ul><h4 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h4><h5 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h5><ul><li>请求头添加 Accept-Charset 为 UTF-8</li></ul><p>第二种(适用范围很广，可以具体到单个对象属性)</p><ul><li>可以使用 Java 自带的 URLEncoder、URLDecoder，对中文进行编码和解码，<font color="red">这种方式对文件名乱码，尤其有效。</font></li></ul><pre class=" language-java"><code class="language-java">例如 A 系统向 B 系统发起 Http 请求<span class="token number">1</span><span class="token punctuation">.</span>A系统的中文通过 java<span class="token punctuation">.</span>net<span class="token punctuation">.</span>URLEncoder#<span class="token function">encode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 编码<span class="token number">2</span><span class="token punctuation">.</span>B系统的中文通过 java<span class="token punctuation">.</span>net<span class="token punctuation">.</span>URLDecoder#<span class="token function">decode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 解码</code></pre>]]></content>
       
       
       <categories>
@@ -46,31 +46,6 @@
         <tags>
             
             <tag> Git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>AOF持久化</title>
-      <link href="/posts/e28a809.html"/>
-      <url>/posts/e28a809.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 中间件 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Redis </tag>
             
         </tags>
       
