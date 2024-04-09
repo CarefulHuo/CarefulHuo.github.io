@@ -4,6 +4,81 @@
   
     
     <entry>
+      <title>系统交互造成的中文乱码问题</title>
+      <link href="/posts/2673be1f.html"/>
+      <url>/posts/2673be1f.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="系统间通过-Http-调用造成的中文乱码问题"><a href="#系统间通过-Http-调用造成的中文乱码问题" class="headerlink" title="系统间通过 Http 调用造成的中文乱码问题"></a>系统间通过 Http 调用造成的中文乱码问题</h3><h4 id="原因产生"><a href="#原因产生" class="headerlink" title="原因产生"></a>原因产生</h4><ul><li>编码格式不一致，需要使用 UTF-8 的编码格式</li></ul><h4 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h4><h5 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h5><ul><li>请求头添加 Accept-Charset 为 UTF-8</li></ul><p>第二种(适用范围很广，可以具体到单个对象属性)</p><ul><li>可以使用 Java 自带的 URLEncoder、URLDecoder，对中文进行编码和解码，<font color="red">这种方式对文件名乱码，尤其有效。</font></li></ul><pre class=" language-java"><code class="language-java">例如 A 系统向 B 系统发起 Http 请求<span class="token number">1</span><span class="token punctuation">.</span>A系统的中文通过 java<span class="token punctuation">.</span>net<span class="token punctuation">.</span>URLEncoder#<span class="token function">encode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 编码<span class="token number">2</span><span class="token punctuation">.</span>B系统的中文通过 java<span class="token punctuation">.</span>net<span class="token punctuation">.</span>URLDecoder#<span class="token function">decode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 解码</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络协议 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HTTP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>本地项目提交 Github</title>
+      <link href="/posts/373015e5.html"/>
+      <url>/posts/373015e5.html</url>
+      
+        <content type="html"><![CDATA[<h4 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h4><ol><li>Git</li><li>Idea</li><li>Github 账号</li></ol><h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><ol><li><p>使用注册好的 Github 账号，登陆 <a href="https://github.com/">Github</a>；</p></li><li><p>创建 Repositories (存储库)，注意填写图上的红框标注；</p><p><img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/20240409224440.png"></p></li></ol><p><img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/20240409224656.png"></p><ol start="3"><li><p>创建完成之后，找到存储库的 ssh 地址或 https 地址，这取决于你自己的配置，此处不再展开说</p><p><img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/20240409225015.png"></p></li><li><p>打开 Idea ，选择  VCS 菜单栏，展开后，选择 Create Git  Repositorie ，再选择需要提交的项目。注意：Idea 版本不同，Create Git  Repositorie 选项的位置会存在差别，但是都会在 VCS 菜单栏下</p><p><img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/20240409230520.png"></p><p><img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/20240409230642.png"></p></li><li><p>右击项目，选择 Git 菜单栏，展开后，选择 Add </p><p><img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/20240409225607.png"></p></li><li><p>将代码，提交到本地，第二个红框是让你填写提交信息，图示是已经提交到本地的情况，没有提交到本地时，会显示那些文件会被提交</p><p><img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/image-20240409225825563.png"></p></li><li><p>填写存储库地址，推送到刚刚创建的 Github 存储库</p><p><img src="https://littleloveblog.oss-cn-beijing.aliyuncs.com/img/20240409230119.png"></p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 版本管理 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>AOF持久化</title>
+      <link href="/posts/e28a809.html"/>
+      <url>/posts/e28a809.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 中间件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>RDB持久化</title>
       <link href="/posts/5f64b03b.html"/>
       <url>/posts/5f64b03b.html</url>

@@ -6,7 +6,7 @@
   <link href="https://carefulhuo.github.io/atom.xml" rel="self"/>
   
   <link href="https://carefulhuo.github.io/"/>
-  <updated>2023-04-22T13:46:02.880Z</updated>
+  <updated>2024-04-09T15:22:52.060Z</updated>
   <id>https://carefulhuo.github.io/</id>
   
   <author>
@@ -15,6 +15,78 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>系统交互造成的中文乱码问题</title>
+    <link href="https://carefulhuo.github.io/posts/2673be1f.html"/>
+    <id>https://carefulhuo.github.io/posts/2673be1f.html</id>
+    <published>2024-04-09T15:18:55.000Z</published>
+    <updated>2024-04-09T15:22:52.060Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;系统间通过-Http-调用造成的中文乱码问题&quot;&gt;&lt;a href=&quot;#系统间通过-Http-调用造成的中文乱码问题&quot; class=&quot;headerlink&quot; title=&quot;系统间通过 Http 调用造成的中文乱码问题&quot;&gt;&lt;/a&gt;系统间通过 Http</summary>
+        
+      
+    
+    
+    
+    <category term="网络协议" scheme="https://carefulhuo.github.io/categories/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/"/>
+    
+    
+    <category term="HTTP" scheme="https://carefulhuo.github.io/tags/HTTP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>本地项目提交 Github</title>
+    <link href="https://carefulhuo.github.io/posts/373015e5.html"/>
+    <id>https://carefulhuo.github.io/posts/373015e5.html</id>
+    <published>2024-04-09T15:13:58.000Z</published>
+    <updated>2024-04-09T15:17:16.107Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;工具&quot;&gt;&lt;a href=&quot;#工具&quot; class=&quot;headerlink&quot; title=&quot;工具&quot;&gt;&lt;/a&gt;工具&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;Git&lt;/li&gt;
+&lt;li&gt;Idea&lt;/li&gt;
+&lt;li&gt;Github 账号&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;步骤&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="版本管理" scheme="https://carefulhuo.github.io/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+    
+    
+    <category term="Git" scheme="https://carefulhuo.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AOF持久化</title>
+    <link href="https://carefulhuo.github.io/posts/e28a809.html"/>
+    <id>https://carefulhuo.github.io/posts/e28a809.html</id>
+    <published>2023-04-23T09:07:29.000Z</published>
+    <updated>2023-04-23T09:23:33.005Z</updated>
+    
+    
+    
+    
+    <category term="中间件" scheme="https://carefulhuo.github.io/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"/>
+    
+    
+    <category term="Redis" scheme="https://carefulhuo.github.io/tags/Redis/"/>
+    
+  </entry>
   
   <entry>
     <title>RDB持久化</title>
@@ -339,63 +411,6 @@
     <id>https://carefulhuo.github.io/posts/501b85dd.html</id>
     <published>2022-10-31T14:05:53.000Z</published>
     <updated>2022-11-06T14:11:07.378Z</updated>
-    
-    
-    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
-    
-    
-    
-    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
-    
-    
-    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小情话第七百零八则</title>
-    <link href="https://carefulhuo.github.io/posts/2ad6a482.html"/>
-    <id>https://carefulhuo.github.io/posts/2ad6a482.html</id>
-    <published>2022-10-28T14:03:25.000Z</published>
-    <updated>2022-11-06T14:08:59.395Z</updated>
-    
-    
-    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
-    
-    
-    
-    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
-    
-    
-    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小情话第七百零七则</title>
-    <link href="https://carefulhuo.github.io/posts/ddbd8cc1.html"/>
-    <id>https://carefulhuo.github.io/posts/ddbd8cc1.html</id>
-    <published>2022-10-27T14:01:57.000Z</published>
-    <updated>2022-11-06T14:07:56.020Z</updated>
-    
-    
-    <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
-    
-    
-    
-    <category term="程序员的浪漫" scheme="https://carefulhuo.github.io/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%B5%AA%E6%BC%AB/"/>
-    
-    
-    <category term="Little Love" scheme="https://carefulhuo.github.io/tags/Little-Love/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小情话第七百零六则</title>
-    <link href="https://carefulhuo.github.io/posts/fbdfb5e.html"/>
-    <id>https://carefulhuo.github.io/posts/fbdfb5e.html</id>
-    <published>2022-10-26T14:00:54.000Z</published>
-    <updated>2022-11-06T14:07:56.011Z</updated>
     
     
     <summary type="html">这个文章-博主不想让其他人看见哟~</summary>
